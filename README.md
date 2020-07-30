@@ -22,7 +22,7 @@ npm install --save ../plot-converter-js
 
 TypeScript:
 ```
-import { hello } from 'plot-converter';
+import { hello } from 'plot-converter-js';
 
 console.log(hello());
 ```
