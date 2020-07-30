@@ -1,5 +1,5 @@
 import {ActionLayerEntities, ActionLayerEntity, ActionLayerEntityBase, Point} from "./in.models";
-import {RDtoWSG84, WGS84ToRD} from "./proj";
+import {WGS84ToRD} from "./proj";
 import 'core-js/es/map';
 
 interface ConversionResult {
@@ -14,13 +14,11 @@ export function hello(): string {
 
 const e = (message: string): ConversionResult => ({ succeeded: false, message});
 
-if(!global['console']) {
-    // @ts-ignore
-    global['console'] = { log: () => {}};
-}
-
-export function convert(json: string): ConversionResult {
+export function convert(json: string, log?: (...args: any[]) => void): ConversionResult {
     let input: ActionLayerEntities;
+    if (!log) {
+        log = () => {};
+    }
     try {
         input = JSON.parse(json);
     } catch(e) {
@@ -48,7 +46,7 @@ export function convert(json: string): ConversionResult {
             });
         } catch(e) {
             // TODO add message about conversion error
-            console.log(`Error converting entity ${id}: ${e}`);
+            log(`Error converting entity ${id}: ${e}`);
         }
     });
 
