@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "description": "Library to convert old LCMS Plot JSON to the format used by the new Plot",
-  "main": "./dist/plot-converter.dev.js",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://git.infosys.ifv.systems/lcms-plot-development/plot-converter-js.git"
   },
   "files": [
-    "/dist"
+    "/dist",
+    "!/dist/plot-converter.js*"
   ],
   "scripts": {
-    "build": "webpack",
+    "build": "webpack && tsc",
     "prepare": "npm run build",
     "start": "webpack-dev-server --open",
     "test": "echo \"Error: no test specified\" && exit 1"
