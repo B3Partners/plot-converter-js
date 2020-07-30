@@ -9,7 +9,7 @@ interface ConversionResult {
 }
 
 export function hello(): string {
-    return "PlotJsonConverter works!";
+    return "PlotConverter works!";
 }
 
 const e = (message: string): ConversionResult => ({ succeeded: false, message});

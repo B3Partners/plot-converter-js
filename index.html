@@ -12,7 +12,7 @@
             <script>
 function doConversion() {
     const input = document.getElementById('input').value;
-    const result = PlotJsonConverter.convert(input);
+    const result = PlotConverter.convert(input);
     console.log(result);
     const outputEl = document.getElementById('output');
     if (!result.succeeded) {
@@ -23,7 +23,7 @@ function doConversion() {
 }
 
 window.addEventListener('load', () => {
-  console.log(PlotJsonConverter.hello());
+  console.log(PlotConverter.hello());
   fetch('test.json').then(r => r.text().then(text => {
     document.getElementById('input').value = text;
     doConversion();

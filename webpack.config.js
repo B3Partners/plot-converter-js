@@ -21,7 +21,7 @@ module.exports = {
         new CleanWebpackPlugin(),
     ],
     output: {
-        library: 'PlotJsonConverter',
+        library: 'PlotConverter',
         libraryTarget: 'umd',
         globalObject: 'this',
         filename: 'plot-converter.dev.js',
