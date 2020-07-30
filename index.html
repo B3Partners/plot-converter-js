@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test</title>
+        <script src="plot-converter.dev.js"></script>
+    </head>
+    <body>
+        <h1>Test Plot JSON converter</h1>
+
+        <p>
+            <script>
+function doConversion() {
+    const input = document.getElementById('input').value;
+    const result = PlotJsonConverter.convert(input);
+    console.log(result);
+    const outputEl = document.getElementById('output');
+    if (!result.succeeded) {
+      outputEl.value = 'Error converting JSON: ' + result.message;
+    } else {
+      outputEl.value = result.output;
+    }
+}
+
+window.addEventListener('load', () => {
+  console.log(PlotJsonConverter.hello());
+  fetch('test.json').then(r => r.text().then(text => {
+    document.getElementById('input').value = text;
+    doConversion();
+  }));
+});
+            </script>
+        </p>
+        <button onclick="doConversion();">Convert</button>
+        <p>
+            Input JSON:<br>
+            <textarea id="input" cols="80" rows="10">
+            </textarea>
+
+        </p>
+        <textarea readonly id="output" cols="80" rows="10"></textarea>
+
+    </body>
+</html>

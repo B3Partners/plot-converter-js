@@ -1,0 +1,541 @@
+{
+  "version": 20161115,
+  "topEntityIds": [
+    "aa6e38fa-bc93-481f-903f-b6baacb355c9",
+    "2cdf1331-e052-4a37-b926-25432c0b0286",
+    "19d92d29-afc6-4551-aebe-210c9af14c89",
+    "a1136bf8-6219-42b3-8e11-be99cae9e4cb",
+    "7b3d3514-1d27-4947-98ca-a2736f5ce9d7",
+    "d4ee507b-f1bf-43e3-bcf6-5054c50027ca",
+    "dcc6b77f-5f30-40b5-ae21-988886124a25",
+    "48a303cb-1e87-4cb6-a0c8-ec3d0521c9ac",
+    "687e3503-12ae-4004-98d6-e4c1d1e0bb47"
+  ],
+  "entityList": [
+    {
+      "entityIdentifier": "PLn",
+      "entity": {
+        "drawOutline": true,
+        "typeList": "011114",
+        "pointList": [
+          {
+            "x": 4.508592105327334,
+            "y": 52.081687366725085
+          },
+          {
+            "x": 4.53714589467155,
+            "y": 52.083132278238814
+          },
+          {
+            "x": 4.5367678554225845,
+            "y": 52.07664231680379
+          },
+          {
+            "x": 4.512540448490506,
+            "y": 52.07636182642108
+          },
+          {
+            "x": 4.508592105327334,
+            "y": 52.081687366725085
+          }
+        ],
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": 2147418112,
+            "name": "Default"
+          }
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1,
+        "alpha": 1,
+        "styleName": "plotStyle_sysadmin1_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "19d92d29-afc6-4551-aebe-210c9af14c89",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 6,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Syn",
+      "entity": {
+        "symbol": {
+          "transform": {
+            "m00": 1,
+            "m10": 0,
+            "m01": 0,
+            "m11": -1
+          },
+          "symbolId": "Brandweer_voertuig-1.gif",
+          "alpha": 1
+        },
+        "text": {
+          "text": "",
+          "textOrigin": {
+            "x": 3801.081875744935,
+            "y": 18031.61177704111
+          },
+          "origin": {
+            "x": 3801.081875744935,
+            "y": 18031.61177704111
+          },
+          "textAngle": 0,
+          "style": {
+            "styleName": "Ingezet",
+            "characterColor": "#FF0000",
+            "characterLine": 0.64,
+            "characterSize": 8.2,
+            "characterSlant": 0,
+            "characterAngle": 0,
+            "relativeWidth": 1,
+            "relativeSpacing": 1.15,
+            "relativeLineDistance": 1,
+            "monoSpacing": false,
+            "reference": 2,
+            "balloonType": 2,
+            "balloonLineWidth": 0.25,
+            "balloonColor": "#010101",
+            "balloonRadius": 5,
+            "includeReferencePointer": false,
+            "balloonFillType": {
+              "paint": {
+                "mode": false,
+                "color1": -1
+              }
+            },
+            "strokeFontName": "std.1"
+          }
+        },
+        "isRotatable": false,
+        "id": "9898b4f5-6423-4fed-a3a8-6111d91b4041",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "PLn",
+      "entity": {
+        "drawOutline": true,
+        "typeList": "01111",
+        "pointList": [
+          {
+            "x": 4.480614576659545,
+            "y": 52.07663533165533
+          },
+          {
+            "x": 4.464079062717492,
+            "y": 52.06806305703069
+          },
+          {
+            "x": 4.488017055359584,
+            "y": 52.06587948374153
+          },
+          {
+            "x": 4.483870978242033,
+            "y": 52.056064817446874
+          },
+          {
+            "x": 4.470141577638012,
+            "y": 52.05760633886994
+          }
+        ],
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1,
+        "alpha": 1,
+        "styleName": "plotStyle_sysadmin1_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "a1136bf8-6219-42b3-8e11-be99cae9e4cb",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 7,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Rct",
+      "entity": {
+        "point1": {
+          "x": 4.5023348346616405,
+          "y": 52.043127034586654
+        },
+        "point2": {
+          "x": 4.515333314009929,
+          "y": 52.05310976956412
+        },
+        "transform": {
+          "m00": 1,
+          "m10": 0,
+          "m01": 0,
+          "m11": 1
+        },
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": 2147418112,
+            "name": "Default"
+          }
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1,
+        "alpha": 1,
+        "styleName": "plotStyle_sysadmin1_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "aa6e38fa-bc93-481f-903f-b6baacb355c9",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "Voertuig",
+        "layerInvisible": false,
+        "children": [
+          "9898b4f5-6423-4fed-a3a8-6111d91b4041"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 4.5129568312660835,
+          "y": 52.04650163029347
+        },
+        "id": "48a303cb-1e87-4cb6-a0c8-ec3d0521c9ac",
+        "readOnly": false,
+        "isUser3": true,
+        "isSymbol": true,
+        "zLevel": 11,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "Voertuig",
+        "layerInvisible": false,
+        "children": [
+          "51455b6e-895e-4982-94dc-a629084446f7"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 4.543214615900609,
+          "y": 52.0538277315676
+        },
+        "id": "dcc6b77f-5f30-40b5-ae21-988886124a25",
+        "readOnly": false,
+        "isUser3": true,
+        "isSymbol": true,
+        "zLevel": 10,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Arc",
+      "entity": {
+        "type": 0,
+        "point1": {
+          "x": 4.566717700829218,
+          "y": 52.065526026424884
+        },
+        "point2": {
+          "x": 4.582250737601137,
+          "y": 52.075315097929604
+        },
+        "start": 0,
+        "extent": 360,
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": 2147418112,
+            "name": "Default"
+          }
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1,
+        "alpha": 1,
+        "styleName": "plotStyle_sysadmin1_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "7b3d3514-1d27-4947-98ca-a2736f5ce9d7",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 8,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Lne",
+      "entity": {
+        "point1": {
+          "x": 4.52574068743415,
+          "y": 52.06780902642324
+        },
+        "point2": {
+          "x": 4.53589592562579,
+          "y": 52.060983422555914
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1,
+        "alpha": 1,
+        "styleName": "plotStyle_sysadmin1_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "2cdf1331-e052-4a37-b926-25432c0b0286",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 3,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Syn",
+      "entity": {
+        "symbol": {
+          "transform": {
+            "m00": 1,
+            "m10": 0,
+            "m01": 0,
+            "m11": -1
+          },
+          "symbolId": "Brandweer-1.gif",
+          "alpha": 1
+        },
+        "text": {
+          "text": "",
+          "textOrigin": {
+            "x": 3789.62539853993,
+            "y": 18014.1979316895
+          },
+          "origin": {
+            "x": 3789.62539853993,
+            "y": 18014.1979316895
+          },
+          "textAngle": 0,
+          "style": {
+            "styleName": "Ingezet",
+            "characterColor": "#FF0000",
+            "characterLine": 0.64,
+            "characterSize": 8.2,
+            "characterSlant": 0,
+            "characterAngle": 0,
+            "relativeWidth": 1,
+            "relativeSpacing": 1.15,
+            "relativeLineDistance": 1,
+            "monoSpacing": false,
+            "reference": 2,
+            "balloonType": 2,
+            "balloonLineWidth": 0.25,
+            "balloonColor": "#010101",
+            "balloonRadius": 5,
+            "includeReferencePointer": false,
+            "balloonFillType": {
+              "paint": {
+                "mode": false,
+                "color1": -1
+              }
+            },
+            "strokeFontName": "std.1"
+          }
+        },
+        "isRotatable": false,
+        "id": "600ced5a-937f-43db-8816-e9b84ee4b3b6",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "Algemeen",
+        "layerInvisible": false,
+        "children": [
+          "600ced5a-937f-43db-8816-e9b84ee4b3b6"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 4.508858924169723,
+          "y": 52.04255801113022
+        },
+        "id": "687e3503-12ae-4004-98d6-e4c1d1e0bb47",
+        "readOnly": false,
+        "isUser3": true,
+        "isSymbol": true,
+        "zLevel": 12,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Syn",
+      "entity": {
+        "symbol": {
+          "transform": {
+            "m00": 1,
+            "m10": 0,
+            "m01": 0,
+            "m11": -1
+          },
+          "symbolId": "Ziekenhuis_functionerend-1.gif",
+          "alpha": 1
+        },
+        "text": {
+          "text": "",
+          "textOrigin": {
+            "x": 3765.7959259535173,
+            "y": 18133.803553709764
+          },
+          "origin": {
+            "x": 3765.7959259535173,
+            "y": 18133.803553709764
+          },
+          "textAngle": 0,
+          "style": {
+            "styleName": "Ingezet",
+            "characterColor": "#FF0000",
+            "characterLine": 0.64,
+            "characterSize": 8.2,
+            "characterSlant": 0,
+            "characterAngle": 0,
+            "relativeWidth": 1,
+            "relativeSpacing": 1.15,
+            "relativeLineDistance": 1,
+            "monoSpacing": false,
+            "reference": 2,
+            "balloonType": 2,
+            "balloonLineWidth": 0.25,
+            "balloonColor": "#010101",
+            "balloonRadius": 5,
+            "includeReferencePointer": false,
+            "balloonFillType": {
+              "paint": {
+                "mode": false,
+                "color1": -1
+              }
+            },
+            "strokeFontName": "std.1"
+          }
+        },
+        "isRotatable": false,
+        "id": "05a3863d-f7cc-4dea-a271-494cc04b972c",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "Ziekenhuis",
+        "layerInvisible": false,
+        "children": [
+          "05a3863d-f7cc-4dea-a271-494cc04b972c"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 4.499643743392785,
+          "y": 52.069365918680184
+        },
+        "id": "d4ee507b-f1bf-43e3-bcf6-5054c50027ca",
+        "readOnly": false,
+        "isUser3": true,
+        "isSymbol": true,
+        "zLevel": 9,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Syn",
+      "entity": {
+        "symbol": {
+          "transform": {
+            "m00": 1,
+            "m10": 0,
+            "m01": 0,
+            "m11": -1
+          },
+          "symbolId": "GHOR_voertuig-1.gif",
+          "alpha": 1
+        },
+        "text": {
+          "text": "",
+          "textOrigin": {
+            "x": 3884.485029797379,
+            "y": 18063.23165412693
+          },
+          "origin": {
+            "x": 3884.485029797379,
+            "y": 18063.23165412693
+          },
+          "textAngle": 0,
+          "style": {
+            "styleName": "Ingezet",
+            "characterColor": "#FF0000",
+            "characterLine": 0.64,
+            "characterSize": 8.2,
+            "characterSlant": 0,
+            "characterAngle": 0,
+            "relativeWidth": 1,
+            "relativeSpacing": 1.15,
+            "relativeLineDistance": 1,
+            "monoSpacing": false,
+            "reference": 2,
+            "balloonType": 2,
+            "balloonLineWidth": 0.25,
+            "balloonColor": "#010101",
+            "balloonRadius": 5,
+            "includeReferencePointer": false,
+            "balloonFillType": {
+              "paint": {
+                "mode": false,
+                "color1": -1
+              }
+            },
+            "strokeFontName": "std.1"
+          }
+        },
+        "isRotatable": false,
+        "id": "51455b6e-895e-4982-94dc-a629084446f7",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    }
+  ]
+}
