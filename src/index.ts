@@ -1,6 +1,5 @@
 import {ActionLayerEntities, ActionLayerEntity, ActionLayerEntityBase, Point} from "./in.models";
 import {WGS84ToRD} from "./proj";
-import 'core-js/es/map';
 
 interface ConversionResult {
     succeeded: boolean;
@@ -12,7 +11,7 @@ export function hello(): string {
     return "PlotConverter works!";
 }
 
-const e = (message: string): ConversionResult => ({ succeeded: false, message});
+const err = (message: string): ConversionResult => ({ succeeded: false, message});
 
 export function convert(json: string, log?: (...args: any[]) => void): ConversionResult {
     let input: ActionLayerEntities;
@@ -22,11 +21,11 @@ export function convert(json: string, log?: (...args: any[]) => void): Conversio
     try {
         input = JSON.parse(json);
     } catch(e) {
-        return e('Error parsing JSON: ' + e);
+        return err('Error parsing JSON: ' + e);
     }
 
     if(input.version !== 20161115) {
-        return e('Unknown version: ' + input.version);
+        return err('Unknown version: ' + input.version);
     }
 
     const entityIndex = indexEntities(input.entityList);
@@ -34,7 +33,7 @@ export function convert(json: string, log?: (...args: any[]) => void): Conversio
     const converted: any[] = [];
 
     input.topEntityIds.forEach((id, index) => {
-        const entity = entityIndex.get(id);
+        const entity = entityIndex[id];
         if (!entity) {
             // TODO add message to log
             return;
@@ -57,10 +56,10 @@ export function convert(json: string, log?: (...args: any[]) => void): Conversio
     };
 }
 
-function indexEntities(input: ActionLayerEntityBase[]): Map<string,ActionLayerEntityBase> {
-    const map = new Map<string, ActionLayerEntityBase>();
+function indexEntities(input: ActionLayerEntityBase[]): { [key: string]: ActionLayerEntityBase} {
+    const map: { [key: string]: ActionLayerEntityBase} = {};
     input.forEach(entity => {
-        map.set(entity.entity.id, entity);
+        map[entity.entity.id] = entity;
     });
     return map;
 }
