@@ -4,41 +4,65 @@
         <meta charset="UTF-8">
         <title>Test</title>
         <script src="plot-converter.dev.js"></script>
+
+        <script src="http://localhost:4201/runtime.js" defer></script>
+        <script src="http://localhost:4201/polyfills-es5.js" nomodule defer></script>
+        <script src="http://localhost:4201/polyfills.js" defer></script>
+        <script src="http://localhost:4201/styles.js" defer></script>
+        <script src="http://localhost:4201/scripts.js" defer></script>
+        <script src="http://localhost:4201/vendor.js" defer></script>
+        <script src="http://localhost:4201/main.js" defer></script>
     </head>
     <body>
         <h1>Test Plot JSON converter</h1>
 
-        <p>
-            <script>
-function doConversion() {
-    const input = document.getElementById('input').value;
-    const result = PlotConverter.convert(input, console.log);
-    console.log(result);
-    const outputEl = document.getElementById('output');
-    if (!result.succeeded) {
-      outputEl.value = 'Error converting JSON: ' + result.message;
-    } else {
-      outputEl.value = result.output;
-    }
-}
+        <table style="width: 100%">
+            <tr>
+                <td>
+                    <p>
+                        <script>
+                            function doConversion() {
+                                const input = document.getElementById('input').value;
+                                const result = PlotConverter.convert(input, console.log);
+                                console.log(result);
+                                const outputEl = document.getElementById('output');
+                                const testEl = document.getElementsByTagName('lcms-test')[0];
+                                if (!result.succeeded) {
+                                    outputEl.value = 'Error converting JSON: ' + result.message;
+                                    testEl.setAttribute('load-geo-json', '[]');
+                                } else {
+                                    outputEl.value = result.output;
 
-window.addEventListener('load', () => {
-  console.log(PlotConverter.hello());
-  fetch('test.json').then(r => r.text().then(text => {
-    document.getElementById('input').value = text;
-    doConversion();
-  }));
-});
-            </script>
-        </p>
-        <button onclick="doConversion();">Convert</button>
-        <p>
-            Input JSON:<br>
-            <textarea id="input" cols="80" rows="10">
-            </textarea>
+                                    testEl.setAttribute('load-geo-json', result.output);
+                                }
+                            }
 
-        </p>
-        <textarea readonly id="output" cols="80" rows="10"></textarea>
+                            window.addEventListener('load', () => {
+                                console.log(PlotConverter.hello());
+                                fetch('test.json').then(r => r.text().then(text => {
+                                    document.getElementById('input').value = text;
+                                    doConversion();
+                                }));
+                            });
+                        </script>
+                    </p>
+                    <button onclick="doConversion();">Convert</button>
+                    <p>
+                        Input JSON:<br>
+                        <textarea id="input" cols="80" rows="10"></textarea>
+
+                    </p>
+                    <textarea readonly id="output" cols="80" rows="10"></textarea>
+                </td>
+                <td style="width: 100%">
+                    Run <tt>npm run start-elements</tt> in the <tt>lcms-plot</tt> project to see the map with the result.
+                    <lcms-test></lcms-test>
+                    <div style="position: relative; margin: 20px; width: calc(95% - 1px); height: 450px; border: 1px solid black">
+                        <lcms-situation-view></lcms-situation-view>
+                    </div>
+                </td>
+            </tr>
+        </table>
 
     </body>
 </html>
