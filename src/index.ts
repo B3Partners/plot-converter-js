@@ -1,5 +1,5 @@
-import {ActionLayerEntities, ActionLayerEntity, ActionLayerEntityBase, Point} from "./in.models";
-import {WGS84ToRD} from "./proj";
+import {ActionLayerEntities, ActionLayerEntityBase} from "./in.models";
+import {convertEntity, EntityIndex} from "./entity";
 
 interface ConversionResult {
     succeeded: boolean;
@@ -30,73 +30,48 @@ export function convert(json: string, log?: (...args: any[]) => void): Conversio
 
     const entityIndex = indexEntities(input.entityList);
 
-    const converted: any[] = [];
+    let features: any[] = [];
 
-    input.topEntityIds.forEach((id, index) => {
+    input.topEntityIds.forEach(id=> {
         const entity = entityIndex[id];
         if (!entity) {
             // TODO add message to log
             return;
         }
         try {
-            converted.push({
-                ...convertEntity(entity),
-                zIndex: index,
-            });
+            const converted = convertEntity(entity, entityIndex);
+            if (Array.isArray(converted)) {
+                features = features.concat(converted);
+            } else {
+                features.push(converted);
+            }
         } catch(e) {
             // TODO add message about conversion error
             log(`Error converting entity ${id}: ${e}`);
         }
     });
 
+    /*
+    input.entityList.forEach(entity => {
+        try {
+            converted.push(convertEntity(entity));
+        } catch(e) {
+            // TODO add message about conversion error
+            log(`Error converting entity ${entity.entityIdentifier}: ${e}`);
+        }
+    });*/
+
     return {
         succeeded: true,
         message: 'Aantal top entities: ' + input.topEntityIds.length,
-        output: JSON.stringify(converted, null, 2),
+        output: JSON.stringify(features, null, 2),
     };
 }
 
-function indexEntities(input: ActionLayerEntityBase[]): { [key: string]: ActionLayerEntityBase} {
+function indexEntities(input: ActionLayerEntityBase[]): EntityIndex {
     const map: { [key: string]: ActionLayerEntityBase} = {};
     input.forEach(entity => {
         map[entity.entity.id] = entity;
     });
     return map;
-}
-
-function convertEntity(entity: ActionLayerEntityBase): any {
-    switch(entity.entityIdentifier) {
-        case 'PLn': return convertPolygon(entity.entity);
-        default: throw new Error('Unknown entity identifier: ' + entity.entityIdentifier);
-    }
-}
-
-function convertPolygon(entity: ActionLayerEntity) {
-    const rdPoints = pointsToRD(entity.pointList);
-
-    return {
-        id: entity.id,
-        name: entity.id,
-        geometry: 'POLYGON((' + rdPoints.map(p => p.x + ' ' + p.y).join(',') + '))',
-        attributes: {
-            tool: 3,
-            type: 'Polygon',
-            scaleFeature: false,
-        },
-        style: {
-            label: '',
-            fillColor: entity.fillType ? entity.fillType.color : '',
-            fillOpacity: 0.5,
-            strokeColor: entity.fillType ? entity.fillType.color : '',
-            strokeOpacity: 1,
-            strokeType: 0,
-            strokeWidth: entity.lineWidth,
-        },
-        showInLegend: false,
-        selectableFeature: true,
-    };
-}
-
-function pointsToRD(points: Point[]): Point[] {
-    return points.map(p => WGS84ToRD(p.y, p.x)).map(coords => ({ x: coords[0], y: coords[1]}));
 }

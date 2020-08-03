@@ -1,4 +1,4 @@
-export type EntityType = 'PLn' | 'Syn';
+export type EntityType = 'Lne' | 'Arc' | 'Prt' | 'Img' | 'PAr' | 'PLn' | 'Rct' | 'Spl' | 'STx' | 'Syn';
 
 export interface Point {
     x: number;
@@ -6,29 +6,86 @@ export interface Point {
 }
 
 export interface FillType {
-    color: string;
+    color?: string;
+    paint?: { mode: boolean; color1: number; name: string };
 }
 
 export interface LineType {
     name: 'Solid';
 }
 
+export interface Transform {
+
+}
+
 export interface ActionLayerEntity {
+    id: string;
+    zLevel: number;
+    attributes: any[];
+}
+
+export interface LineEntity extends ActionLayerEntity {
+    point1: Point;
+    point2: Point;
+    color: string;
+    lineType: LineType;
+    lineWidth: number;
+    alpha: number;
+}
+
+export interface ArcEntity extends ActionLayerEntity {
+    point1: Point;
+    point2: Point;
+    start: number;
+    extent: number;
+    color: string;
+    fillType: FillType;
+    lineType: LineType;
+    lineWidth: number;
+}
+
+export interface PolyLineEntity extends ActionLayerEntity {
+    typeList: string;
+    color: string;
+    lineType: LineType;
+    lineWidth: number;
+    alpha: number;
     drawOutline: boolean;
-    typeList: number;
     pointList: Point[];
+    fillType: FillType;
+}
+
+export interface RectangleEntity extends ActionLayerEntity {
+    point1: Point;
+    point2: Point;
+    transform: Transform;
+    color: string;
     fillType: FillType;
     lineType: LineType;
     lineWidth: number;
     alpha: number;
-    styleName: string;
-    id: string;
-    readOnly: boolean;
-    isUser3: boolean;
-    isSymbol: boolean;
-    zLevel: number;
-    attributes: any[];
-    versionId: number;
+}
+
+export interface SymbolEntity extends ActionLayerEntity {
+    symbol: {
+        transform: Transform;
+        symbolId: string;
+        alpha: number;
+    },
+    text: {
+        text: string;
+        textOrigin: Point;
+        origin: Point;
+        textAngle: number;
+        style: {}
+    }
+}
+
+export interface PartEntity extends ActionLayerEntity {
+    children: string[];
+    layerInvisible: boolean;
+    pixelScale: boolean;
+    origin: Point;
 }
 
 export interface ActionLayerEntityBase {
