@@ -15,7 +15,10 @@ export interface LineType {
 }
 
 export interface Transform {
-
+    m00: number;
+    m10: number;
+    m01: number;
+    m11: number;
 }
 
 export interface ActionLayerEntity {
@@ -86,6 +89,7 @@ export interface PartEntity extends ActionLayerEntity {
     layerInvisible: boolean;
     pixelScale: boolean;
     origin: Point;
+    name?: string;
 }
 
 export interface ActionLayerEntityBase {
