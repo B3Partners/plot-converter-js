@@ -1,0 +1,259 @@
+{
+  "version": 20161115,
+  "topEntityIds": [
+    "cd1a9bac-84cf-40b3-a41f-b514f0c8f718",
+    "e95a9e93-b88f-422d-b313-37fdc8ed6293",
+    "c94f64ef-f893-4936-96f0-b476c4007160",
+    "391c5080-585d-433e-a897-cb6eea157e21",
+    "25f1333f-50ee-4a9b-b861-28da3c5791a7",
+    "ef3185a9-8ba1-4380-938c-481aac6ccd72",
+    "0e8e59e2-e8d0-4793-8091-d14ee7ec86d5",
+    "ae4e178a-2dcd-4c96-8d86-77c285876a2c"
+  ],
+  "entityList": [
+    {
+      "entityIdentifier": "Arc",
+      "entity": {
+        "type": 0,
+        "point1": {
+          "x": 4.281280536109143,
+          "y": 51.907121963259996
+        },
+        "point2": {
+          "x": 4.3174276353176095,
+          "y": 51.93015323839249
+        },
+        "start": 87.18396637713353,
+        "extent": -287.3610587894466,
+        "color": "#00FF33",
+        "lineType": {
+          "name": "dash_2mm",
+          "dashes": [
+            2.0,
+            2.0
+          ]
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners6_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "cd1a9bac-84cf-40b3-a41f-b514f0c8f718",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": 1
+      }
+    },
+    {
+      "entityIdentifier": "Arc",
+      "entity": {
+        "type": 0,
+        "point1": {
+          "x": 4.288039541017542,
+          "y": 51.92094834832674
+        },
+        "point2": {
+          "x": 4.310407529383821,
+          "y": 51.93519727336562
+        },
+        "start": 158.46789889234933,
+        "extent": -140.7446622754702,
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners24_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "ef3185a9-8ba1-4380-938c-481aac6ccd72",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 6,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Arc",
+      "entity": {
+        "type": 0,
+        "point1": {
+          "x": 4.281558575593307,
+          "y": 51.9096238582579
+        },
+        "point2": {
+          "x": 4.302685779092056,
+          "y": 51.923088506283456
+        },
+        "start": 100.8892362647213,
+        "extent": 217.80067503775427,
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners24_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "e95a9e93-b88f-422d-b313-37fdc8ed6293",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": 1
+      }
+    },
+    {
+      "entityIdentifier": "Arc",
+      "entity": {
+        "type": 0,
+        "point1": {
+          "x": 4.286153435619265,
+          "y": 51.91720199711796
+        },
+        "point2": {
+          "x": 4.300845445133805,
+          "y": 51.92656390740249
+        },
+        "start": 310.51334604898966,
+        "extent": 157.47096057510822,
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners24_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "391c5080-585d-433e-a897-cb6eea157e21",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 4,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Arc",
+      "entity": {
+        "type": 0,
+        "point1": {
+          "x": 4.295073683005004,
+          "y": 51.900532021704585
+        },
+        "point2": {
+          "x": 4.312481424300581,
+          "y": 51.91162517560304
+        },
+        "start": 1.3971810273036631,
+        "extent": 74.84203386090395,
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners24_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "ae4e178a-2dcd-4c96-8d86-77c285876a2c",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 8,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Arc",
+      "entity": {
+        "type": 0,
+        "point1": {
+          "x": 4.2811461216948965,
+          "y": 51.91313577292901
+        },
+        "point2": {
+          "x": 4.300958202221506,
+          "y": 51.925761781397725
+        },
+        "start": 304.4680356073725,
+        "extent": 123.47082458863926,
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners24_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "25f1333f-50ee-4a9b-b861-28da3c5791a7",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 5,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Arc",
+      "entity": {
+        "type": 0,
+        "point1": {
+          "x": 4.285094353896505,
+          "y": 51.89827427665835
+        },
+        "point2": {
+          "x": 4.300478307448978,
+          "y": 51.908081361404165
+        },
+        "start": 212.22875743509925,
+        "extent": -319.7035316913533,
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners24_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "0e8e59e2-e8d0-4793-8091-d14ee7ec86d5",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 7,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Arc",
+      "entity": {
+        "type": 0,
+        "point1": {
+          "x": 4.288589720312523,
+          "y": 51.90863059729798
+        },
+        "point2": {
+          "x": 4.307036370354526,
+          "y": 51.920385532822515
+        },
+        "start": -81.46312127824524,
+        "extent": -139.8528381115767,
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners24_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "c94f64ef-f893-4936-96f0-b476c4007160",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 3,
+        "attributes": [],
+        "versionId": 1
+      }
+    }
+  ]
+}

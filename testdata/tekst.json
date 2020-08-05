@@ -1,0 +1,417 @@
+{
+  "version": 20161115,
+  "topEntityIds": [
+    "de0cc705-9091-4e92-8a67-c33a5c5ece70",
+    "28e6558a-242d-482e-a2c5-5259708d9d5e",
+    "f1c0ad67-bd5d-4624-9778-4024dda15087",
+    "994bdd86-1407-40a9-8b27-9b8c6b5f5ad2",
+    "11181cbd-59d3-410f-85ab-3ff1ba616346",
+    "3db3579d-c46e-4266-b2d6-0d3063526a35"
+  ],
+  "entityList": [
+    {
+      "entityIdentifier": "STx",
+      "entity": {
+        "text": "Dun",
+        "textOrigin": {
+          "x": 3101.1307842227366,
+          "y": 17704.481403293397
+        },
+        "origin": {
+          "x": 3100.630784215584,
+          "y": 17704.801403286245
+        },
+        "textAngle": 0.0,
+        "style": {
+          "styleName": "Rood trans",
+          "characterColor": "#330033",
+          "characterLine": 0.64,
+          "characterSize": 8.2,
+          "characterSlant": 0.0,
+          "characterAngle": 0.0,
+          "relativeWidth": 1.0,
+          "relativeSpacing": 1.0,
+          "relativeLineDistance": 1.0,
+          "monoSpacing": false,
+          "reference": 1,
+          "balloonType": 1,
+          "balloonLineWidth": 0.45,
+          "balloonColor": "#000000",
+          "balloonRadius": 9.1,
+          "includeReferencePointer": false,
+          "balloonFillType": {
+            "paint": {
+              "mode": false,
+              "color1": -1711341568,
+              "name": "Rood trans 40"
+            }
+          },
+          "strokeFontName": "std.1"
+        },
+        "alpha": 1.0,
+        "id": "c566a41e-4d71-4e31-9142-1ecd72d02756",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "",
+        "layerInvisible": false,
+        "children": [
+          "cbb8900d-77f3-4a18-a297-e26646fcf9ed"
+        ],
+        "pixelScale": false,
+        "id": "3db3579d-c46e-4266-b2d6-0d3063526a35",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 6,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "STx",
+      "entity": {
+        "text": "Dik (niet schalen)",
+        "textOrigin": {
+          "x": 3171.3857374851277,
+          "y": 17601.27644629662
+        },
+        "origin": {
+          "x": 3170.885737477975,
+          "y": 17602.580446289467
+        },
+        "textAngle": 0.0,
+        "style": {
+          "styleName": "Groen trans",
+          "characterColor": "#330033",
+          "characterLine": 0.64,
+          "characterSize": 8.2,
+          "characterSlant": 0.0,
+          "characterAngle": 0.0,
+          "relativeWidth": 1.0,
+          "relativeSpacing": 1.0,
+          "relativeLineDistance": 1.0,
+          "monoSpacing": false,
+          "reference": 1,
+          "balloonType": 1,
+          "balloonLineWidth": 0.45,
+          "balloonColor": "#000000",
+          "balloonRadius": 9.1,
+          "includeReferencePointer": false,
+          "balloonFillType": {
+            "paint": {
+              "mode": false,
+              "color1": -1727987968,
+              "name": "Groen trans 40"
+            }
+          },
+          "strokeFontName": "std.1"
+        },
+        "alpha": 1.0,
+        "id": "62978df0-e25a-45d2-bd22-0ed44b7c97ec",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "STx",
+      "entity": {
+        "text": "Zeer dun!!!",
+        "textOrigin": {
+          "x": 4.247799422244878,
+          "y": 51.96421432102155
+        },
+        "origin": {
+          "x": 4.247863942804698,
+          "y": 51.96418968529553
+        },
+        "textAngle": 0.0,
+        "style": {
+          "styleName": "Rood z.bg",
+          "characterColor": "#FF0000",
+          "characterLine": 0.22481585,
+          "characterSize": 2.880453083758029,
+          "characterSlant": 0.0,
+          "characterAngle": 0.0,
+          "relativeWidth": 1.0,
+          "relativeSpacing": 1.0,
+          "relativeLineDistance": 1.0,
+          "monoSpacing": false,
+          "reference": 1,
+          "balloonType": 1,
+          "balloonLineWidth": 0.15807364484037967,
+          "balloonColor": "#FF0000",
+          "balloonRadius": 3.1966003734387884,
+          "includeReferencePointer": false,
+          "strokeFontName": "std.1"
+        },
+        "alpha": 1.0,
+        "id": "cbb8900d-77f3-4a18-a297-e26646fcf9ed",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "STx",
+      "entity": {
+        "text": "Zeer dik (meeschalen 45 graden)",
+        "textOrigin": {
+          "x": 4.312333728844222,
+          "y": 51.924321513880024
+        },
+        "origin": {
+          "x": 4.312587761619196,
+          "y": 51.92422403276345
+        },
+        "textAngle": 0.7853981633974483,
+        "style": {
+          "styleName": "Beschikbaar",
+          "characterColor": "#00CC33",
+          "characterLine": 0.22481585,
+          "characterSize": 2.880453083758029,
+          "characterSlant": 0.0,
+          "characterAngle": 0.0,
+          "relativeWidth": 1.0,
+          "relativeSpacing": 1.0,
+          "relativeLineDistance": 1.0,
+          "monoSpacing": false,
+          "reference": 1,
+          "balloonType": 1,
+          "balloonLineWidth": 0.15807364484037967,
+          "balloonColor": "#000009",
+          "balloonRadius": 3.1966003734387884,
+          "includeReferencePointer": false,
+          "balloonFillType": {
+            "paint": {
+              "mode": false,
+              "color1": -1,
+              "name": "wit"
+            }
+          },
+          "strokeFontName": "std.1"
+        },
+        "alpha": 1.0,
+        "id": "baab5502-f5ec-48ca-b052-0c9c6e7ab5af",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "STx",
+      "entity": {
+        "text": "Normaal",
+        "textOrigin": {
+          "x": 3162.497023693749,
+          "y": 17599.853133477227
+        },
+        "origin": {
+          "x": 3161.608778271421,
+          "y": 17597.8557205176
+        },
+        "textAngle": 1.7216734961947098,
+        "style": {
+          "styleName": "Groen z.bg",
+          "characterColor": "#00CC33",
+          "characterLine": 2.356753,
+          "characterSize": 30.19590056140544,
+          "characterSlant": 0.0,
+          "characterAngle": 0.0,
+          "relativeWidth": 1.0,
+          "relativeSpacing": 1.0,
+          "relativeLineDistance": 1.0,
+          "monoSpacing": false,
+          "reference": 1,
+          "balloonType": 1,
+          "balloonLineWidth": 1.657092103979567,
+          "balloonColor": "#00CC33",
+          "balloonRadius": 33.510084769364575,
+          "includeReferencePointer": false,
+          "strokeFontName": "std.1"
+        },
+        "alpha": 1.0,
+        "id": "c501cef0-f44b-42df-b824-f1c0b4750c1d",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "",
+        "layerInvisible": false,
+        "children": [
+          "baab5502-f5ec-48ca-b052-0c9c6e7ab5af"
+        ],
+        "pixelScale": false,
+        "id": "de0cc705-9091-4e92-8a67-c33a5c5ece70",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "",
+        "layerInvisible": false,
+        "children": [
+          "c566a41e-4d71-4e31-9142-1ecd72d02756"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 4.25968804726922,
+          "y": 51.96659288585219
+        },
+        "id": "11181cbd-59d3-410f-85ab-3ff1ba616346",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 5,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "STx",
+      "entity": {
+        "text": "Half",
+        "textOrigin": {
+          "x": 3136.609535620244,
+          "y": 17712.209448152258
+        },
+        "origin": {
+          "x": 3136.1095356130913,
+          "y": 17712.529448145106
+        },
+        "textAngle": 0.0,
+        "style": {
+          "styleName": "Ingezet",
+          "characterColor": "#FF0033",
+          "characterLine": 0.64,
+          "characterSize": 8.2,
+          "characterSlant": 0.0,
+          "characterAngle": 0.0,
+          "relativeWidth": 1.0,
+          "relativeSpacing": 1.0,
+          "relativeLineDistance": 1.0,
+          "monoSpacing": false,
+          "reference": 1,
+          "balloonType": 1,
+          "balloonLineWidth": 0.45,
+          "balloonColor": "#000009",
+          "balloonRadius": 9.1,
+          "includeReferencePointer": false,
+          "balloonFillType": {
+            "paint": {
+              "mode": false,
+              "color1": -1,
+              "name": "wit"
+            }
+          },
+          "strokeFontName": "std.1"
+        },
+        "alpha": 1.0,
+        "id": "e5e61d70-4e3a-415c-a641-8f60cf54b445",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "",
+        "layerInvisible": false,
+        "children": [
+          "62978df0-e25a-45d2-bd22-0ed44b7c97ec"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 4.285805025087006,
+          "y": 51.94386894288774
+        },
+        "id": "28e6558a-242d-482e-a2c5-5259708d9d5e",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "",
+        "layerInvisible": false,
+        "children": [
+          "c501cef0-f44b-42df-b824-f1c0b4750c1d"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 4.282458598520896,
+          "y": 51.9427757903497
+        },
+        "id": "f1c0ad67-bd5d-4624-9778-4024dda15087",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 3,
+        "attributes": [],
+        "versionId": 1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "",
+        "layerInvisible": false,
+        "children": [
+          "e5e61d70-4e3a-415c-a641-8f60cf54b445"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 4.272549335536666,
+          "y": 51.968452144849735
+        },
+        "id": "994bdd86-1407-40a9-8b27-9b8c6b5f5ad2",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 4,
+        "attributes": [],
+        "versionId": 0
+      }
+    }
+  ]
+}

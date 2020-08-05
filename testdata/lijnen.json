@@ -1,0 +1,369 @@
+{
+  "version": 20161115,
+  "topEntityIds": [
+    "598973dc-9369-444e-96bd-bac1bc77ba47",
+    "911f14b7-f4f9-4c53-93a0-12ef228fcf02",
+    "23829867-7eed-42c1-ba06-3a2fbb2552be",
+    "44d3cd2e-dd54-41af-9b1c-d132c019381f",
+    "63ca8e3e-9922-45c7-afec-83deba130c28",
+    "cde3631f-dce3-4812-b220-029850c0aaf6",
+    "6ecd4dc7-c79f-4812-ad7a-e173f5bd27f6",
+    "20bc7032-cbf7-44d7-82c1-fe5942987d01",
+    "9905f280-c8ab-4b12-b5b3-4ac2e7f56c52",
+    "d3383c07-b182-42e4-8aae-6003a38b07d3",
+    "50d3d022-ad72-48f8-b771-52ba52c475ea",
+    "4e660db0-7629-46df-9445-4dd6035d9450"
+  ],
+  "entityList": [
+    {
+      "entityIdentifier": "Lne",
+      "entity": {
+        "point1": {
+          "x": 4.503872269341544,
+          "y": 51.96383917822578
+        },
+        "point2": {
+          "x": 4.548898026225144,
+          "y": 51.97047343673242
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners24_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "9905f280-c8ab-4b12-b5b3-4ac2e7f56c52",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 9,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Lne",
+      "entity": {
+        "point1": {
+          "x": 4.5176713084598195,
+          "y": 51.992687389696606
+        },
+        "point2": {
+          "x": 4.5476132600862185,
+          "y": 51.99290482766913
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners24_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "23829867-7eed-42c1-ba06-3a2fbb2552be",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 3,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Lne",
+      "entity": {
+        "point1": {
+          "x": 4.501583863114198,
+          "y": 51.98337743449344
+        },
+        "point2": {
+          "x": 4.5538277697876355,
+          "y": 51.98450709399672
+        },
+        "color": "#3333FF",
+        "lineType": {
+          "name": "dash_dot_7mm",
+          "dashes": [
+            7.0,
+            3.0,
+            0.75,
+            3.0
+          ]
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners4_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "63ca8e3e-9922-45c7-afec-83deba130c28",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 5,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Lne",
+      "entity": {
+        "point1": {
+          "x": 4.507742337219333,
+          "y": 51.96055550130224
+        },
+        "point2": {
+          "x": 4.553248575511793,
+          "y": 51.96911518092804
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "dash_2mm",
+          "dashes": [
+            2.0,
+            2.0
+          ]
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners10_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "d3383c07-b182-42e4-8aae-6003a38b07d3",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 10,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Lne",
+      "entity": {
+        "point1": {
+          "x": 4.481337249667221,
+          "y": 52.00042782782407
+        },
+        "point2": {
+          "x": 4.491488610612787,
+          "y": 52.01226013594081
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners24_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "598973dc-9369-444e-96bd-bac1bc77ba47",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Lne",
+      "entity": {
+        "point1": {
+          "x": 4.515671247942968,
+          "y": 51.98871877276786
+        },
+        "point2": {
+          "x": 4.54663087850187,
+          "y": 51.98990574458591
+        },
+        "color": "#3333FF",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners3_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "44d3cd2e-dd54-41af-9b1c-d132c019381f",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 4,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Lne",
+      "entity": {
+        "point1": {
+          "x": 4.552168935235507,
+          "y": 51.980648383445256
+        },
+        "point2": {
+          "x": 4.498393534907363,
+          "y": 51.97843779933073
+        },
+        "color": "#00FF00",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners5_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "cde3631f-dce3-4812-b220-029850c0aaf6",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 6,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Lne",
+      "entity": {
+        "point1": {
+          "x": 4.501718732768962,
+          "y": 51.96777682690542
+        },
+        "point2": {
+          "x": 4.552095349959798,
+          "y": 51.97530487201845
+        },
+        "color": "#CC00CC",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners7_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "20bc7032-cbf7-44d7-82c1-fe5942987d01",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 8,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Lne",
+      "entity": {
+        "point1": {
+          "x": 4.50449221254434,
+          "y": 52.01826166960436
+        },
+        "point2": {
+          "x": 4.545013787643021,
+          "y": 52.00386088867932
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "dash_4mm",
+          "dashes": [
+            4.0,
+            4.0
+          ]
+        },
+        "lineWidth": 0.7,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners10_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "911f14b7-f4f9-4c53-93a0-12ef228fcf02",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": 1
+      }
+    },
+    {
+      "entityIdentifier": "Lne",
+      "entity": {
+        "point1": {
+          "x": 4.496596381619792,
+          "y": 51.973081183895154
+        },
+        "point2": {
+          "x": 4.554298838596979,
+          "y": 51.977778267897115
+        },
+        "color": "#00FF33",
+        "lineType": {
+          "name": "dash_2mm",
+          "dashes": [
+            2.0,
+            2.0
+          ]
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners6_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "6ecd4dc7-c79f-4812-ad7a-e173f5bd27f6",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 7,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Lne",
+      "entity": {
+        "point1": {
+          "x": 4.571324570583427,
+          "y": 51.974050624894225
+        },
+        "point2": {
+          "x": 4.56080624510972,
+          "y": 52.00026465480913
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "dash_4mm",
+          "dashes": [
+            4.0,
+            4.0
+          ]
+        },
+        "lineWidth": 0.7,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners10_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "4e660db0-7629-46df-9445-4dd6035d9450",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 12,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Lne",
+      "entity": {
+        "point1": {
+          "x": 4.511440985389019,
+          "y": 51.95716356154203
+        },
+        "point2": {
+          "x": 4.555525092696712,
+          "y": 51.967635259713354
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "dash_4mm",
+          "dashes": [
+            4.0,
+            4.0
+          ]
+        },
+        "lineWidth": 0.7,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners10_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "50d3d022-ad72-48f8-b771-52ba52c475ea",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 11,
+        "attributes": [],
+        "versionId": 0
+      }
+    }
+  ]
+}

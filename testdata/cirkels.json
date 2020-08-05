@@ -1,0 +1,84 @@
+{
+  "version": 20161115,
+  "topEntityIds": [
+    "a559d53c-4d19-4dc3-8c47-f93b5e326b70",
+    "d829dd1e-dbdf-457b-a676-509fe230af91"
+  ],
+  "entityList": [
+    {
+      "entityIdentifier": "Arc",
+      "entity": {
+        "type": 0,
+        "point1": {
+          "x": 4.409311521745148,
+          "y": 51.94643966353616
+        },
+        "point2": {
+          "x": 4.456016002823658,
+          "y": 51.97606052799479
+        },
+        "start": 0.0,
+        "extent": 360.0,
+        "color": "#FF0000",
+        "lineType": {
+          "name": "dash_2mm",
+          "dashes": [
+            2.0,
+            2.0
+          ]
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners2_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "d829dd1e-dbdf-457b-a676-509fe230af91",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Arc",
+      "entity": {
+        "type": 0,
+        "point1": {
+          "x": 4.4687961387962325,
+          "y": 51.94673147873093
+        },
+        "point2": {
+          "x": 4.488428354453896,
+          "y": 51.97867503119701
+        },
+        "start": -0.0,
+        "extent": 360.0,
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": -1979646208,
+            "name": "Ontruiming"
+          }
+        },
+        "color": "#00CED1",
+        "lineType": {
+          "name": "dash_2mm",
+          "dashes": [
+            2.0,
+            2.0
+          ]
+        },
+        "lineWidth": 2.0,
+        "alpha": 0.4,
+        "styleName": "plotStyle_b3partners8_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "a559d53c-4d19-4dc3-8c47-f93b5e326b70",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": 1
+      }
+    }
+  ]
+}

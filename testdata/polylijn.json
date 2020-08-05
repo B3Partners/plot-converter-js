@@ -1,0 +1,227 @@
+{
+  "version": 20161115,
+  "topEntityIds": [
+    "98ddce9a-3a8e-4846-9ff4-bbc92c402518",
+    "bfc52ece-6779-421e-8f04-cf44a568ec93",
+    "27c453ae-bb8a-4080-b217-22a9487028de",
+    "a8d5e68f-dd85-4e27-a292-5065fcea8842",
+    "84032f8a-babf-4d6d-9805-cb15284e59fb",
+    "25740c1f-fd00-431d-9b25-318af51de175"
+  ],
+  "entityList": [
+    {
+      "entityIdentifier": "PLn",
+      "entity": {
+        "drawOutline": true,
+        "typeList": "011",
+        "pointList": [
+          {
+            "x": 4.265660072144395,
+            "y": 51.93728431194175
+          },
+          {
+            "x": 4.266260046017288,
+            "y": 51.95418340043337
+          },
+          {
+            "x": 4.2598277538039175,
+            "y": 51.966120493899155
+          }
+        ],
+        "color": "#CC00CC",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 0.2,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners7_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "84032f8a-babf-4d6d-9805-cb15284e59fb",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 5,
+        "attributes": [],
+        "versionId": 1
+      }
+    },
+    {
+      "entityIdentifier": "Spl",
+      "entity": {
+        "drawOutline": true,
+        "typeList": "01",
+        "pointList": [
+          {
+            "x": 4.254241896607614,
+            "y": 51.96464605607449
+          },
+          {
+            "x": 4.261477087453686,
+            "y": 51.93092922132362
+          }
+        ],
+        "color": "#CC00CC",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 0.1,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners7_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "25740c1f-fd00-431d-9b25-318af51de175",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 6,
+        "attributes": [],
+        "versionId": 1
+      }
+    },
+    {
+      "entityIdentifier": "PLn",
+      "entity": {
+        "drawOutline": true,
+        "typeList": "011",
+        "pointList": [
+          {
+            "x": 4.276862370767815,
+            "y": 51.96975608969799
+          },
+          {
+            "x": 4.269364861001353,
+            "y": 51.96289597444838
+          },
+          {
+            "x": 4.274829885248524,
+            "y": 51.938318609376
+          }
+        ],
+        "color": "#CC00CC",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 0.5,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners7_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "a8d5e68f-dd85-4e27-a292-5065fcea8842",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 4,
+        "attributes": [],
+        "versionId": 1
+      }
+    },
+    {
+      "entityIdentifier": "PLn",
+      "entity": {
+        "drawOutline": true,
+        "typeList": "011",
+        "pointList": [
+          {
+            "x": 4.286612020172976,
+            "y": 51.968268955273174
+          },
+          {
+            "x": 4.278122492242156,
+            "y": 51.960137366364975
+          },
+          {
+            "x": 4.2809498213069315,
+            "y": 51.9491121745581
+          }
+        ],
+        "color": "#CC00CC",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners7_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "27c453ae-bb8a-4080-b217-22a9487028de",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 3,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "PLn",
+      "entity": {
+        "drawOutline": true,
+        "typeList": "011",
+        "pointList": [
+          {
+            "x": 4.294262947704927,
+            "y": 51.968971450380785
+          },
+          {
+            "x": 4.287935809792628,
+            "y": 51.955966787325245
+          },
+          {
+            "x": 4.288198568137374,
+            "y": 51.94523344486298
+          }
+        ],
+        "color": "#CC00CC",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 2.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners7_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "bfc52ece-6779-421e-8f04-cf44a568ec93",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": 1
+      }
+    },
+    {
+      "entityIdentifier": "PLn",
+      "entity": {
+        "drawOutline": true,
+        "typeList": "01111",
+        "pointList": [
+          {
+            "x": 4.320965955465762,
+            "y": 51.93164185869163
+          },
+          {
+            "x": 4.325120113666714,
+            "y": 51.93957327866784
+          },
+          {
+            "x": 4.301167324550423,
+            "y": 51.947721876757356
+          },
+          {
+            "x": 4.29665637246876,
+            "y": 51.95462678422976
+          },
+          {
+            "x": 4.3055337808544,
+            "y": 51.96797090021838
+          }
+        ],
+        "color": "#CC00CC",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 5.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners7_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "98ddce9a-3a8e-4846-9ff4-bbc92c402518",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": 1
+      }
+    }
+  ]
+}

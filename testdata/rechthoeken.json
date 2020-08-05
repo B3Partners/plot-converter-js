@@ -1,0 +1,183 @@
+{
+  "version": 20161115,
+  "topEntityIds": [
+    "efe75117-def6-40f1-a887-6630f7917469",
+    "ae9b42a0-de80-41d7-b249-0ef2bd7f2638",
+    "e7c7a5dd-36e4-469a-9728-237d44662a58",
+    "586f5c7c-4c4d-455d-99d7-5c6561aa0cc6"
+  ],
+  "entityList": [
+    {
+      "entityIdentifier": "Rct",
+      "entity": {
+        "point1": {
+          "x": 4.316237639695072,
+          "y": 51.947860223363016
+        },
+        "point2": {
+          "x": 4.357469598646707,
+          "y": 51.97696221164425
+        },
+        "transform": {
+          "m00": 1.0,
+          "m10": 0.0,
+          "m01": 0.0,
+          "m11": 1.0
+        },
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": -1727987968,
+            "name": "Groen trans 40"
+          }
+        },
+        "color": "#CC00CC",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners11_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "586f5c7c-4c4d-455d-99d7-5c6561aa0cc6",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 4,
+        "attributes": [],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Rct",
+      "entity": {
+        "point1": {
+          "x": 4.359299455167164,
+          "y": 51.93056222894837
+        },
+        "point2": {
+          "x": 4.38422328550457,
+          "y": 51.95809027472698
+        },
+        "transform": {
+          "m00": 1.0,
+          "m10": 0.0,
+          "m01": 0.0,
+          "m11": 1.0
+        },
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": -1711341568,
+            "name": "Rood trans 40"
+          }
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "dash_2mm",
+          "dashes": [
+            2.0,
+            2.0
+          ]
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners9_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "efe75117-def6-40f1-a887-6630f7917469",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": 1
+      }
+    },
+    {
+      "entityIdentifier": "Rct",
+      "entity": {
+        "point1": {
+          "x": 4.338010051064339,
+          "y": 51.939789862579296
+        },
+        "point2": {
+          "x": 4.404963192558053,
+          "y": 51.96183949408581
+        },
+        "transform": {
+          "m00": 0.941986626349015,
+          "m10": 0.33565040708987887,
+          "m01": -0.33565040708987887,
+          "m11": 0.941986626349015
+        },
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": -1996488960,
+            "name": "Stank overlast"
+          }
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "dash_2mm",
+          "dashes": [
+            2.0,
+            2.0
+          ]
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners10_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "ae9b42a0-de80-41d7-b249-0ef2bd7f2638",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": 1
+      }
+    },
+    {
+      "entityIdentifier": "Rct",
+      "entity": {
+        "point1": {
+          "x": 4.341339848990353,
+          "y": 51.92314140683473
+        },
+        "point2": {
+          "x": 4.3681072563249845,
+          "y": 51.936322514131966
+        },
+        "transform": {
+          "m00": 1.0,
+          "m10": 0.0,
+          "m01": 0.0,
+          "m11": 1.0
+        },
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": -1996488960,
+            "name": "Stank overlast"
+          }
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "dash_2mm",
+          "dashes": [
+            2.0,
+            2.0
+          ]
+        },
+        "lineWidth": 1.0,
+        "alpha": 0.4,
+        "styleName": "plotStyle_b3partners10_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "e7c7a5dd-36e4-469a-9728-237d44662a58",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 3,
+        "attributes": [],
+        "versionId": 1
+      }
+    }
+  ]
+}

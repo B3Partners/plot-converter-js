@@ -1,0 +1,4533 @@
+{
+  "version": 20161115,
+  "topEntityIds": [
+    "c3b79218-2c6d-443c-b52e-91a8783c0a3f",
+    "17bb32ab-e1ff-4434-864c-e9d9ceaf5122",
+    "daa579cb-1a9d-4f87-a392-c6b5f5b494ae",
+    "bc922db1-aaee-4f60-950f-57582aa78926",
+    "d161abcf-f464-46de-9835-2149992b747e",
+    "1883a608-46d0-40db-90ec-1e2aa3b60a53",
+    "f59b9bb2-41e6-4023-aea3-065288407173",
+    "ae7e1f16-1b19-498b-928d-a92afae4761a",
+    "d586a231-67e8-427d-a3c3-c773b18bc75b",
+    "026f6a8f-76e4-47d0-b546-9b3757cd7e0c",
+    "63347d75-ad92-4b29-af50-4679a499c355"
+  ],
+  "entityList": [
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "gasmal-label3",
+        "layerInvisible": false,
+        "children": [
+          "6eaf2e5a-c121-42fc-b532-f6faac816bde"
+        ],
+        "pixelScale": false,
+        "id": "e56ebced-a737-4e45-91bc-3d06cd7d1bb4",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Spl",
+      "entity": {
+        "drawOutline": false,
+        "typeList": "022222112121121211222222221121211212112224",
+        "pointList": [
+          {
+            "x": 5.74186220521062,
+            "y": 51.725883198824484
+          },
+          {
+            "x": 5.741990574882274,
+            "y": 51.725828387253685
+          },
+          {
+            "x": 5.742146223199953,
+            "y": 51.72582747674325
+          },
+          {
+            "x": 5.742302055087717,
+            "y": 51.725827443255945
+          },
+          {
+            "x": 5.742431280054584,
+            "y": 51.72588147413835
+          },
+          {
+            "x": 5.742628760678422,
+            "y": 51.72596514249877
+          },
+          {
+            "x": 5.742770515241153,
+            "y": 51.72608453007932
+          },
+          {
+            "x": 5.742906939116352,
+            "y": 51.72619998363933
+          },
+          {
+            "x": 5.743008308457887,
+            "y": 51.726328710339864
+          },
+          {
+            "x": 5.743145013530329,
+            "y": 51.72650209667791
+          },
+          {
+            "x": 5.743251923085147,
+            "y": 51.726683473518506
+          },
+          {
+            "x": 5.743419794184306,
+            "y": 51.72699984397876
+          },
+          {
+            "x": 5.743568277549802,
+            "y": 51.72734436235283
+          },
+          {
+            "x": 5.7437210035788,
+            "y": 51.72773363472361
+          },
+          {
+            "x": 5.743823075578836,
+            "y": 51.72812964452946
+          },
+          {
+            "x": 5.743971269526233,
+            "y": 51.728794555262624
+          },
+          {
+            "x": 5.744103309636175,
+            "y": 51.72949418755384
+          },
+          {
+            "x": 5.744148625211829,
+            "y": 51.730197595128715
+          },
+          {
+            "x": 5.744177150061853,
+            "y": 51.73098971021198
+          },
+          {
+            "x": 5.744161147675167,
+            "y": 51.7317819609334
+          },
+          {
+            "x": 5.74412695052497,
+            "y": 51.732485610645796
+          },
+          {
+            "x": 5.744005962443783,
+            "y": 51.733186013565
+          },
+          {
+            "x": 5.743868262978975,
+            "y": 51.733851794645325
+          },
+          {
+            "x": 5.743772435988771,
+            "y": 51.73424840670194
+          },
+          {
+            "x": 5.7436258393947055,
+            "y": 51.73463858976414
+          },
+          {
+            "x": 5.743482771286196,
+            "y": 51.734983555923954
+          },
+          {
+            "x": 5.743319871223311,
+            "y": 51.73530137083113
+          },
+          {
+            "x": 5.743215805900673,
+            "y": 51.73548338880607
+          },
+          {
+            "x": 5.743081812698326,
+            "y": 51.73565759754326
+          },
+          {
+            "x": 5.742982455394109,
+            "y": 51.73578693385838
+          },
+          {
+            "x": 5.742847827403206,
+            "y": 51.73590321039603
+          },
+          {
+            "x": 5.742707928334608,
+            "y": 51.736023452809185
+          },
+          {
+            "x": 5.742511729644492,
+            "y": 51.73610831552423
+          },
+          {
+            "x": 5.742383331427125,
+            "y": 51.736163127632636
+          },
+          {
+            "x": 5.742227470790357,
+            "y": 51.736164039025795
+          },
+          {
+            "x": 5.742071779965241,
+            "y": 51.736164071911624
+          },
+          {
+            "x": 5.741942525986007,
+            "y": 51.73611004071874
+          },
+          {
+            "x": 5.741745002240206,
+            "y": 51.736026371332024
+          },
+          {
+            "x": 5.741603219126995,
+            "y": 51.73590698266351
+          },
+          {
+            "x": 5.74146676920812,
+            "y": 51.7357915277289
+          },
+          {
+            "x": 5.741365382958489,
+            "y": 51.735662799839936
+          },
+          {
+            "x": 5.741228656907038,
+            "y": 51.735489411613926
+          },
+          {
+            "x": 5.741121557833876,
+            "y": 51.73530803364297
+          },
+          {
+            "x": 5.740953845083541,
+            "y": 51.73499122076733
+          },
+          {
+            "x": 5.740805359811043,
+            "y": 51.73464713824786
+          },
+          {
+            "x": 5.740652635380208,
+            "y": 51.7342578623616
+          },
+          {
+            "x": 5.740550577188198,
+            "y": 51.7338618500395
+          },
+          {
+            "x": 5.740402416770675,
+            "y": 51.73319693530778
+          },
+          {
+            "x": 5.740270422999135,
+            "y": 51.732497299079434
+          },
+          {
+            "x": 5.740225165403384,
+            "y": 51.73179389012379
+          },
+          {
+            "x": 5.740196532595621,
+            "y": 51.731001774615976
+          },
+          {
+            "x": 5.740212780948537,
+            "y": 51.730209523774434
+          },
+          {
+            "x": 5.740247037418522,
+            "y": 51.72950587497983
+          },
+          {
+            "x": 5.740368074058263,
+            "y": 51.728805475623254
+          },
+          {
+            "x": 5.740505809906573,
+            "y": 51.72813969826549
+          },
+          {
+            "x": 5.740601652749642,
+            "y": 51.72774308860819
+          },
+          {
+            "x": 5.740748253239265,
+            "y": 51.72735290903971
+          },
+          {
+            "x": 5.740891314775769,
+            "y": 51.727007507058765
+          },
+          {
+            "x": 5.741054028927595,
+            "y": 51.726690134675756
+          },
+          {
+            "x": 5.74115825947648,
+            "y": 51.72650811792709
+          },
+          {
+            "x": 5.741292233054499,
+            "y": 51.72633391123805
+          },
+          {
+            "x": 5.741391574480338,
+            "y": 51.726204576240775
+          },
+          {
+            "x": 5.7415261773878035,
+            "y": 51.72608830127949
+          },
+          {
+            "x": 5.7416660489098055,
+            "y": 51.7259680601758
+          },
+          {
+            "x": 5.74186220521062,
+            "y": 51.725883198824484
+          }
+        ],
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": 2147418112,
+            "name": "Default"
+          }
+        },
+        "color": "#FF0000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners1_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "6c755f2a-6c92-432f-8679-a4f3f6ad62d9",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 41,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Img",
+      "entity": {
+        "transform": {
+          "m00": -1.0000000001320928,
+          "m10": 1.2246467993091202E-16,
+          "m01": 1.2246467989855862E-16,
+          "m11": 0.9999999998679073
+        },
+        "plotLocalFileSystemLastPartOfDownloadUrl": "6",
+        "downloadLocation": "/DownloadFile?imageid\u003d4D7AR2G5DR8093JX1PAAAKCYLXZ7PT",
+        "lowerLeft": {
+          "x": 5.317545675140161,
+          "y": 51.74090726849933
+        },
+        "upperRight": {
+          "x": 5.322247982111843,
+          "y": 51.74383184621454
+        },
+        "alpha": 1.0,
+        "id": "6e415a1b-8d7a-4c84-b593-f67d16d9f1d3",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Img",
+      "entity": {
+        "transform": {
+          "m00": -1.0000000002705418,
+          "m10": 1.2246467994786713E-16,
+          "m01": 1.2246467988160353E-16,
+          "m11": 0.9999999997294584
+        },
+        "plotLocalFileSystemLastPartOfDownloadUrl": "3",
+        "downloadLocation": "/DownloadFile?imageid\u003d4D7AQQMVL16093JX1P7TU59G6Y96XE",
+        "lowerLeft": {
+          "x": 3.813735740838882,
+          "y": 51.68628814640143
+        },
+        "upperRight": {
+          "x": 3.818333828813415,
+          "y": 51.6892722141093
+        },
+        "alpha": 1.0,
+        "id": "8c872a5d-b4e3-44c0-a1c5-7d7cfe1e5a2f",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Img",
+      "entity": {
+        "transform": {
+          "m00": -1.0000000001404163,
+          "m10": 1.2246467993193135E-16,
+          "m01": 1.2246467989753929E-16,
+          "m11": 0.9999999998595838
+        },
+        "plotLocalFileSystemLastPartOfDownloadUrl": "8",
+        "downloadLocation": "/DownloadFile?imageid\u003d4D7AR2H41YD093JX1PYMCO0JIN555I",
+        "lowerLeft": {
+          "x": 5.609538715347316,
+          "y": 51.746403198964856
+        },
+        "upperRight": {
+          "x": 5.614260459181804,
+          "y": 51.74931603165595
+        },
+        "alpha": 1.0,
+        "id": "130bc5c1-77b2-4479-bd84-54d04f6a2c0a",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "gasmal-label3",
+        "layerInvisible": false,
+        "children": [
+          "e118d797-45ca-477f-8863-d47458f086c1"
+        ],
+        "pixelScale": false,
+        "id": "97f4cb5f-7cff-4411-8d68-6e6f3950db79",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Img",
+      "entity": {
+        "transform": {
+          "m00": 3.061616998282223E-16,
+          "m10": 1.0000000001351703,
+          "m01": 0.9999999998648297,
+          "m11": -3.0616169974545433E-16
+        },
+        "plotLocalFileSystemLastPartOfDownloadUrl": "10",
+        "downloadLocation": "/DownloadFile?imageid\u003d4D7AR2I08VF093JX1PPVIROU4GKN2K",
+        "lowerLeft": {
+          "x": 5.739863177729414,
+          "y": 51.734710205371336
+        },
+        "upperRight": {
+          "x": 5.744592083144023,
+          "y": 51.737617781716054
+        },
+        "alpha": 1.0,
+        "id": "76b205c7-1a7f-431e-a545-8f63137d9099",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Spl",
+      "entity": {
+        "drawOutline": false,
+        "typeList": "022222112112112222221121121124",
+        "pointList": [
+          {
+            "x": 5.417983934569417,
+            "y": 51.718235011654485
+          },
+          {
+            "x": 5.41801110637945,
+            "y": 51.718188043241966
+          },
+          {
+            "x": 5.418076623003529,
+            "y": 51.71815862027147
+          },
+          {
+            "x": 5.418142846741843,
+            "y": 51.718130074856525
+          },
+          {
+            "x": 5.418223398325984,
+            "y": 51.71812961455274
+          },
+          {
+            "x": 5.418304127164526,
+            "y": 51.7181300319263
+          },
+          {
+            "x": 5.418370213618727,
+            "y": 51.71815854212267
+          },
+          {
+            "x": 5.418435770818737,
+            "y": 51.71818793020351
+          },
+          {
+            "x": 5.418463184078895,
+            "y": 51.71823488408601
+          },
+          {
+            "x": 5.418702486029438,
+            "y": 51.71865659295474
+          },
+          {
+            "x": 5.418827511191509,
+            "y": 51.71909676575922
+          },
+          {
+            "x": 5.418982014786207,
+            "y": 51.719751108675744
+          },
+          {
+            "x": 5.419096271346487,
+            "y": 51.720442768007274
+          },
+          {
+            "x": 5.41927879581425,
+            "y": 51.721732615311545
+          },
+          {
+            "x": 5.4193042766203305,
+            "y": 51.72302777218943
+          },
+          {
+            "x": 5.419312820631921,
+            "y": 51.72385946597361
+          },
+          {
+            "x": 5.419305464567968,
+            "y": 51.72469160295394
+          },
+          {
+            "x": 5.419281830587605,
+            "y": 51.725986334058966
+          },
+          {
+            "x": 5.419101119185869,
+            "y": 51.72727628028344
+          },
+          {
+            "x": 5.4189878236487905,
+            "y": 51.72796844011065
+          },
+          {
+            "x": 5.418834212445674,
+            "y": 51.72862242733354
+          },
+          {
+            "x": 5.418709777929257,
+            "y": 51.729062667232334
+          },
+          {
+            "x": 5.418471007578892,
+            "y": 51.72948450434529
+          },
+          {
+            "x": 5.418443652763189,
+            "y": 51.7295314728564
+          },
+          {
+            "x": 5.41837811989027,
+            "y": 51.72956089599821
+          },
+          {
+            "x": 5.418312056243435,
+            "y": 51.72958944146595
+          },
+          {
+            "x": 5.41823130753803,
+            "y": 51.729589901878825
+          },
+          {
+            "x": 5.418150734920242,
+            "y": 51.72958948441032
+          },
+          {
+            "x": 5.418084455191613,
+            "y": 51.729560974172635
+          },
+          {
+            "x": 5.41801888171858,
+            "y": 51.72953158593174
+          },
+          {
+            "x": 5.417991638757621,
+            "y": 51.72948463195504
+          },
+          {
+            "x": 5.4177521093854,
+            "y": 51.729062922165795
+          },
+          {
+            "x": 5.417627067103993,
+            "y": 51.7286227486773
+          },
+          {
+            "x": 5.417472553064687,
+            "y": 51.72796884347602
+          },
+          {
+            "x": 5.41735830200878,
+            "y": 51.72727674421965
+          },
+          {
+            "x": 5.4171759866094025,
+            "y": 51.72598689462935
+          },
+          {
+            "x": 5.417150388729411,
+            "y": 51.72469217662315
+          },
+          {
+            "x": 5.417141884060452,
+            "y": 51.72386004386172
+          },
+          {
+            "x": 5.417149280122011,
+            "y": 51.7230283458312
+          },
+          {
+            "x": 5.417173150036342,
+            "y": 51.72173317581335
+          },
+          {
+            "x": 5.417353717676759,
+            "y": 51.720443231852315
+          },
+          {
+            "x": 5.417467019695559,
+            "y": 51.71975151194581
+          },
+          {
+            "x": 5.417620620262486,
+            "y": 51.71909708701497
+          },
+          {
+            "x": 5.41774503797204,
+            "y": 51.71865684781188
+          },
+          {
+            "x": 5.417983934569417,
+            "y": 51.718235011654485
+          }
+        ],
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": 2063649792,
+            "name": "mal-groen"
+          }
+        },
+        "color": "#00CC00",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners18_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "4dc78d79-dda9-4366-99cc-221b6b556bfb",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 25,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "mal-6-oranje",
+        "layerInvisible": false,
+        "children": [
+          "b62dd040-1b3b-4e84-b756-b6dd00e8c0ab"
+        ],
+        "pixelScale": false,
+        "id": "dc2a55d1-1efc-4730-8e0d-ea41799fbc0b",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "label",
+        "layerInvisible": false,
+        "children": [
+          "6e415a1b-8d7a-4c84-b593-f67d16d9f1d3"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 5.315190102621717,
+          "y": 51.74236679025184
+        },
+        "id": "e118d797-45ca-477f-8863-d47458f086c1",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "\u003cTop\u003e",
+        "layerInvisible": false,
+        "children": [
+          "7776e3a2-e26f-4915-a16d-a8145e6a18f1",
+          "68d3d558-0376-424b-a28d-48cd18ac14d2"
+        ],
+        "pixelScale": false,
+        "id": "ae7e1f16-1b19-498b-928d-a92afae4761a",
+        "readOnly": true,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 8,
+        "attributes": [
+          {
+            "name": "pn",
+            "attributeItems": [
+              {
+                "type": 2,
+                "name": "pn",
+                "attributeValue": "1"
+              }
+            ]
+          },
+          {
+            "name": "GasMal",
+            "attributeItems": [
+              {
+                "type": 0,
+                "name": "Startmal",
+                "attributeValue": "0"
+              },
+              {
+                "type": 2,
+                "name": "Nummer",
+                "attributeValue": "5"
+              },
+              {
+                "type": 6,
+                "name": "Kleur",
+                "attributeValue": "Groen"
+              },
+              {
+                "type": 5,
+                "name": "Hoek",
+                "attributeValue": "0.0"
+              },
+              {
+                "type": 7,
+                "name": "Rapport",
+                "attributeValue": ""
+              },
+              {
+                "type": 5,
+                "name": "originLat",
+                "attributeValue": "51.72958997390472"
+              },
+              {
+                "type": 5,
+                "name": "originLon",
+                "attributeValue": "5.418231340720294"
+              }
+            ]
+          }
+        ],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Img",
+      "entity": {
+        "transform": {
+          "m00": -1.0000000001381781,
+          "m10": 1.2246467993165725E-16,
+          "m01": 1.2246467989781342E-16,
+          "m11": 0.9999999998618221
+        },
+        "plotLocalFileSystemLastPartOfDownloadUrl": "7",
+        "downloadLocation": "/DownloadFile?imageid\u003d4D7AR2GMP6Z093JX1P2HKFDTBTMJTD",
+        "lowerLeft": {
+          "x": 5.420582918368455,
+          "y": 51.7281283937109
+        },
+        "upperRight": {
+          "x": 5.425290560480257,
+          "y": 51.73104883879577
+        },
+        "alpha": 1.0,
+        "id": "3a7982b0-8dd5-41c6-8525-958f4015a597",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "gasmal-label3",
+        "layerInvisible": false,
+        "children": [
+          "44e97f93-168b-47b8-aa2e-7191abc22ee6"
+        ],
+        "pixelScale": false,
+        "id": "68d3d558-0376-424b-a28d-48cd18ac14d2",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "label",
+        "layerInvisible": false,
+        "children": [
+          "8c872a5d-b4e3-44c0-a1c5-7d7cfe1e5a2f"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 3.811335176042107,
+          "y": 51.68771705027447
+        },
+        "id": "4454ce38-7715-4896-bf71-47f7f2132071",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "label",
+        "layerInvisible": false,
+        "children": [
+          "aea7b90a-19ac-4212-96af-c9ce18bf913a"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 4.112212643254766,
+          "y": 51.90033176234724
+        },
+        "id": "94c09b93-31d1-4178-8aa2-62ec96392a37",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "\u003cTop\u003e",
+        "layerInvisible": false,
+        "children": [
+          "13aab2b8-8a76-48a4-a3f6-6fbfdccd0e5f",
+          "9eb61a7f-7087-4cac-8b97-be7ab5609aaf"
+        ],
+        "pixelScale": false,
+        "id": "daa579cb-1a9d-4f87-a392-c6b5f5b494ae",
+        "readOnly": true,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 3,
+        "attributes": [
+          {
+            "name": "pn",
+            "attributeItems": [
+              {
+                "type": 2,
+                "name": "pn",
+                "attributeValue": "1"
+              }
+            ]
+          },
+          {
+            "name": "GasMal",
+            "attributeItems": [
+              {
+                "type": 0,
+                "name": "Startmal",
+                "attributeValue": "0"
+              },
+              {
+                "type": 2,
+                "name": "Nummer",
+                "attributeValue": "5"
+              },
+              {
+                "type": 6,
+                "name": "Kleur",
+                "attributeValue": "blauw"
+              },
+              {
+                "type": 5,
+                "name": "Hoek",
+                "attributeValue": "0.0"
+              },
+              {
+                "type": 7,
+                "name": "Rapport",
+                "attributeValue": ""
+              },
+              {
+                "type": 5,
+                "name": "originLat",
+                "attributeValue": "51.83468842937976"
+              },
+              {
+                "type": 5,
+                "name": "originLon",
+                "attributeValue": "4.662194451192587"
+              }
+            ]
+          }
+        ],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "mal-2-paars",
+        "layerInvisible": false,
+        "children": [
+          "f766af8b-580b-4413-af37-732597046e02"
+        ],
+        "pixelScale": false,
+        "id": "4121c3e3-3e45-4b85-9875-a77c887c1db6",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "mal-7-bruin",
+        "layerInvisible": false,
+        "children": [
+          "7987aba6-4b6d-4f5b-99bf-4f2c2552888e"
+        ],
+        "pixelScale": false,
+        "id": "03b6324d-a869-4f1c-aed2-c9d463938933",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "\u003cTop\u003e",
+        "layerInvisible": false,
+        "children": [
+          "dc2a55d1-1efc-4730-8e0d-ea41799fbc0b",
+          "21a607df-9ef3-49fb-86a3-5f9ef617de55"
+        ],
+        "pixelScale": false,
+        "id": "d586a231-67e8-427d-a3c3-c773b18bc75b",
+        "readOnly": true,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 9,
+        "attributes": [
+          {
+            "name": "pn",
+            "attributeItems": [
+              {
+                "type": 2,
+                "name": "pn",
+                "attributeValue": "1"
+              }
+            ]
+          },
+          {
+            "name": "GasMal",
+            "attributeItems": [
+              {
+                "type": 0,
+                "name": "Startmal",
+                "attributeValue": "0"
+              },
+              {
+                "type": 2,
+                "name": "Nummer",
+                "attributeValue": "6"
+              },
+              {
+                "type": 6,
+                "name": "Kleur",
+                "attributeValue": "Oranje"
+              },
+              {
+                "type": 5,
+                "name": "Hoek",
+                "attributeValue": "0.0"
+              },
+              {
+                "type": 7,
+                "name": "Rapport",
+                "attributeValue": ""
+              },
+              {
+                "type": 5,
+                "name": "originLat",
+                "attributeValue": "51.747868561963536"
+              },
+              {
+                "type": 5,
+                "name": "originLon",
+                "attributeValue": "5.607192312453195"
+              }
+            ]
+          }
+        ],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "gasmal-label3",
+        "layerInvisible": false,
+        "children": [
+          "52738413-c693-4a16-b401-89a9ab859d33"
+        ],
+        "pixelScale": false,
+        "id": "ca42feb4-11d7-4063-92d3-02d8e3809d38",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "mal-1-rood",
+        "layerInvisible": false,
+        "children": [
+          "6c755f2a-6c92-432f-8679-a4f3f6ad62d9"
+        ],
+        "pixelScale": false,
+        "id": "b1613607-e7f8-45d3-b8da-416d041e7dca",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "\u003cTop\u003e",
+        "layerInvisible": false,
+        "children": [
+          "b1613607-e7f8-45d3-b8da-416d041e7dca",
+          "ca42feb4-11d7-4063-92d3-02d8e3809d38"
+        ],
+        "pixelScale": false,
+        "id": "63347d75-ad92-4b29-af50-4679a499c355",
+        "readOnly": true,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 11,
+        "attributes": [
+          {
+            "name": "pn",
+            "attributeItems": [
+              {
+                "type": 2,
+                "name": "pn",
+                "attributeValue": "1"
+              }
+            ]
+          },
+          {
+            "name": "GasMal",
+            "attributeItems": [
+              {
+                "type": 0,
+                "name": "Startmal",
+                "attributeValue": "0"
+              },
+              {
+                "type": 2,
+                "name": "Nummer",
+                "attributeValue": "1"
+              },
+              {
+                "type": 6,
+                "name": "Kleur",
+                "attributeValue": "Rood"
+              },
+              {
+                "type": 5,
+                "name": "Hoek",
+                "attributeValue": "0.0"
+              },
+              {
+                "type": 7,
+                "name": "Rapport",
+                "attributeValue": ""
+              },
+              {
+                "type": 5,
+                "name": "originLat",
+                "attributeValue": "51.73616401388873"
+              },
+              {
+                "type": 5,
+                "name": "originLon",
+                "attributeValue": "5.742227537130709"
+              }
+            ]
+          }
+        ],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Img",
+      "entity": {
+        "transform": {
+          "m00": -1.0000000001387026,
+          "m10": 1.224646799317215E-16,
+          "m01": 1.2246467989774917E-16,
+          "m11": 0.9999999998612975
+        },
+        "plotLocalFileSystemLastPartOfDownloadUrl": "9",
+        "downloadLocation": "/DownloadFile?imageid\u003d4D7AR2HJBG6093JX1PERQ2YTRCUQ8Y",
+        "lowerLeft": {
+          "x": 5.723957423845212,
+          "y": 51.73404620349983
+        },
+        "upperRight": {
+          "x": 5.7286852373735675,
+          "y": 51.736954422830614
+        },
+        "alpha": 1.0,
+        "id": "303632ee-736f-43d1-bb1a-1d7145a5e540",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "startmal",
+        "layerInvisible": false,
+        "children": [
+          "367ef30a-8a0a-4791-b6b7-183acd6ab142"
+        ],
+        "pixelScale": false,
+        "id": "8e7db53e-19d7-4eb3-b886-ec41b9648ae0",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "\u003cTop\u003e",
+        "layerInvisible": false,
+        "children": [
+          "03b6324d-a869-4f1c-aed2-c9d463938933",
+          "f97e42f1-7c0b-4b3c-b084-3529a97e34a7"
+        ],
+        "pixelScale": false,
+        "id": "d161abcf-f464-46de-9835-2149992b747e",
+        "readOnly": true,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 5,
+        "attributes": [
+          {
+            "name": "pn",
+            "attributeItems": [
+              {
+                "type": 2,
+                "name": "pn",
+                "attributeValue": "1"
+              }
+            ]
+          },
+          {
+            "name": "GasMal",
+            "attributeItems": [
+              {
+                "type": 0,
+                "name": "Startmal",
+                "attributeValue": "0"
+              },
+              {
+                "type": 2,
+                "name": "Nummer",
+                "attributeValue": "7"
+              },
+              {
+                "type": 6,
+                "name": "Kleur",
+                "attributeValue": "Bruin"
+              },
+              {
+                "type": 5,
+                "name": "Hoek",
+                "attributeValue": "0.0"
+              },
+              {
+                "type": 7,
+                "name": "Rapport",
+                "attributeValue": ""
+              },
+              {
+                "type": 5,
+                "name": "originLat",
+                "attributeValue": "51.73606437088939"
+              },
+              {
+                "type": 5,
+                "name": "originLon",
+                "attributeValue": "5.000367634416007"
+              }
+            ]
+          }
+        ],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Spl",
+      "entity": {
+        "drawOutline": false,
+        "typeList": "02222112122212112222222112122212112224",
+        "pointList": [
+          {
+            "x": 5.721239571280323,
+            "y": 51.7252214168865
+          },
+          {
+            "x": 5.721538570707864,
+            "y": 51.72513410177698
+          },
+          {
+            "x": 5.721838850072365,
+            "y": 51.72521970604442
+          },
+          {
+            "x": 5.7220237175755075,
+            "y": 51.72527579484274
+          },
+          {
+            "x": 5.722171197954634,
+            "y": 51.72536490725827
+          },
+          {
+            "x": 5.722314245757737,
+            "y": 51.725451837707624
+          },
+          {
+            "x": 5.722427019946046,
+            "y": 51.72555421589278
+          },
+          {
+            "x": 5.722574487582987,
+            "y": 51.72568897269781
+          },
+          {
+            "x": 5.722693586158486,
+            "y": 51.725833905124496
+          },
+          {
+            "x": 5.722889200298427,
+            "y": 51.726099313676016
+          },
+          {
+            "x": 5.723070609760798,
+            "y": 51.72640250742188
+          },
+          {
+            "x": 5.723209615950316,
+            "y": 51.726657983225245
+          },
+          {
+            "x": 5.723315273508221,
+            "y": 51.72691926017943
+          },
+          {
+            "x": 5.723498388622715,
+            "y": 51.72742697241024
+          },
+          {
+            "x": 5.723788414098308,
+            "y": 51.72833903628867
+          },
+          {
+            "x": 5.723875192488673,
+            "y": 51.729266606166696
+          },
+          {
+            "x": 5.7239752430745785,
+            "y": 51.73033853343166
+          },
+          {
+            "x": 5.723891178794871,
+            "y": 51.7314109899061
+          },
+          {
+            "x": 5.723818230028579,
+            "y": 51.73233945747414
+          },
+          {
+            "x": 5.723541772473004,
+            "y": 51.73325270933355
+          },
+          {
+            "x": 5.723366202927682,
+            "y": 51.733761889809486
+          },
+          {
+            "x": 5.723264422238848,
+            "y": 51.73402376181935
+          },
+          {
+            "x": 5.723129199815766,
+            "y": 51.734280024044544
+          },
+          {
+            "x": 5.722952274434018,
+            "y": 51.734584244931874
+          },
+          {
+            "x": 5.722760575813801,
+            "y": 51.734850763109755
+          },
+          {
+            "x": 5.722643611463556,
+            "y": 51.73499637153697
+          },
+          {
+            "x": 5.7224981173617095,
+            "y": 51.73513152809723
+          },
+          {
+            "x": 5.722386846950776,
+            "y": 51.73523498628767
+          },
+          {
+            "x": 5.722245064038266,
+            "y": 51.73532273152513
+          },
+          {
+            "x": 5.722098878999744,
+            "y": 51.735412683637755
+          },
+          {
+            "x": 5.7219148092253045,
+            "y": 51.735469826900015
+          },
+          {
+            "x": 5.721615742169589,
+            "y": 51.73555714293297
+          },
+          {
+            "x": 5.721315394475053,
+            "y": 51.735471538247516
+          },
+          {
+            "x": 5.721130309386226,
+            "y": 51.73541544893193
+          },
+          {
+            "x": 5.720982798203781,
+            "y": 51.73532633532835
+          },
+          {
+            "x": 5.720839721650841,
+            "y": 51.73523940336978
+          },
+          {
+            "x": 5.720727100301808,
+            "y": 51.73513658439392
+          },
+          {
+            "x": 5.720579433796231,
+            "y": 51.735002264807385
+          },
+          {
+            "x": 5.720460494474154,
+            "y": 51.734857329885465
+          },
+          {
+            "x": 5.7202648565562795,
+            "y": 51.73459191754708
+          },
+          {
+            "x": 5.720083256195924,
+            "y": 51.734288720235746
+          },
+          {
+            "x": 5.719944244100852,
+            "y": 51.734033240935865
+          },
+          {
+            "x": 5.719838766008279,
+            "y": 51.733771960635366
+          },
+          {
+            "x": 5.719655486190654,
+            "y": 51.73326380463305
+          },
+          {
+            "x": 5.7193655155110426,
+            "y": 51.73235216984168
+          },
+          {
+            "x": 5.719278820395586,
+            "y": 51.731424157970444
+          },
+          {
+            "x": 5.71917887875388,
+            "y": 51.730352226726
+          },
+          {
+            "x": 5.7192630529731705,
+            "y": 51.729279773417325
+          },
+          {
+            "x": 5.719336093774477,
+            "y": 51.72835174719074
+          },
+          {
+            "x": 5.719612603361432,
+            "y": 51.727438065847075
+          },
+          {
+            "x": 5.719788370719752,
+            "y": 51.726929329019555
+          },
+          {
+            "x": 5.719889978993856,
+            "y": 51.72666746032982
+          },
+          {
+            "x": 5.720025197112991,
+            "y": 51.72641120163909
+          },
+          {
+            "x": 5.720202287013506,
+            "y": 51.72610698441531
+          },
+          {
+            "x": 5.72039396375618,
+            "y": 51.725840470194015
+          },
+          {
+            "x": 5.720510735052727,
+            "y": 51.72569486438773
+          },
+          {
+            "x": 5.72065637822079,
+            "y": 51.72555927079408
+          },
+          {
+            "x": 5.720767455388853,
+            "y": 51.725456253544614
+          },
+          {
+            "x": 5.720909210261599,
+            "y": 51.72536851002743
+          },
+          {
+            "x": 5.721055365224647,
+            "y": 51.72527855932918
+          },
+          {
+            "x": 5.721239571280323,
+            "y": 51.7252214168865
+          }
+        ],
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": -2050228020,
+            "name": "mal-paars"
+          }
+        },
+        "color": "#CC0099",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners20_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "f766af8b-580b-4413-af37-732597046e02",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 41,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Img",
+      "entity": {
+        "transform": {
+          "m00": -1.000000000283473,
+          "m10": 1.2246467994945075E-16,
+          "m01": 1.224646798800199E-16,
+          "m11": 0.999999999716527
+        },
+        "plotLocalFileSystemLastPartOfDownloadUrl": "1",
+        "downloadLocation": "/DownloadFile?imageid\u003d4D7AQQLMDBV093JX1PXZXV6C98K1J1",
+        "lowerLeft": {
+          "x": 4.2253246926197425,
+          "y": 51.83682471890831
+        },
+        "upperRight": {
+          "x": 4.2299653811578874,
+          "y": 51.83979267058221
+        },
+        "alpha": 1.0,
+        "id": "4e23f9d9-2a05-4987-8bce-5e66536366cb",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Spl",
+      "entity": {
+        "drawOutline": false,
+        "typeList": "0222222222222222222222222224",
+        "pointList": [
+          {
+            "x": 5.5554829595961674,
+            "y": 49.52308172747758
+          },
+          {
+            "x": 5.558480558763138,
+            "y": 49.51344488311569
+          },
+          {
+            "x": 5.570017537387126,
+            "y": 49.50710155426135
+          },
+          {
+            "x": 5.581737526577683,
+            "y": 49.50090331348297
+          },
+          {
+            "x": 5.596833191061656,
+            "y": 49.50078139389031
+          },
+          {
+            "x": 5.611929495117074,
+            "y": 49.50084747780792
+          },
+          {
+            "x": 5.623703325708247,
+            "y": 49.50700226580064
+          },
+          {
+            "x": 5.635295417202067,
+            "y": 49.51330281251378
+          },
+          {
+            "x": 5.638377057365166,
+            "y": 49.52292840268663
+          },
+          {
+            "x": 5.678695817396041,
+            "y": 49.654871870825374
+          },
+          {
+            "x": 5.699637958974087,
+            "y": 49.788710296295996
+          },
+          {
+            "x": 5.711839072423758,
+            "y": 49.86636065404447
+          },
+          {
+            "x": 5.720178904050416,
+            "y": 49.94422657541992
+          },
+          {
+            "x": 5.727503424983637,
+            "y": 50.012403173855425
+          },
+          {
+            "x": 5.73312182946524,
+            "y": 50.08064799086352
+          },
+          {
+            "x": 5.751076761561592,
+            "y": 50.297420533389186
+          },
+          {
+            "x": 5.7549919882882,
+            "y": 50.51448995017234
+          },
+          {
+            "x": 5.7569792811939795,
+            "y": 50.62389349581571
+          },
+          {
+            "x": 5.756722409507588,
+            "y": 50.733304961540306
+          },
+          {
+            "x": 5.756209625659426,
+            "y": 50.9503944764728
+          },
+          {
+            "x": 5.741280642616777,
+            "y": 51.16728050416178
+          },
+          {
+            "x": 5.736551701845542,
+            "y": 51.23556152930104
+          },
+          {
+            "x": 5.7300345218789195,
+            "y": 51.30378448486481
+          },
+          {
+            "x": 5.722567303395754,
+            "y": 51.381702797328366
+          },
+          {
+            "x": 5.711041338874243,
+            "y": 51.459427724685625
+          },
+          {
+            "x": 5.691077161833899,
+            "y": 51.593390108085195
+          },
+          {
+            "x": 5.650535943821704,
+            "y": 51.72554482916441
+          },
+          {
+            "x": 5.647412866422099,
+            "y": 51.735185476580945
+          },
+          {
+            "x": 5.635322387359638,
+            "y": 51.741537888448285
+          },
+          {
+            "x": 5.623033123621516,
+            "y": 51.7477428547755
+          },
+          {
+            "x": 5.607192381846393,
+            "y": 51.74786847858804
+          },
+          {
+            "x": 5.591350514969212,
+            "y": 51.747802363029166
+          },
+          {
+            "x": 5.579000960593555,
+            "y": 51.741643670495826
+          },
+          {
+            "x": 5.566848754071929,
+            "y": 51.73533678446478
+          },
+          {
+            "x": 5.563631810522805,
+            "y": 51.725708033760995
+          },
+          {
+            "x": 5.521808385456294,
+            "y": 51.59370771097794
+          },
+          {
+            "x": 5.5005529382116345,
+            "y": 51.459822313297
+          },
+          {
+            "x": 5.488281775945027,
+            "y": 51.38214176662725
+          },
+          {
+            "x": 5.4800705877556215,
+            "y": 51.30425258355836
+          },
+          {
+            "x": 5.472904079370503,
+            "y": 51.23605502460047
+          },
+          {
+            "x": 5.467527656524748,
+            "y": 51.16779267720188
+          },
+          {
+            "x": 5.450556702961759,
+            "y": 50.95096548725521
+          },
+          {
+            "x": 5.448022270474165,
+            "y": 50.73388080712184
+          },
+          {
+            "x": 5.446754506712566,
+            "y": 50.62447174901519
+          },
+          {
+            "x": 5.447736800472091,
+            "y": 50.51506223534175
+          },
+          {
+            "x": 5.449673512731464,
+            "y": 50.29798107291567
+          },
+          {
+            "x": 5.465673769358262,
+            "y": 50.0811446287378
+          },
+          {
+            "x": 5.47068108007444,
+            "y": 50.01287985197598
+          },
+          {
+            "x": 5.477397310716812,
+            "y": 49.94467697727895
+          },
+          {
+            "x": 5.485044502504046,
+            "y": 49.8667811662895
+          },
+          {
+            "x": 5.496557644437968,
+            "y": 49.78908663224297
+          },
+          {
+            "x": 5.516320037589235,
+            "y": 49.655172490543436
+          },
+          {
+            "x": 5.5554829595961674,
+            "y": 49.52308172747758
+          }
+        ],
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": -1962973645
+          }
+        },
+        "color": "#FF6600",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners19_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "b62dd040-1b3b-4e84-b756-b6dd00e8c0ab",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 25,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Spl",
+      "entity": {
+        "drawOutline": false,
+        "typeList": "0222222222222222222222222224",
+        "pointList": [
+          {
+            "x": 4.244707359771983,
+            "y": 47.8340491170361
+          },
+          {
+            "x": 4.2503711931957415,
+            "y": 47.81677861237289
+          },
+          {
+            "x": 4.270725110927946,
+            "y": 47.80560584886975
+          },
+          {
+            "x": 4.291386721622847,
+            "y": 47.79469610382973
+          },
+          {
+            "x": 4.3176342278857955,
+            "y": 47.79478115314204
+          },
+          {
+            "x": 4.343874783291613,
+            "y": 47.795202025745645
+          },
+          {
+            "x": 4.364065179712289,
+            "y": 47.806505609795465
+          },
+          {
+            "x": 4.383936713285306,
+            "y": 47.818066239920455
+          },
+          {
+            "x": 4.388864164884041,
+            "y": 47.83543902907362
+          },
+          {
+            "x": 4.4531799002549155,
+            "y": 48.0735497041459
+          },
+          {
+            "x": 4.483797181304832,
+            "y": 48.31470693191597
+          },
+          {
+            "x": 4.5016883125996205,
+            "y": 48.45462981733964
+          },
+          {
+            "x": 4.512840091981448,
+            "y": 48.594871768985264
+          },
+          {
+            "x": 4.522654269980636,
+            "y": 48.71766714213706
+          },
+          {
+            "x": 4.529482807501369,
+            "y": 48.84055780899283
+          },
+          {
+            "x": 4.55138849558182,
+            "y": 49.23093049502372
+          },
+          {
+            "x": 4.548524236909354,
+            "y": 49.62160574726724
+          },
+          {
+            "x": 4.547054781742839,
+            "y": 49.8185176489101
+          },
+          {
+            "x": 4.541572656456968,
+            "y": 50.01540696070572
+          },
+          {
+            "x": 4.5305429858982205,
+            "y": 50.40607816077924
+          },
+          {
+            "x": 4.4935850811505915,
+            "y": 50.7961188072847
+          },
+          {
+            "x": 4.481816427508324,
+            "y": 50.91891274071856
+          },
+          {
+            "x": 4.466810752208302,
+            "y": 51.04156718710203
+          },
+          {
+            "x": 4.449571769486682,
+            "y": 51.18165089418901
+          },
+          {
+            "x": 4.424996787686943,
+            "y": 51.321304432633724
+          },
+          {
+            "x": 4.38226810723178,
+            "y": 51.561994893277074
+          },
+          {
+            "x": 4.302290729069139,
+            "y": 51.798998117405034
+          },
+          {
+            "x": 4.296141327190765,
+            "y": 51.81628237150261
+          },
+          {
+            "x": 4.273998673224604,
+            "y": 51.827462631910436
+          },
+          {
+            "x": 4.251500613361076,
+            "y": 51.83837110291806
+          },
+          {
+            "x": 4.222929066451427,
+            "y": 51.83826192884632
+          },
+          {
+            "x": 4.194366757947597,
+            "y": 51.83780440836534
+          },
+          {
+            "x": 4.172444413431438,
+            "y": 51.826455418952854
+          },
+          {
+            "x": 4.150891172419455,
+            "y": 51.81484189352687
+          },
+          {
+            "x": 4.145636899262459,
+            "y": 51.79744472678595
+          },
+          {
+            "x": 4.077854284327919,
+            "y": 51.55898111889197
+          },
+          {
+            "x": 4.047339263522222,
+            "y": 51.31757161525683
+          },
+          {
+            "x": 4.029783118357947,
+            "y": 51.17750559072619
+          },
+          {
+            "x": 4.019530535943067,
+            "y": 51.037154636335416
+          },
+          {
+            "x": 4.010601924635153,
+            "y": 50.91426797984298
+          },
+          {
+            "x": 4.0048778312867634,
+            "y": 50.79130568794944
+          },
+          {
+            "x": 3.98687662767434,
+            "y": 50.4007382210045
+          },
+          {
+            "x": 3.9944558363564036,
+            "y": 50.010047808974164
+          },
+          {
+            "x": 3.998218077140123,
+            "y": 49.81314911794491
+          },
+          {
+            "x": 4.005903539686824,
+            "y": 49.61630543153626
+          },
+          {
+            "x": 4.020947054399085,
+            "y": 49.22576361094015
+          },
+          {
+            "x": 4.060401174923242,
+            "y": 48.836001488333
+          },
+          {
+            "x": 4.072687266210326,
+            "y": 48.713300395699804
+          },
+          {
+            "x": 4.087921487943902,
+            "y": 48.59075180292883
+          },
+          {
+            "x": 4.105225499311506,
+            "y": 48.45078970484163
+          },
+          {
+            "x": 4.1292111245814365,
+            "y": 48.31127596661961
+          },
+          {
+            "x": 4.170240102736304,
+            "y": 48.07081686226873
+          },
+          {
+            "x": 4.244707359771983,
+            "y": 47.8340491170361
+          }
+        ],
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": -2097151745,
+            "name": "mal-blauw"
+          }
+        },
+        "color": "#3300FF",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners14_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "9e0c293f-69ce-4a6d-a687-be2132d67964",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 25,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "\u003cTop\u003e",
+        "layerInvisible": false,
+        "children": [
+          "0c3cb318-77d6-49ba-b93a-447b6233df11",
+          "37334580-8727-4649-aa83-34a896bedb0d"
+        ],
+        "pixelScale": false,
+        "id": "1883a608-46d0-40db-90ec-1e2aa3b60a53",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 6,
+        "attributes": [
+          {
+            "name": "pn",
+            "attributeItems": [
+              {
+                "type": 2,
+                "name": "pn",
+                "attributeValue": "1"
+              }
+            ]
+          },
+          {
+            "name": "GasMal",
+            "attributeItems": [
+              {
+                "type": 0,
+                "name": "Startmal",
+                "attributeValue": "0"
+              },
+              {
+                "type": 2,
+                "name": "Nummer",
+                "attributeValue": "2"
+              },
+              {
+                "type": 6,
+                "name": "Kleur",
+                "attributeValue": "Geel"
+              },
+              {
+                "type": 5,
+                "name": "Hoek",
+                "attributeValue": "0.0"
+              },
+              {
+                "type": 7,
+                "name": "Rapport",
+                "attributeValue": ""
+              },
+              {
+                "type": 5,
+                "name": "originLat",
+                "attributeValue": "51.69597170464841"
+              },
+              {
+                "type": 5,
+                "name": "originLon",
+                "attributeValue": "5.16313473043311"
+              }
+            ]
+          }
+        ],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "mal-5-blauw",
+        "layerInvisible": false,
+        "children": [
+          "5f9b449a-9fe1-4e04-8997-ca836f5da5ba"
+        ],
+        "pixelScale": false,
+        "id": "13aab2b8-8a76-48a4-a3f6-6fbfdccd0e5f",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "label",
+        "layerInvisible": false,
+        "children": [
+          "eaa7e947-bd7d-4062-ba2b-bad703cf66d4"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 4.662194452986463,
+          "y": 51.83468844641585
+        },
+        "id": "45b5b4d0-56d8-4712-a415-a307044e747a",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "\u003cTop\u003e",
+        "layerInvisible": false,
+        "children": [
+          "8e7db53e-19d7-4eb3-b886-ec41b9648ae0",
+          "273ef850-9b2a-4a70-af21-6845484d0d22"
+        ],
+        "pixelScale": false,
+        "id": "c3b79218-2c6d-443c-b52e-91a8783c0a3f",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [
+          {
+            "name": "pn",
+            "attributeItems": [
+              {
+                "type": 2,
+                "name": "pn",
+                "attributeValue": "1"
+              }
+            ]
+          },
+          {
+            "name": "GasMal",
+            "attributeItems": [
+              {
+                "type": 0,
+                "name": "Startmal",
+                "attributeValue": "1"
+              },
+              {
+                "type": 2,
+                "name": "Nummer",
+                "attributeValue": "7"
+              },
+              {
+                "type": 6,
+                "name": "Kleur",
+                "attributeValue": "blauw"
+              },
+              {
+                "type": 5,
+                "name": "Hoek",
+                "attributeValue": "0.0"
+              },
+              {
+                "type": 7,
+                "name": "Rapport",
+                "attributeValue": ""
+              },
+              {
+                "type": 5,
+                "name": "originLat",
+                "attributeValue": "51.91406434848548"
+              },
+              {
+                "type": 5,
+                "name": "originLon",
+                "attributeValue": "4.079866337051172"
+              }
+            ]
+          }
+        ],
+        "versionId": 1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "label",
+        "layerInvisible": false,
+        "children": [
+          "4191a8ec-2680-4ac0-b607-3cdb0d1740ee"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 5.163134731857877,
+          "y": 51.695971717782875
+        },
+        "id": "071a19e3-976a-4a93-a21c-99c79120e8eb",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "gasmal-label3",
+        "layerInvisible": false,
+        "children": [
+          "071a19e3-976a-4a93-a21c-99c79120e8eb"
+        ],
+        "pixelScale": false,
+        "id": "37334580-8727-4649-aa83-34a896bedb0d",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Spl",
+      "entity": {
+        "drawOutline": false,
+        "typeList": "0222222222222222222222222224",
+        "pointList": [
+          {
+            "x": 4.646928779202962,
+            "y": 47.82967743387842
+          },
+          {
+            "x": 4.653424781219671,
+            "y": 47.81253392528743
+          },
+          {
+            "x": 4.674025866072302,
+            "y": 47.801559938534716
+          },
+          {
+            "x": 4.69490466992357,
+            "y": 47.790830433354344
+          },
+          {
+            "x": 4.72115971120353,
+            "y": 47.7908336676158
+          },
+          {
+            "x": 4.747410784239048,
+            "y": 47.79114555922774
+          },
+          {
+            "x": 4.768002863308413,
+            "y": 47.80212400591932
+          },
+          {
+            "x": 4.788310787305067,
+            "y": 47.81334360325596
+          },
+          {
+            "x": 4.794352149078014,
+            "y": 47.830562483339634
+          },
+          {
+            "x": 4.8644458959675445,
+            "y": 48.037705039742065
+          },
+          {
+            "x": 4.899360668281205,
+            "y": 48.248866630683246
+          },
+          {
+            "x": 4.921538113785875,
+            "y": 48.38214245084364
+          },
+          {
+            "x": 4.935999133457193,
+            "y": 48.515898470529294
+          },
+          {
+            "x": 4.949491534573818,
+            "y": 48.64006319948527
+          },
+          {
+            "x": 4.959358549491525,
+            "y": 48.76438422389303
+          },
+          {
+            "x": 4.992458583925534,
+            "y": 49.177040930122025
+          },
+          {
+            "x": 4.99408931207486,
+            "y": 49.590319001880715
+          },
+          {
+            "x": 4.99497709997341,
+            "y": 49.8138316352577
+          },
+          {
+            "x": 4.990389984656274,
+            "y": 50.03733450682913
+          },
+          {
+            "x": 4.981781711844466,
+            "y": 50.450641957526074
+          },
+          {
+            "x": 4.940118230795888,
+            "y": 50.86315141410241
+          },
+          {
+            "x": 4.927416248576791,
+            "y": 50.987435596200605
+          },
+          {
+            "x": 4.910768304333594,
+            "y": 51.11153575423827
+          },
+          {
+            "x": 4.892731250795201,
+            "y": 51.24522426133225
+          },
+          {
+            "x": 4.866276592151094,
+            "y": 51.37836346960235
+          },
+          {
+            "x": 4.824023688055432,
+            "y": 51.58930056198105
+          },
+          {
+            "x": 4.742933268891994,
+            "y": 51.79581636582331
+          },
+          {
+            "x": 4.735897375887782,
+            "y": 51.81297661418106
+          },
+          {
+            "x": 4.713497315390948,
+            "y": 51.82396701001288
+          },
+          {
+            "x": 4.690774398179694,
+            "y": 51.83470370553896
+          },
+          {
+            "x": 4.662194484554669,
+            "y": 51.83468824179982
+          },
+          {
+            "x": 4.633619899442729,
+            "y": 51.83435072194678
+          },
+          {
+            "x": 4.611247218178301,
+            "y": 51.82333556397313
+          },
+          {
+            "x": 4.589205461543275,
+            "y": 51.81207078492195
+          },
+          {
+            "x": 4.582722482279824,
+            "y": 51.79482717069384
+          },
+          {
+            "x": 4.508248353577903,
+            "y": 51.58735356509225
+          },
+          {
+            "x": 4.472672996047899,
+            "y": 51.37594005851431
+          },
+          {
+            "x": 4.450396694310752,
+            "y": 51.24250327615895
+          },
+          {
+            "x": 4.436524711506662,
+            "y": 51.10862113936443
+          },
+          {
+            "x": 4.423718138015423,
+            "y": 50.9843425855031
+          },
+          {
+            "x": 4.414838450432401,
+            "y": 50.85992862886822
+          },
+          {
+            "x": 4.385692875956997,
+            "y": 50.446995150841104
+          },
+          {
+            "x": 4.389363913090666,
+            "y": 50.033668104843024
+          },
+          {
+            "x": 4.3913141601417385,
+            "y": 49.81015494979916
+          },
+          {
+            "x": 4.398667412775849,
+            "y": 49.586698258244674
+          },
+          {
+            "x": 4.412070745402511,
+            "y": 49.17352203858353
+          },
+          {
+            "x": 4.4566876790701,
+            "y": 48.76134562087948
+          },
+          {
+            "x": 4.46998051345023,
+            "y": 48.637167222707376
+          },
+          {
+            "x": 4.4868737803523855,
+            "y": 48.5131884693525
+          },
+          {
+            "x": 4.504976333708147,
+            "y": 48.3796314043727
+          },
+          {
+            "x": 4.530757802970544,
+            "y": 48.246646862193536
+          },
+          {
+            "x": 4.5713376747096754,
+            "y": 48.03594266539465
+          },
+          {
+            "x": 4.646928779202962,
+            "y": 47.82967743387842
+          }
+        ],
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": -2097151745,
+            "name": "mal-blauw"
+          }
+        },
+        "color": "#3300FF",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners14_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "5f9b449a-9fe1-4e04-8997-ca836f5da5ba",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 25,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "\u003cTop\u003e",
+        "layerInvisible": false,
+        "children": [
+          "f2cf555f-314d-4be7-9859-f4984f5621c4",
+          "97f4cb5f-7cff-4411-8d68-6e6f3950db79"
+        ],
+        "pixelScale": false,
+        "id": "f59b9bb2-41e6-4023-aea3-065288407173",
+        "readOnly": true,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 7,
+        "attributes": [
+          {
+            "name": "pn",
+            "attributeItems": [
+              {
+                "type": 2,
+                "name": "pn",
+                "attributeValue": "1"
+              }
+            ]
+          },
+          {
+            "name": "GasMal",
+            "attributeItems": [
+              {
+                "type": 0,
+                "name": "Startmal",
+                "attributeValue": "0"
+              },
+              {
+                "type": 2,
+                "name": "Nummer",
+                "attributeValue": "4"
+              },
+              {
+                "type": 6,
+                "name": "Kleur",
+                "attributeValue": "Grijs"
+              },
+              {
+                "type": 5,
+                "name": "Hoek",
+                "attributeValue": "0.0"
+              },
+              {
+                "type": 7,
+                "name": "Rapport",
+                "attributeValue": ""
+              },
+              {
+                "type": 5,
+                "name": "originLat",
+                "attributeValue": "51.7423667770889"
+              },
+              {
+                "type": 5,
+                "name": "originLon",
+                "attributeValue": "5.315190101010035"
+              }
+            ]
+          }
+        ],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Spl",
+      "entity": {
+        "drawOutline": true,
+        "typeList": "033333333333333333333333333334",
+        "pointList": [
+          {
+            "x": 4.112213777569499,
+            "y": 51.90033050151308
+          },
+          {
+            "x": 4.108015785828386,
+            "y": 51.89975201237268
+          },
+          {
+            "x": 4.1057155285876545,
+            "y": 51.897653888444225
+          },
+          {
+            "x": 4.103234109779915,
+            "y": 51.89608132938015
+          },
+          {
+            "x": 4.098798007835733,
+            "y": 51.893264000903756
+          },
+          {
+            "x": 4.095579997125343,
+            "y": 51.89013553031633
+          },
+          {
+            "x": 4.092996847846978,
+            "y": 51.88699113899455
+          },
+          {
+            "x": 4.09128920234412,
+            "y": 51.88491812075814
+          },
+          {
+            "x": 4.090446555215718,
+            "y": 51.88275938101975
+          },
+          {
+            "x": 4.089589200654711,
+            "y": 51.88062461270576
+          },
+          {
+            "x": 4.088786022038946,
+            "y": 51.8786396721995
+          },
+          {
+            "x": 4.088103648349264,
+            "y": 51.87663630959242
+          },
+          {
+            "x": 4.0879715706536075,
+            "y": 51.87464693181889
+          },
+          {
+            "x": 4.08781529850457,
+            "y": 51.87229253412398
+          },
+          {
+            "x": 4.088419185774828,
+            "y": 51.869970686150616
+          },
+          {
+            "x": 4.088945130910442,
+            "y": 51.867654118247536
+          },
+          {
+            "x": 4.08954494294662,
+            "y": 51.865005215372065
+          },
+          {
+            "x": 4.090099439012633,
+            "y": 51.862339568075015
+          },
+          {
+            "x": 4.091430498517824,
+            "y": 51.85977115441944
+          },
+          {
+            "x": 4.092539777202205,
+            "y": 51.85763175015556
+          },
+          {
+            "x": 4.09427549229929,
+            "y": 51.85558394951301
+          },
+          {
+            "x": 4.095986578902248,
+            "y": 51.853542875940676
+          },
+          {
+            "x": 4.097746021466067,
+            "y": 51.8514474428246
+          },
+          {
+            "x": 4.099670058171668,
+            "y": 51.84937441908608
+          },
+          {
+            "x": 4.1018554505680465,
+            "y": 51.84736260435764
+          },
+          {
+            "x": 4.1035551286121015,
+            "y": 51.84579490513627
+          },
+          {
+            "x": 4.105411213439922,
+            "y": 51.844264443264656
+          },
+          {
+            "x": 4.107473834980813,
+            "y": 51.84279282663572
+          },
+          {
+            "x": 4.1100364459494765,
+            "y": 51.84096098624794
+          },
+          {
+            "x": 4.112733414052431,
+            "y": 51.83916259191033
+          },
+          {
+            "x": 4.115845502787532,
+            "y": 51.83750382456451
+          },
+          {
+            "x": 4.118313137758806,
+            "y": 51.83618476594519
+          },
+          {
+            "x": 4.12091279706433,
+            "y": 51.83489912267994
+          },
+          {
+            "x": 4.123967530456643,
+            "y": 51.83382417979994
+          },
+          {
+            "x": 4.128043779923997,
+            "y": 51.83238922610319
+          },
+          {
+            "x": 4.132378525692483,
+            "y": 51.830995522354485
+          },
+          {
+            "x": 4.1374173149901505,
+            "y": 51.830193374723265
+          },
+          {
+            "x": 4.140338012168183,
+            "y": 51.829728011402565
+          },
+          {
+            "x": 4.143588502815767,
+            "y": 51.8295320618634
+          },
+          {
+            "x": 4.14681356661237,
+            "y": 51.8295670692224
+          },
+          {
+            "x": 4.148629034659206,
+            "y": 51.82958712041112
+          },
+          {
+            "x": 4.150465854826028,
+            "y": 51.82979391311821
+          },
+          {
+            "x": 4.152238183843326,
+            "y": 51.830037746191806
+          },
+          {
+            "x": 4.154008950771693,
+            "y": 51.83028109700829
+          },
+          {
+            "x": 4.155798855791992,
+            "y": 51.83057334277424
+          },
+          {
+            "x": 4.1573704693060956,
+            "y": 51.83101909328562
+          },
+          {
+            "x": 4.160165092568196,
+            "y": 51.831811639090525
+          },
+          {
+            "x": 4.162737723631627,
+            "y": 51.832808975575105
+          },
+          {
+            "x": 4.16474389919507,
+            "y": 51.83395178618052
+          },
+          {
+            "x": 4.168207723223792,
+            "y": 51.835923040816525
+          },
+          {
+            "x": 4.170442299817113,
+            "y": 51.83822074481612
+          },
+          {
+            "x": 4.17241379860786,
+            "y": 51.8404880293715
+          },
+          {
+            "x": 4.173891684798708,
+            "y": 51.842186157724655
+          },
+          {
+            "x": 4.174757890772142,
+            "y": 51.84394905628562
+          },
+          {
+            "x": 4.175475669135855,
+            "y": 51.84570646529236
+          },
+          {
+            "x": 4.176385893282742,
+            "y": 51.8479192644389
+          },
+          {
+            "x": 4.1767946326143415,
+            "y": 51.850144004155126
+          },
+          {
+            "x": 4.177051835766317,
+            "y": 51.85236498507697
+          },
+          {
+            "x": 4.177261958773822,
+            "y": 51.854149626652514
+          },
+          {
+            "x": 4.177233301585744,
+            "y": 51.85593136795275
+          },
+          {
+            "x": 4.177031427820148,
+            "y": 51.857706056597266
+          },
+          {
+            "x": 4.176775798217135,
+            "y": 51.85998319859903
+          },
+          {
+            "x": 4.176233567200544,
+            "y": 51.86224685006975
+          },
+          {
+            "x": 4.175523439518013,
+            "y": 51.86448725914986
+          },
+          {
+            "x": 4.174831150175102,
+            "y": 51.866668154211084
+          },
+          {
+            "x": 4.17415358935049,
+            "y": 51.86886236496296
+          },
+          {
+            "x": 4.172840750993935,
+            "y": 51.870973631523235
+          },
+          {
+            "x": 4.171266973524267,
+            "y": 51.873509695078454
+          },
+          {
+            "x": 4.16892401246704,
+            "y": 51.875928908552055
+          },
+          {
+            "x": 4.166639792229524,
+            "y": 51.87834649218326
+          },
+          {
+            "x": 4.16463990005455,
+            "y": 51.88046062273607
+          },
+          {
+            "x": 4.162702622034567,
+            "y": 51.882599513648415
+          },
+          {
+            "x": 4.160080988378599,
+            "y": 51.88457189631092
+          },
+          {
+            "x": 4.157865767049163,
+            "y": 51.88623815565954
+          },
+          {
+            "x": 4.155164436376132,
+            "y": 51.88777681660526
+          },
+          {
+            "x": 4.152380796235512,
+            "y": 51.889267586298985
+          },
+          {
+            "x": 4.1493911013295595,
+            "y": 51.89087331315074
+          },
+          {
+            "x": 4.146389180046139,
+            "y": 51.89250297689899
+          },
+          {
+            "x": 4.142739115954584,
+            "y": 51.893839082840174
+          },
+          {
+            "x": 4.137206260007445,
+            "y": 51.89586611910983
+          },
+          {
+            "x": 4.1311479827636575,
+            "y": 51.89771785631403
+          },
+          {
+            "x": 4.124378420538972,
+            "y": 51.89899235353072
+          },
+          {
+            "x": 4.120596586446798,
+            "y": 51.899702647655204
+          },
+          {
+            "x": 4.116410573383462,
+            "y": 51.90090794898845
+          },
+          {
+            "x": 4.112213777569499,
+            "y": 51.90033050151308
+          }
+        ],
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": -2147483648
+          }
+        },
+        "color": "#000000",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 0.5,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners13_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "367ef30a-8a0a-4791-b6b7-183acd6ab142",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "gasmal-label3",
+        "layerInvisible": false,
+        "children": [
+          "fa58ea85-a036-4127-9911-d8141084ea8c"
+        ],
+        "pixelScale": false,
+        "id": "f97e42f1-7c0b-4b3c-b084-3529a97e34a7",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "label",
+        "layerInvisible": false,
+        "children": [
+          "3a7982b0-8dd5-41c6-8525-958f4015a597"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 5.418231342456833,
+          "y": 51.729589987058134
+        },
+        "id": "44e97f93-168b-47b8-aa2e-7191abc22ee6",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Img",
+      "entity": {
+        "transform": {
+          "m00": -0.26238914653492035,
+          "m10": 0.7874288769559395,
+          "m01": 1.1890384176158397,
+          "m11": 0.24283326883268086
+        },
+        "plotLocalFileSystemLastPartOfDownloadUrl": "0",
+        "downloadLocation": "/DownloadFile?imageid\u003d4D7AQQJ5LGV093JX1PLDQFJ05NEKW5",
+        "lowerLeft": {
+          "x": 4.082663286302166,
+          "y": 51.87926329918892
+        },
+        "upperRight": {
+          "x": 4.1465989657966995,
+          "y": 51.920225059129734
+        },
+        "alpha": 1.0,
+        "id": "aea7b90a-19ac-4212-96af-c9ce18bf913a",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "mal-7-blauw",
+        "layerInvisible": false,
+        "children": [
+          "4e383594-b540-423d-b0a4-b3eba1b63748"
+        ],
+        "pixelScale": false,
+        "id": "f883cec0-13a5-4750-987c-0a10078230e6",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Img",
+      "entity": {
+        "transform": {
+          "m00": -1.0000000001315332,
+          "m10": 1.224646799308435E-16,
+          "m01": 1.2246467989862715E-16,
+          "m11": 0.9999999998684669
+        },
+        "plotLocalFileSystemLastPartOfDownloadUrl": "4",
+        "downloadLocation": "/DownloadFile?imageid\u003d4D7AR2F4TR8093JX1PNWJUJHJZDE5Y",
+        "lowerLeft": {
+          "x": 5.002733018242748,
+          "y": 51.734611208089675
+        },
+        "upperRight": {
+          "x": 5.007414227037083,
+          "y": 51.73754837882077
+        },
+        "alpha": 1.0,
+        "id": "1d0e400e-928f-4e38-9972-dbd43e67305a",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "label",
+        "layerInvisible": false,
+        "children": [
+          "76b205c7-1a7f-431e-a545-8f63137d9099"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 5.742227554349759,
+          "y": 51.73616401758024
+        },
+        "id": "52738413-c693-4a16-b401-89a9ab859d33",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "label",
+        "layerInvisible": false,
+        "children": [
+          "1d0e400e-928f-4e38-9972-dbd43e67305a"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 5.000367635644316,
+          "y": 51.73606438405091
+        },
+        "id": "fa58ea85-a036-4127-9911-d8141084ea8c",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Spl",
+      "entity": {
+        "drawOutline": false,
+        "typeList": "0222222222222222222222222224",
+        "pointList": [
+          {
+            "x": 5.2965482819801775,
+            "y": 50.71860429839767
+          },
+          {
+            "x": 5.2983935533548845,
+            "y": 50.71423447598251
+          },
+          {
+            "x": 5.3039937169604485,
+            "y": 50.711437124363364
+          },
+          {
+            "x": 5.309667238862564,
+            "y": 50.70870011947078
+          },
+          {
+            "x": 5.31679196622836,
+            "y": 50.7086662723968
+          },
+          {
+            "x": 5.32391657917388,
+            "y": 50.70870879335194
+          },
+          {
+            "x": 5.329581827640891,
+            "y": 50.71145270069411
+          },
+          {
+            "x": 5.3351735356126,
+            "y": 50.71425686560987
+          },
+          {
+            "x": 5.3370057778929425,
+            "y": 50.71862892740706
+          },
+          {
+            "x": 5.356979632998561,
+            "y": 50.767929089619315
+          },
+          {
+            "x": 5.367205387884226,
+            "y": 50.8184182232838
+          },
+          {
+            "x": 5.373920797116997,
+            "y": 50.85153103112785
+          },
+          {
+            "x": 5.378410234403617,
+            "y": 50.88479453509156
+          },
+          {
+            "x": 5.382703172369055,
+            "y": 50.916560334883435
+          },
+          {
+            "x": 5.3859202149676575,
+            "y": 50.94837711881764
+          },
+          {
+            "x": 5.3968827981049925,
+            "y": 51.05647900152035
+          },
+          {
+            "x": 5.398396731709141,
+            "y": 51.16479770216049
+          },
+          {
+            "x": 5.399248296796175,
+            "y": 51.22554162069626
+          },
+          {
+            "x": 5.398426873057059,
+            "y": 51.2862855969796
+          },
+          {
+            "x": 5.3969556799046785,
+            "y": 51.39460381543491
+          },
+          {
+            "x": 5.385906629553399,
+            "y": 51.50270528345411
+          },
+          {
+            "x": 5.382644360682064,
+            "y": 51.53452112946409
+          },
+          {
+            "x": 5.378281040593924,
+            "y": 51.56628581743346
+          },
+          {
+            "x": 5.373705037085119,
+            "y": 51.599547965603335
+          },
+          {
+            "x": 5.366850019398355,
+            "y": 51.63265805003157
+          },
+          {
+            "x": 5.356373559123072,
+            "y": 51.68314093766088
+          },
+          {
+            "x": 5.335887064317472,
+            "y": 51.73242601563286
+          },
+          {
+            "x": 5.334003739154623,
+            "y": 51.73679607708909
+          },
+          {
+            "x": 5.3282787268915275,
+            "y": 51.7395947759693
+          },
+          {
+            "x": 5.322477268790841,
+            "y": 51.74233258582284
+          },
+          {
+            "x": 5.315190075690701,
+            "y": 51.74236696736325
+          },
+          {
+            "x": 5.307903007123461,
+            "y": 51.74232365142935
+          },
+          {
+            "x": 5.30211027164193,
+            "y": 51.73957873433533
+          },
+          {
+            "x": 5.296394175418262,
+            "y": 51.73677302232752
+          },
+          {
+            "x": 5.294524928962463,
+            "y": 51.73240066131062
+          },
+          {
+            "x": 5.274194833663538,
+            "y": 51.683090580055804
+          },
+          {
+            "x": 5.263878320151781,
+            "y": 51.632594972318905
+          },
+          {
+            "x": 5.2571279846431445,
+            "y": 51.59947656955188
+          },
+          {
+            "x": 5.252657134198963,
+            "y": 51.56620889811647
+          },
+          {
+            "x": 5.248393723642262,
+            "y": 51.53443894554479
+          },
+          {
+            "x": 5.245231535139069,
+            "y": 51.502619185206804
+          },
+          {
+            "x": 5.234521501138205,
+            "y": 51.39450447272868
+          },
+          {
+            "x": 5.233387925625622,
+            "y": 51.286184735478095
+          },
+          {
+            "x": 5.232754852045211,
+            "y": 51.225439912255766
+          },
+          {
+            "x": 5.233794531175589,
+            "y": 51.16469719083749
+          },
+          {
+            "x": 5.23564217432658,
+            "y": 51.05638061579023
+          },
+          {
+            "x": 5.246935776653353,
+            "y": 50.94829237611132
+          },
+          {
+            "x": 5.2502499560969795,
+            "y": 50.916479592104935
+          },
+          {
+            "x": 5.25463989044929,
+            "y": 50.884719101924254
+          },
+          {
+            "x": 5.25923037815167,
+            "y": 50.85146114774038
+          },
+          {
+            "x": 5.266046378161841,
+            "y": 50.81835659894503
+          },
+          {
+            "x": 5.2764251932681825,
+            "y": 50.767880034325046
+          },
+          {
+            "x": 5.2965482819801775,
+            "y": 50.71860429839767
+          }
+        ],
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": -2003199591,
+            "name": "mal-grijs"
+          }
+        },
+        "color": "#999999",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners17_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "33512184-c36c-4734-9216-d38fd2fa891b",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 25,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "mal-6-blauw",
+        "layerInvisible": false,
+        "children": [
+          "9e0c293f-69ce-4a6d-a687-be2132d67964"
+        ],
+        "pixelScale": false,
+        "id": "043ec711-e1d7-43ba-a337-9d407de86c3a",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "gasmal-label3",
+        "layerInvisible": false,
+        "children": [
+          "94c09b93-31d1-4178-8aa2-62ec96392a37"
+        ],
+        "pixelScale": false,
+        "id": "273ef850-9b2a-4a70-af21-6845484d0d22",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Spl",
+      "entity": {
+        "drawOutline": false,
+        "typeList": "0222222112222222211224",
+        "pointList": [
+          {
+            "x": 3.9365514414164373,
+            "y": 45.00406473230991
+          },
+          {
+            "x": 3.9379960188259124,
+            "y": 44.9827745824255
+          },
+          {
+            "x": 3.9595018681535565,
+            "y": 44.96789824529989
+          },
+          {
+            "x": 3.981561113881986,
+            "y": 44.95344098908179
+          },
+          {
+            "x": 4.011578041753318,
+            "y": 44.95353802104369
+          },
+          {
+            "x": 4.041580713465481,
+            "y": 44.95420953700892
+          },
+          {
+            "x": 4.062891853422084,
+            "y": 44.96922230622672
+          },
+          {
+            "x": 4.083628452349198,
+            "y": 44.984639847859725
+          },
+          {
+            "x": 4.08398917283304,
+            "y": 45.005953444619614
+          },
+          {
+            "x": 4.081103882529149,
+            "y": 46.159835870045264
+          },
+          {
+            "x": 4.064728317166256,
+            "y": 47.31464532811135
+          },
+          {
+            "x": 4.058018362790155,
+            "y": 47.76897088607225
+          },
+          {
+            "x": 4.046292067564781,
+            "y": 48.22335194874709
+          },
+          {
+            "x": 4.043726567969776,
+            "y": 48.319943145945935
+          },
+          {
+            "x": 4.041067950682546,
+            "y": 48.41653686404972
+          },
+          {
+            "x": 4.028203059381336,
+            "y": 48.87102621746682
+          },
+          {
+            "x": 4.010091515704625,
+            "y": 49.32550675760749
+          },
+          {
+            "x": 3.9622729920229363,
+            "y": 50.48144908666287
+          },
+          {
+            "x": 3.8974000071621853,
+            "y": 51.637186981790045
+          },
+          {
+            "x": 3.8956976670378767,
+            "y": 51.65853370962413
+          },
+          {
+            "x": 3.8710399981091306,
+            "y": 51.67342372518799
+          },
+          {
+            "x": 3.8457205057124417,
+            "y": 51.68788251035081
+          },
+          {
+            "x": 3.811335084171711,
+            "y": 51.687717147971995
+          },
+          {
+            "x": 3.7769708766917383,
+            "y": 51.68695727366505
+          },
+          {
+            "x": 3.7526825026312123,
+            "y": 51.67183102126901
+          },
+          {
+            "x": 3.729084967666485,
+            "y": 51.656291878448776
+          },
+          {
+            "x": 3.7288677286848597,
+            "y": 51.6349196476709
+          },
+          {
+            "x": 3.742028677150341,
+            "y": 50.478509383891556
+          },
+          {
+            "x": 3.767902004206899,
+            "y": 49.32230044574731
+          },
+          {
+            "x": 3.7776547085937366,
+            "y": 48.867720123377
+          },
+          {
+            "x": 3.7920553008782347,
+            "y": 48.41326194549294
+          },
+          {
+            "x": 3.795116716021273,
+            "y": 48.31667585298386
+          },
+          {
+            "x": 3.798245139817139,
+            "y": 48.22009438106056
+          },
+          {
+            "x": 3.8129631496463543,
+            "y": 47.76576348307567
+          },
+          {
+            "x": 3.832141298452861,
+            "y": 47.31161152597753
+          },
+          {
+            "x": 3.879214841077198,
+            "y": 46.157225811912525
+          },
+          {
+            "x": 3.9365514414164373,
+            "y": 45.00406473230991
+          }
+        ],
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": -2097151745,
+            "name": "mal-blauw"
+          }
+        },
+        "color": "#3300FF",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners14_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "4e383594-b540-423d-b0a4-b3eba1b63748",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 17,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "\u003cTop\u003e",
+        "layerInvisible": false,
+        "children": [
+          "f883cec0-13a5-4750-987c-0a10078230e6",
+          "10b63f56-1382-412d-b2ee-d383bc8cce8f"
+        ],
+        "pixelScale": false,
+        "id": "bc922db1-aaee-4f60-950f-57582aa78926",
+        "readOnly": true,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 4,
+        "attributes": [
+          {
+            "name": "pn",
+            "attributeItems": [
+              {
+                "type": 2,
+                "name": "pn",
+                "attributeValue": "1"
+              }
+            ]
+          },
+          {
+            "name": "GasMal",
+            "attributeItems": [
+              {
+                "type": 0,
+                "name": "Startmal",
+                "attributeValue": "0"
+              },
+              {
+                "type": 2,
+                "name": "Nummer",
+                "attributeValue": "7"
+              },
+              {
+                "type": 6,
+                "name": "Kleur",
+                "attributeValue": "blauw"
+              },
+              {
+                "type": 5,
+                "name": "Hoek",
+                "attributeValue": "0.0"
+              },
+              {
+                "type": 7,
+                "name": "Rapport",
+                "attributeValue": ""
+              },
+              {
+                "type": 5,
+                "name": "originLat",
+                "attributeValue": "51.68771703252505"
+              },
+              {
+                "type": 5,
+                "name": "originLon",
+                "attributeValue": "3.8113351073906334"
+              }
+            ]
+          }
+        ],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "gasmal-label3",
+        "layerInvisible": false,
+        "children": [
+          "4454ce38-7715-4896-bf71-47f7f2132071"
+        ],
+        "pixelScale": false,
+        "id": "10b63f56-1382-412d-b2ee-d383bc8cce8f",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "\u003cTop\u003e",
+        "layerInvisible": false,
+        "children": [
+          "4121c3e3-3e45-4b85-9875-a77c887c1db6",
+          "901db7cc-91f0-4af3-a7c5-759be0f1fea9"
+        ],
+        "pixelScale": false,
+        "id": "026f6a8f-76e4-47d0-b546-9b3757cd7e0c",
+        "readOnly": true,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 10,
+        "attributes": [
+          {
+            "name": "pn",
+            "attributeItems": [
+              {
+                "type": 2,
+                "name": "pn",
+                "attributeValue": "1"
+              }
+            ]
+          },
+          {
+            "name": "GasMal",
+            "attributeItems": [
+              {
+                "type": 0,
+                "name": "Startmal",
+                "attributeValue": "0"
+              },
+              {
+                "type": 2,
+                "name": "Nummer",
+                "attributeValue": "2"
+              },
+              {
+                "type": 6,
+                "name": "Kleur",
+                "attributeValue": "Paars"
+              },
+              {
+                "type": 5,
+                "name": "Hoek",
+                "attributeValue": "0.0"
+              },
+              {
+                "type": 7,
+                "name": "Rapport",
+                "attributeValue": ""
+              },
+              {
+                "type": 5,
+                "name": "originLat",
+                "attributeValue": "51.73551385393564"
+              },
+              {
+                "type": 5,
+                "name": "originLon",
+                "attributeValue": "5.721615380457047"
+              }
+            ]
+          }
+        ],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "label",
+        "layerInvisible": false,
+        "children": [
+          "303632ee-736f-43d1-bb1a-1d7145a5e540"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 5.721615382562678,
+          "y": 51.73551386708727
+        },
+        "id": "53f887ce-bd6e-4d35-b146-885653d208bd",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "label",
+        "layerInvisible": false,
+        "children": [
+          "4e23f9d9-2a05-4987-8bce-5e66536366cb"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 4.2229290747321,
+          "y": 51.83826203677171
+        },
+        "id": "6eaf2e5a-c121-42fc-b532-f6faac816bde",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "mal-2-geel",
+        "layerInvisible": false,
+        "children": [
+          "7254a3ce-6918-48cb-9eb1-85353ec7cf71"
+        ],
+        "pixelScale": false,
+        "id": "0c3cb318-77d6-49ba-b93a-447b6233df11",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "mal-4-grijs",
+        "layerInvisible": false,
+        "children": [
+          "33512184-c36c-4734-9216-d38fd2fa891b"
+        ],
+        "pixelScale": false,
+        "id": "f2cf555f-314d-4be7-9859-f4984f5621c4",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "gasmal-label3",
+        "layerInvisible": false,
+        "children": [
+          "53f887ce-bd6e-4d35-b146-885653d208bd"
+        ],
+        "pixelScale": false,
+        "id": "901db7cc-91f0-4af3-a7c5-759be0f1fea9",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "gasmal-label3",
+        "layerInvisible": false,
+        "children": [
+          "bd72c484-e548-4af6-99ae-06f15fb77cd0"
+        ],
+        "pixelScale": false,
+        "id": "21a607df-9ef3-49fb-86a3-5f9ef617de55",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "gasmal-label3",
+        "layerInvisible": false,
+        "children": [
+          "45b5b4d0-56d8-4712-a415-a307044e747a"
+        ],
+        "pixelScale": false,
+        "id": "9eb61a7f-7087-4cac-8b97-be7ab5609aaf",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "mal-5-groen",
+        "layerInvisible": false,
+        "children": [
+          "4dc78d79-dda9-4366-99cc-221b6b556bfb"
+        ],
+        "pixelScale": false,
+        "id": "7776e3a2-e26f-4915-a16d-a8145e6a18f1",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "\u003cTop\u003e",
+        "layerInvisible": false,
+        "children": [
+          "043ec711-e1d7-43ba-a337-9d407de86c3a",
+          "e56ebced-a737-4e45-91bc-3d06cd7d1bb4"
+        ],
+        "pixelScale": false,
+        "id": "17bb32ab-e1ff-4434-864c-e9d9ceaf5122",
+        "readOnly": true,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 2,
+        "attributes": [
+          {
+            "name": "pn",
+            "attributeItems": [
+              {
+                "type": 2,
+                "name": "pn",
+                "attributeValue": "1"
+              }
+            ]
+          },
+          {
+            "name": "GasMal",
+            "attributeItems": [
+              {
+                "type": 0,
+                "name": "Startmal",
+                "attributeValue": "0"
+              },
+              {
+                "type": 2,
+                "name": "Nummer",
+                "attributeValue": "6"
+              },
+              {
+                "type": 6,
+                "name": "Kleur",
+                "attributeValue": "blauw"
+              },
+              {
+                "type": 5,
+                "name": "Hoek",
+                "attributeValue": "0.0"
+              },
+              {
+                "type": 7,
+                "name": "Rapport",
+                "attributeValue": ""
+              },
+              {
+                "type": 5,
+                "name": "originLat",
+                "attributeValue": "51.83826201973856"
+              },
+              {
+                "type": 5,
+                "name": "originLon",
+                "attributeValue": "4.222929073913476"
+              }
+            ]
+          }
+        ],
+        "versionId": 0
+      }
+    },
+    {
+      "entityIdentifier": "Prt",
+      "entity": {
+        "name": "label",
+        "layerInvisible": false,
+        "children": [
+          "130bc5c1-77b2-4479-bd84-54d04f6a2c0a"
+        ],
+        "pixelScale": true,
+        "origin": {
+          "x": 5.607192314420216,
+          "y": 51.747868575125494
+        },
+        "id": "bd72c484-e548-4af6-99ae-06f15fb77cd0",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Spl",
+      "entity": {
+        "drawOutline": false,
+        "typeList": "0222222112222222211224",
+        "pointList": [
+          {
+            "x": 4.989885796389343,
+            "y": 49.06022494680595
+          },
+          {
+            "x": 4.990333793158884,
+            "y": 49.051682343576566
+          },
+          {
+            "x": 4.999522692296529,
+            "y": 49.04563411212293
+          },
+          {
+            "x": 5.008957623097197,
+            "y": 49.03975249001654
+          },
+          {
+            "x": 5.0219585299624505,
+            "y": 49.03967862336004
+          },
+          {
+            "x": 5.0349578811270135,
+            "y": 49.03983668306864
+          },
+          {
+            "x": 5.044304076706028,
+            "y": 49.04577912773867
+          },
+          {
+            "x": 5.05340191087881,
+            "y": 49.05188658611502
+          },
+          {
+            "x": 5.053721957032188,
+            "y": 49.06043168932943
+          },
+          {
+            "x": 5.061479071053653,
+            "y": 49.52290882533168
+          },
+          {
+            "x": 5.063835636513272,
+            "y": 49.98545994800204
+          },
+          {
+            "x": 5.064772548939598,
+            "y": 50.1673662873812
+          },
+          {
+            "x": 5.063685155054932,
+            "y": 50.34927646927428
+          },
+          {
+            "x": 5.0634358739115015,
+            "y": 50.38794303761853
+          },
+          {
+            "x": 5.063152103929166,
+            "y": 50.42660943325541
+          },
+          {
+            "x": 5.061730095054128,
+            "y": 50.608523430956865
+          },
+          {
+            "x": 5.058246189076945,
+            "y": 50.790427957041096
+          },
+          {
+            "x": 5.049256064858662,
+            "y": 51.25300305405056
+          },
+          {
+            "x": 5.034320348193422,
+            "y": 51.71551148520415
+          },
+          {
+            "x": 5.033852964546678,
+            "y": 51.72405621130761
+          },
+          {
+            "x": 5.024127953742218,
+            "y": 51.7301082384576
+          },
+          {
+            "x": 5.0141375232796515,
+            "y": 51.73599183653275
+          },
+          {
+            "x": 5.000367555472764,
+            "y": 51.73606439556493
+          },
+          {
+            "x": 4.98659980226091,
+            "y": 51.73590097499181
+          },
+          {
+            "x": 4.976710492976757,
+            "y": 51.72995178928224
+          },
+          {
+            "x": 4.967089632881823,
+            "y": 51.72383594134663
+          },
+          {
+            "x": 4.966768598647069,
+            "y": 51.71528862685497
+          },
+          {
+            "x": 4.959650087507091,
+            "y": 51.252708358141014
+          },
+          {
+            "x": 4.95829735089508,
+            "y": 50.79010028358778
+          },
+          {
+            "x": 4.957768713339573,
+            "y": 50.60818303032981
+          },
+          {
+            "x": 4.959275422027164,
+            "y": 50.426269738904075
+          },
+          {
+            "x": 4.9596107691675835,
+            "y": 50.387603603278706
+          },
+          {
+            "x": 4.959979425080587,
+            "y": 50.34893751652181
+          },
+          {
+            "x": 4.961783423205018,
+            "y": 50.16703010443549
+          },
+          {
+            "x": 4.965585843817626,
+            "y": 49.985139644992564
+          },
+          {
+            "x": 4.9751154326273275,
+            "y": 49.5226281939028
+          },
+          {
+            "x": 4.989885796389343,
+            "y": 49.06022494680595
+          }
+        ],
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": -1919326720,
+            "name": "mal-bruin"
+          }
+        },
+        "color": "#996600",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners15_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "7987aba6-4b6d-4f5b-99bf-4f2c2552888e",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 17,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Spl",
+      "entity": {
+        "drawOutline": false,
+        "typeList": "022222212221122212222222222122211222122224",
+        "pointList": [
+          {
+            "x": 5.162538071582888,
+            "y": 51.66959660205429
+          },
+          {
+            "x": 5.162867156147504,
+            "y": 51.66945678671304
+          },
+          {
+            "x": 5.163265959498977,
+            "y": 51.66945579410528
+          },
+          {
+            "x": 5.163664569050243,
+            "y": 51.66945831091791
+          },
+          {
+            "x": 5.16399226501526,
+            "y": 51.669599381656695
+          },
+          {
+            "x": 5.164497089071492,
+            "y": 51.66982044749281
+          },
+          {
+            "x": 5.164855358823667,
+            "y": 51.6701329618448
+          },
+          {
+            "x": 5.1652000986716535,
+            "y": 51.6704346965564
+          },
+          {
+            "x": 5.1654543319264015,
+            "y": 51.67076939542986
+          },
+          {
+            "x": 5.165797112744407,
+            "y": 51.67122100676885
+          },
+          {
+            "x": 5.166063747989974,
+            "y": 51.67169200413613
+          },
+          {
+            "x": 5.166293472887403,
+            "y": 51.672097536157345
+          },
+          {
+            "x": 5.166479924038197,
+            "y": 51.67251176405951
+          },
+          {
+            "x": 5.166845130029689,
+            "y": 51.67340077172013
+          },
+          {
+            "x": 5.167218442392341,
+            "y": 51.674404125077274
+          },
+          {
+            "x": 5.167463569366589,
+            "y": 51.67542303695216
+          },
+          {
+            "x": 5.167667704776472,
+            "y": 51.676271800273796
+          },
+          {
+            "x": 5.167815171866749,
+            "y": 51.67712528489449
+          },
+          {
+            "x": 5.168124032288914,
+            "y": 51.678912157928295
+          },
+          {
+            "x": 5.168215067199782,
+            "y": 51.68070827857008
+          },
+          {
+            "x": 5.168261276133505,
+            "y": 51.68272332265378
+          },
+          {
+            "x": 5.168195576976999,
+            "y": 51.68473815722134
+          },
+          {
+            "x": 5.1680871534545405,
+            "y": 51.68653390398178
+          },
+          {
+            "x": 5.1677609281816705,
+            "y": 51.68831958706143
+          },
+          {
+            "x": 5.167605149240433,
+            "y": 51.68917250266217
+          },
+          {
+            "x": 5.1673927191163465,
+            "y": 51.690020483930624
+          },
+          {
+            "x": 5.167137615028531,
+            "y": 51.6910382360668
+          },
+          {
+            "x": 5.16675440183378,
+            "y": 51.69204038541751
+          },
+          {
+            "x": 5.166380381369905,
+            "y": 51.69292799980743
+          },
+          {
+            "x": 5.1661898059080915,
+            "y": 51.69334151622558
+          },
+          {
+            "x": 5.165956014465604,
+            "y": 51.69374617289791
+          },
+          {
+            "x": 5.165684645880566,
+            "y": 51.6942161530551
+          },
+          {
+            "x": 5.165337270556412,
+            "y": 51.69466667744347
+          },
+          {
+            "x": 5.165079625115287,
+            "y": 51.69500018659632
+          },
+          {
+            "x": 5.164731739561843,
+            "y": 51.695300606987544
+          },
+          {
+            "x": 5.164370200263007,
+            "y": 51.69561197269497
+          },
+          {
+            "x": 5.163862918193035,
+            "y": 51.695830892242085
+          },
+          {
+            "x": 5.16353364470008,
+            "y": 51.69597070990564
+          },
+          {
+            "x": 5.1631347841436925,
+            "y": 51.6959717036222
+          },
+          {
+            "x": 5.162735764422951,
+            "y": 51.69596918453607
+          },
+          {
+            "x": 5.16240788147106,
+            "y": 51.69582811053824
+          },
+          {
+            "x": 5.161902776487239,
+            "y": 51.6956072555411
+          },
+          {
+            "x": 5.161544503304157,
+            "y": 51.695294513730836
+          },
+          {
+            "x": 5.16119942209204,
+            "y": 51.69499276855987
+          },
+          {
+            "x": 5.160945083368218,
+            "y": 51.69465828063245
+          },
+          {
+            "x": 5.160602174867309,
+            "y": 51.69420643661593
+          },
+          {
+            "x": 5.160335464157102,
+            "y": 51.6937354278169
+          },
+          {
+            "x": 5.160105683101416,
+            "y": 51.693329884941924
+          },
+          {
+            "x": 5.159919204819921,
+            "y": 51.692915647727986
+          },
+          {
+            "x": 5.15955397801061,
+            "y": 51.69202662017264
+          },
+          {
+            "x": 5.159180691957394,
+            "y": 51.69102302470422
+          },
+          {
+            "x": 5.15893584300254,
+            "y": 51.69000431691755
+          },
+          {
+            "x": 5.158731633331019,
+            "y": 51.68915553924851
+          },
+          {
+            "x": 5.158584298754361,
+            "y": 51.68830204428902
+          },
+          {
+            "x": 5.158275751608179,
+            "y": 51.68651514795286
+          },
+          {
+            "x": 5.158185099946633,
+            "y": 51.684719020859674
+          },
+          {
+            "x": 5.158139514363408,
+            "y": 51.682703973825696
+          },
+          {
+            "x": 5.158205481692624,
+            "y": 51.680689144430076
+          },
+          {
+            "x": 5.158314282991059,
+            "y": 51.67889340601749
+          },
+          {
+            "x": 5.158640812470307,
+            "y": 51.677107747778955
+          },
+          {
+            "x": 5.158796718470524,
+            "y": 51.676254843163804
+          },
+          {
+            "x": 5.159009421112913,
+            "y": 51.6754068767368
+          },
+          {
+            "x": 5.159264443946353,
+            "y": 51.67438892100279
+          },
+          {
+            "x": 5.159647671794493,
+            "y": 51.67338701386549
+          },
+          {
+            "x": 5.160021662193236,
+            "y": 51.67249941924339
+          },
+          {
+            "x": 5.160212205942741,
+            "y": 51.6720859119905
+          },
+          {
+            "x": 5.160445936536307,
+            "y": 51.67168126588028
+          },
+          {
+            "x": 5.16071722402738,
+            "y": 51.671211296764724
+          },
+          {
+            "x": 5.161064463841032,
+            "y": 51.670761004397974
+          },
+          {
+            "x": 5.161322001691905,
+            "y": 51.67042728376817
+          },
+          {
+            "x": 5.161669894883023,
+            "y": 51.670126873004655
+          },
+          {
+            "x": 5.1620310713508974,
+            "y": 51.66981573384277
+          },
+          {
+            "x": 5.162538071582888,
+            "y": 51.66959660205429
+          }
+        ],
+        "fillType": {
+          "paint": {
+            "mode": false,
+            "color1": 2113928960,
+            "name": "mal-geel"
+          }
+        },
+        "color": "#FFFF00",
+        "lineType": {
+          "name": "Solid"
+        },
+        "lineWidth": 1.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners16_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "7254a3ce-6918-48cb-9eb1-85353ec7cf71",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 41,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Img",
+      "entity": {
+        "transform": {
+          "m00": -1.0000000002946818,
+          "m10": 1.2246467995082344E-16,
+          "m01": 1.224646798786472E-16,
+          "m11": 0.9999999997053182
+        },
+        "plotLocalFileSystemLastPartOfDownloadUrl": "2",
+        "downloadLocation": "/DownloadFile?imageid\u003d4D7AQQM7NP2093JX1POE0FD3W7FF0B",
+        "lowerLeft": {
+          "x": 4.6645758778195825,
+          "y": 51.8332421536774
+        },
+        "upperRight": {
+          "x": 4.669245166744547,
+          "y": 51.836192754794695
+        },
+        "alpha": 1.0,
+        "id": "eaa7e947-bd7d-4062-ba2b-bad703cf66d4",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    },
+    {
+      "entityIdentifier": "Img",
+      "entity": {
+        "transform": {
+          "m00": -1.0000000001420948,
+          "m10": 1.2246467993213693E-16,
+          "m01": 1.224646798973337E-16,
+          "m11": 0.999999999857905
+        },
+        "plotLocalFileSystemLastPartOfDownloadUrl": "5",
+        "downloadLocation": "/DownloadFile?imageid\u003d4D7AR2FKGPL093JX1P8UGPU52YLFA9",
+        "lowerLeft": {
+          "x": 5.165492785520914,
+          "y": 51.694515248703375
+        },
+        "upperRight": {
+          "x": 5.170180421657726,
+          "y": 51.69744592863968
+        },
+        "alpha": 1.0,
+        "id": "4191a8ec-2680-4ac0-b607-3cdb0d1740ee",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": -1
+      }
+    }
+  ]
+}

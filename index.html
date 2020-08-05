@@ -19,12 +19,16 @@
         <table style="width: 100%">
             <tr>
                 <td>
+                    <button onclick="doConversion();">Convert</button>
+                    <p id="message" style="border: 1px solid black; padding: 2px; font-weight: bold">...</p>
                     <p>
                         <script>
                             function doConversion() {
+                                console.clear();
                                 const input = document.getElementById('input').value;
                                 const result = PlotConverter.convert(input, console.log);
                                 console.log(result);
+                                document.getElementById('message').innerText = result.message;
                                 const outputEl = document.getElementById('output');
                                 const testEl = document.getElementsByTagName('lcms-test')[0];
                                 if (!result.succeeded) {
@@ -39,18 +43,59 @@
 
                             window.addEventListener('load', () => {
                                 console.log(PlotConverter.hello());
-                                fetch('test.json').then(r => r.text().then(text => {
+
+                                const testdata = [
+                                    'test',
+                                    'boog',
+                                    'cirkels',
+                                    'curve',
+                                    'lijnen',
+                                    'pijlen',
+                                    'polylijn',
+                                    'rechthoeken',
+                                    'schets',
+                                    'symbolen',
+                                    'tekst',
+                                    'vuurhaard',
+                                    'sectormal',
+                                    'gasmallen',
+                                ];
+
+                                const selected = window.sessionStorage.getItem('testfile') || testdata[0];
+                                const select = document.getElementById('testfiles');
+                                testdata.forEach(t => {
+                                    const option = document.createElement('option');
+                                    option.value = t;
+                                    option.innerText = t;
+                                    if (t === selected) {
+                                        option.selected = 'selected';
+                                    }
+                                    select.append(option);
+                                });
+
+                                loadfile();
+/*                                fetch(`testdata/${selected}.json`).then(r => r.text().then(text => {
+                                    document.getElementById('input').value = text;
+                                    doConversion();
+                                }));*/
+                            });
+
+                            function loadfile() {
+                                const selected = document.getElementById('testfiles').value;
+                                window.sessionStorage.setItem('testfile', selected);
+
+                                fetch(`testdata/${selected}.json`).then(r => r.text().then(text => {
                                     document.getElementById('input').value = text;
                                     doConversion();
                                 }));
-                            });
+
+                            }
                         </script>
                     </p>
-                    <button onclick="doConversion();">Convert</button>
                     <p>
                         Input JSON:<br>
+                        <p><select id="testfiles" onchange="loadfile();"></select></p>
                         <textarea id="input" cols="80" rows="10"></textarea>
-
                     </p>
                     <textarea readonly id="output" cols="80" rows="10"></textarea>
                 </td>
