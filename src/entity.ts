@@ -8,7 +8,7 @@ import {
     RectangleEntity, SymbolEntity, Transform
 } from "./in.models";
 import {coordinateToPoint, coordsList, pointsToRD, pointToCoordinate} from "./util";
-import * as turf from '@turf/turf';
+//import * as turf from '@turf/turf';
 
 export type EntityIndex = { [key: string]: ActionLayerEntityBase};
 
@@ -21,8 +21,9 @@ export function convertEntity(entity: ActionLayerEntityBase, entityIndex: Entity
         case 'Rct': return convertRectangle(entity.entity as RectangleEntity, parent);
         case 'Prt': return convertPart(entity.entity as PartEntity, entityIndex);
         case 'Syn': return convertSymbol(entity.entity as SymbolEntity, parent);
-        case 'Img': return [];
-        default: console.log('Unknown entity', entity, parent); throw new Error('Unknown entity identifier: ' + entity.entityIdentifier);
+        default:
+            //console.log('Unknown entity', entity, parent);
+            throw new Error('Unsupported entity: ' + entity.entityIdentifier);
     }
 }
 
@@ -92,6 +93,8 @@ function convertPolyLine(entity: PolyLineEntity, parent?: PartEntity) {
 }
 
 function convertSmoothPolyLine(entity: PolyLineEntity, parent?: PartEntity) {
+    return convertPolyLine(entity, parent);
+    /*
     const line = turf.lineString(entity.pointList.map(pointToCoordinate));
     const curved = turf.bezier(line);
 
@@ -111,7 +114,7 @@ function convertSmoothPolyLine(entity: PolyLineEntity, parent?: PartEntity) {
             label: '',
             ...convertStyle(entity),
         },
-    };
+    };*/
 }
 
 function convertRectangle(entity: RectangleEntity, parent?: PartEntity) {
@@ -139,6 +142,11 @@ function convertRectangle(entity: RectangleEntity, parent?: PartEntity) {
     };
 }
 
+function flatDeep<T>(arr: Array<T>, d = 1): Array<T> {
+    return d > 0 ? arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val), [])
+        : arr.slice();
+}
+
 function convertPart(entity: PartEntity, entityIndex: EntityIndex, parent?: PartEntity) {
     if (!entity.children || entity.children.length === 0) {
         return [];
@@ -149,10 +157,9 @@ function convertPart(entity: PartEntity, entityIndex: EntityIndex, parent?: Part
         return gasMal;
     }
 
-    return entity.children
+    return flatDeep(entity.children
         .map(child => convertEntity(entityIndex[child], entityIndex, entity))
-        .filter(converted => converted != null)
-        .reduce((acc, val) => acc.concat(val), []);
+        .filter(converted => converted != null));
 }
 
 function convertGasMal(entity: PartEntity) {
@@ -255,7 +262,7 @@ function convertSymbol(entity: SymbolEntity, parent?: PartEntity) {
 
     const symbol = symbolMap[entity.symbol.symbolId] || 's0460';
     if (!symbolMap[entity.symbol.symbolId]) {
-        console.log('Unknown symbol ' + entity.symbol.symbolId);
+        throw new Error('Unknown symbol: ' + entity.symbol.symbolId);
     }
 
     const points = pointsToRD([parent.origin]);

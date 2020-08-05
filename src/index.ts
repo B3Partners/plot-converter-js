@@ -1,3 +1,4 @@
+import './polyfills';
 import {ActionLayerEntities, ActionLayerEntityBase} from "./in.models";
 import {convertEntity, EntityIndex} from "./entity";
 
@@ -15,8 +16,9 @@ const err = (message: string): ConversionResult => ({ succeeded: false, message}
 
 export function convert(json: string, log?: (...args: any[]) => void): ConversionResult {
     let input: ActionLayerEntities;
+    let message = "";
     if (!log) {
-        log = () => {};
+        log = (s) => { message += s + "\n" };
     }
     try {
         input = JSON.parse(json);
@@ -32,38 +34,39 @@ export function convert(json: string, log?: (...args: any[]) => void): Conversio
 
     let features: any[] = [];
 
+    let errors = 0;
+    let convertedCount = 0;
     input.topEntityIds.forEach(id=> {
         const entity = entityIndex[id];
         if (!entity) {
-            // TODO add message to log
+            log(`Can't find top entity ID {$id}`);
             return;
         }
         try {
             const converted = convertEntity(entity, entityIndex);
-            if (Array.isArray(converted)) {
-                features = features.concat(converted);
-            } else {
-                features.push(converted);
+            if (converted) {
+                //log(`Converted entity ${entity.entityIdentifier} with ID ${id}`, entity, converted);
+                if (Array.isArray(converted)) {
+                    features = features.concat(converted);
+                } else {
+                    features.push(converted);
+                }
             }
+            convertedCount++;
         } catch(e) {
-            // TODO add message about conversion error
-            log(`Error converting entity ${id}: ${e}`);
+            log(`Error converting entity ${entity.entityIdentifier} with ID ${id}: ${e}`);
+            errors++;
         }
     });
 
-    /*
-    input.entityList.forEach(entity => {
-        try {
-            converted.push(convertEntity(entity));
-        } catch(e) {
-            // TODO add message about conversion error
-            log(`Error converting entity ${entity.entityIdentifier}: ${e}`);
-        }
-    });*/
+    let result = `Converted ${convertedCount} out of ${input.topEntityIds.length} entities resulting in ${features.length} new features, ${errors ? 'errors: ' + errors : 'no errors'}`;
+    if (message !== "") {
+        result = result + ", log:\n" + message.trimRight();
+    }
 
     return {
         succeeded: true,
-        message: 'Aantal top entities: ' + input.topEntityIds.length,
+        message: result,
         output: JSON.stringify(features, null, 2),
     };
 }
