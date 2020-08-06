@@ -16,3 +16,8 @@ export function pointsToRD(points: Point[]): Point[] {
 export function coordsList(points: Point[]): string {
     return points.map(p => p.x + ' ' + p.y).join(',');
 }
+
+export function geoJsonCoordinatesToCoordsList(feature: { geometry: { coordinates: number[][] } }): string {
+    const rdPoints = pointsToRD(feature.geometry.coordinates.map(coordinateToPoint));
+    return coordsList(rdPoints);
+}

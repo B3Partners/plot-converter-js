@@ -1,0 +1,42 @@
+{
+  "version": 20161115,
+  "topEntityIds": [
+    "cd1a9bac-84cf-40b3-a41f-b514f0c8f718"
+  ],
+  "entityList": [
+    {
+      "entityIdentifier": "Arc",
+      "entity": {
+        "type": 0,
+        "point1": {
+          "x": 4.281280537295953,
+          "y": 51.90712197096946
+        },
+        "point2": {
+          "x": 4.317427636579565,
+          "y": 51.93015324613182
+        },
+        "start": 87.18396637713353,
+        "extent": -287.3610587894466,
+        "color": "#000000",
+        "lineType": {
+          "name": "dash_2mm",
+          "dashes": [
+            2.0,
+            2.0
+          ]
+        },
+        "lineWidth": 5.0,
+        "alpha": 1.0,
+        "styleName": "plotStyle_b3partners13_49TZX12C1VA1IAAXFJU36TX1B56DFI",
+        "id": "cd1a9bac-84cf-40b3-a41f-b514f0c8f718",
+        "readOnly": false,
+        "isUser3": false,
+        "isSymbol": false,
+        "zLevel": 1,
+        "attributes": [],
+        "versionId": 1
+      }
+    }
+  ]
+}

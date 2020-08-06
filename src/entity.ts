@@ -3,12 +3,16 @@ import {
     ActionLayerEntityBase,
     ArcEntity,
     FillType,
-    LineEntity, LineType, PartEntity, Point,
+    LineEntity,
+    LineType,
+    PartEntity,
+    Point,
     PolyLineEntity,
-    RectangleEntity, SymbolEntity, Transform
+    RectangleEntity,
+    SymbolEntity,
+    Transform
 } from "./in.models";
-import {coordinateToPoint, coordsList, pointsToRD, pointToCoordinate} from "./util";
-//import * as turf from '@turf/turf';
+import {coordsList, pointsToRD} from "./util";
 
 export type EntityIndex = { [key: string]: ActionLayerEntityBase};
 
@@ -45,31 +49,106 @@ function convertLine(entity: LineEntity, parent?: PartEntity) {
     };
 }
 
-function convertArc(entity: ArcEntity, parent?: PartEntity) {
+function convertArc(entity: ArcEntity, parent?: PartEntity): any {
+
+    if (isCircle(entity)) {
+        return convertCircleArc(entity);
+    } else {
+        return convertEllipseArc(entity);
+    }
+}
+
+function isCircle(entity: { point1: Point, point2: Point}): boolean {
     const points = pointsToRD([entity.point1, entity.point2]);
+    const rx = Math.abs(points[0].x - points[1].x);
+    const ry = Math.abs(points[0].y - points[1].y);
+    return Math.abs(rx-ry) < 0.000001;
+}
 
+function convertCircleArc(entity: ArcEntity): any {
+    const points = pointsToRD([entity.point1, entity.point2]);
+    const midPoint = {
+        x: points[0].x + ((points[1].x - points[0].x) / 2),
+        y: points[0].y + ((points[1].y - points[0].y) / 2),
+    };
+    const radius = Math.abs(points[1].x - points[0].x) / 2;
     if (entity.start === 0 && entity.extent === 360) {
-        const midPoint = {
-            x: points[0].x + ((points[1].x - points[0].x) / 2),
-            y: points[0].y + ((points[1].y - points[0].y) / 2),
-        };
-
         return {
             ...baseEntity(entity),
             geometry: 'POINT(' + coordsList([midPoint]) + ')',
             attributes: {
                 tool: 2,
                 type: 'Circle',
-                radius: Math.abs(points[1].x - points[0].x) / 2,
+                radius,
             },
             style: {
                 label: '',
                 ...convertStyle(entity),
             },
-        }
+        };
     } else {
-        throw new Error('Only full circle arcs supported');
+        const circlePoints: Point[] = [];
+        const startAngle = entity.extent < 360 ? entity.start : 0;
+        const endAngle = entity.extent;
+        const vertices = 64;
+        for (let i = 0; i < vertices; i++) {
+            const angle = startAngle + (i * endAngle / vertices);
+            circlePoints.push({
+                x: midPoint.x + radius * Math.cos(angle * Math.PI/180),
+                y: midPoint.y - radius * Math.sin(angle * Math.PI/180),
+            });
+        }
+        const coords = coordsList(circlePoints);
+
+        return {
+            ...baseEntity(entity),
+            geometry: `LINESTRING(${coords})`,
+            attributes: {
+                tool: 4,
+                type: 'LineString',
+            },
+            style: {
+                label: '',
+                ...convertStyle(entity),
+            },
+        };
     }
+}
+
+function convertEllipseArc(entity: ArcEntity) {
+    const points = pointsToRD([entity.point1, entity.point2]);
+    const midPoint = {
+        x: points[0].x + ((points[1].x - points[0].x) / 2),
+        y: points[0].y + ((points[1].y - points[0].y) / 2),
+    };
+    const rx = Math.abs(points[1].x - points[0].x) / 2;
+    const ry = Math.abs(points[1].y - points[0].y) / 2;
+
+    // TODO start / extent angles
+
+    const vertices = 64;
+    const ellipsePoints: Point[] = [];
+    for (let i = 0; i < vertices; i++) {
+        const t = Math.tan(i * (2 * Math.PI / vertices));
+        ellipsePoints.push({
+            x: midPoint.x + rx * (1 - t ** 2) / (1 + t ** 2),
+            y: midPoint.y + ry * 2 * t / (1 + t **2),
+        })
+    }
+    const coords = coordsList(ellipsePoints);
+
+    return {
+        ...baseEntity(entity),
+        geometry: `LINESTRING(${coords})`,
+        attributes: {
+            tool: 4,
+            type: 'LineString',
+        },
+        style: {
+            label: '',
+            ...convertStyle(entity),
+        },
+    };
 }
 
 function convertPolyLine(entity: PolyLineEntity, parent?: PartEntity) {
