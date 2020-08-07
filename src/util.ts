@@ -13,8 +13,14 @@ export function pointsToRD(points: Point[]): Point[] {
     return points.map(p => WGS84ToRD(p.y, p.x)).map(coordinateToPoint);
 }
 
-export function coordsList(points: Point[]): string {
-    return points.map(p => p.x + ' ' + p.y).join(',');
+export function coordsList(points: Point[] | any): string {
+    return points.map((p: any) => {
+        if (Array.isArray(p)) {
+            return p[0] + ' ' + p[1];
+        } else {
+            return p.x + ' ' + p.y;
+        }
+    }).join(',');
 }
 
 export function geoJsonCoordinatesToCoordsList(feature: { geometry: { coordinates: number[][] } }): string {

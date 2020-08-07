@@ -12,7 +12,11 @@ import {
     SymbolEntity,
     Transform
 } from "./in.models";
-import {coordsList, pointsToRD} from "./util";
+import {coordinateToPoint, coordsList, pointsToRD, pointToCoordinate} from "./util";
+// @ts-ignore
+import quadratic from 'adaptive-quadratic-curve';
+// @ts-ignore
+import bezier from 'adaptive-bezier-curve';
 
 export type EntityIndex = { [key: string]: ActionLayerEntityBase};
 
@@ -115,7 +119,7 @@ function convertCircleArc(entity: ArcEntity): any {
     }
 }
 
-function convertEllipseArc(entity: ArcEntity) {
+function convertEllipseArc(entity: ArcEntity): any {
     const points = pointsToRD([entity.point1, entity.point2]);
     const midPoint = {
         x: points[0].x + ((points[1].x - points[0].x) / 2),
@@ -124,25 +128,46 @@ function convertEllipseArc(entity: ArcEntity) {
     const rx = Math.abs(points[1].x - points[0].x) / 2;
     const ry = Math.abs(points[1].y - points[0].y) / 2;
 
-    // TODO start / extent angles
+    if (entity.extent < entity.start) {
+        const temp = entity.extent;
+        entity.extent = entity.start;
+        entity.start = temp;
+    }
 
     const vertices = 64;
     const ellipsePoints: Point[] = [];
     for (let i = 0; i < vertices; i++) {
-        const t = Math.tan(i * (2 * Math.PI / vertices));
-        ellipsePoints.push({
-            x: midPoint.x + rx * (1 - t ** 2) / (1 + t ** 2),
-            y: midPoint.y + ry * 2 * t / (1 + t **2),
-        })
+        const angle = i * 360 / vertices;
+        if(angle >= entity.start && angle <= entity.extent) {
+            const t = Math.tan(i * (2 * Math.PI / vertices));
+            ellipsePoints.push({
+                x: midPoint.x + rx * (1 - t ** 2) / (1 + t ** 2),
+                y: midPoint.y + ry * 2 * t / (1 + t ** 2),
+            });
+        }
+    }
+
+    if(ellipsePoints.length === 0) {
+        return [];
     }
     const coords = coordsList(ellipsePoints);
+    const isClosed = Math.abs(entity.start % 360) === Math.abs(entity.extent % 360);
+
+    if (isClosed) {
+        const isClosedPolygon = ellipsePoints[0].x === ellipsePoints[ellipsePoints.length - 1].x &&
+            ellipsePoints[0].y === ellipsePoints[ellipsePoints.length - 1].y;
+
+        if (!isClosedPolygon) {
+            ellipsePoints.push(ellipsePoints[0]);
+        }
+    }
 
     return {
         ...baseEntity(entity),
-        geometry: `LINESTRING(${coords})`,
+        geometry: isClosed ? `POLYGON((${coords}))` : `LINESTRING(${coords})`,
         attributes: {
-            tool: 4,
-            type: 'LineString',
+            tool: isClosed? 3 : 4,
+            type: isClosed ? 'Polygon' : 'LineString',
         },
         style: {
             label: '',
@@ -172,15 +197,30 @@ function convertPolyLine(entity: PolyLineEntity, parent?: PartEntity) {
 }
 
 function convertSmoothPolyLine(entity: PolyLineEntity, parent?: PartEntity) {
-    return convertPolyLine(entity, parent);
-    /*
-    const line = turf.lineString(entity.pointList.map(pointToCoordinate));
-    const curved = turf.bezier(line);
+    const rdCoords = pointsToRD(entity.pointList).map(pointToCoordinate);
 
-    const rdPoints = pointsToRD(curved.geometry.coordinates.map(coordinateToPoint));
-    const coords = coordsList(rdPoints);
+    let idx = 0;
+    const smoothedCoords = [rdCoords[0]];
+    let polygon = false;
+    for(let i = 0; i < entity.typeList.length; i++) {
+        const segmentType = entity.typeList.charAt(i);
 
-    const polygon = entity.typeList.endsWith("4");
+        if (segmentType === '0' || segmentType === '1') {
+            smoothedCoords.push(rdCoords[idx++]);
+        } else if (segmentType === '2') {
+            quadratic(rdCoords[idx - 1], rdCoords[idx], rdCoords[idx + 1], 1, smoothedCoords);
+            idx += 2;
+        } else if (segmentType === '3') {
+            bezier(rdCoords[idx - 1], rdCoords[idx], rdCoords[idx + 1], rdCoords[idx + 2], 1, smoothedCoords);
+            idx += 3;
+        } else if (segmentType === '4') {
+            polygon = true;
+        } else {
+            throw "Unknown segment type in spline: " + segmentType;
+        }
+    }
+
+    const coords = coordsList(smoothedCoords);
 
     return {
         ...baseEntity(entity),
@@ -193,7 +233,7 @@ function convertSmoothPolyLine(entity: PolyLineEntity, parent?: PartEntity) {
             label: '',
             ...convertStyle(entity),
         },
-    };*/
+    };
 }
 
 function convertRectangle(entity: RectangleEntity, parent?: PartEntity) {
