@@ -54,6 +54,7 @@ export function convert(json: string, log?: (...args: any[]) => void): Conversio
             }
             convertedCount++;
         } catch(e) {
+            //console.log(e);
             log(`Error converting entity ${entity.entityIdentifier} with ID ${id}: ${e}`);
             errors++;
         }

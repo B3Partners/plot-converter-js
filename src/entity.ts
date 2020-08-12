@@ -8,7 +8,7 @@ import {
     PartEntity,
     Point, PolyArrowEntity,
     PolyLineEntity,
-    RectangleEntity,
+    RectangleEntity, StrokeTextEntity,
     SymbolEntity,
     Transform
 } from "./in.models";
@@ -30,6 +30,7 @@ export function convertEntity(entity: ActionLayerEntityBase, entityIndex: Entity
         case 'Rct': return convertRectangle(entity.entity as RectangleEntity, parent);
         case 'Prt': return convertPart(entity.entity as PartEntity, entityIndex);
         case 'Syn': return convertSymbol(entity.entity as SymbolEntity, parent);
+        case 'STx': return convertText(entity.entity as StrokeTextEntity, parent);
         default:
             //console.log('Unknown entity', entity, parent);
             throw new Error('Unsupported entity: ' + entity.entityIdentifier);
@@ -222,7 +223,7 @@ function convertPolyArrow(entity: PolyArrowEntity, parent?: PartEntity) {
             ...convertStyle({
                 alpha: entity.alpha,
                 lineType: entity.style.lineType,
-                lineWidth: entity.style.lineWeight,
+                lineWidth: toStrokeWidth(entity.style.lineWeight),
                 color: hexColor(entity.style.color),
             }),
             arrow,
@@ -442,12 +443,55 @@ function convertSymbol(entity: SymbolEntity, parent?: PartEntity) {
     };
 }
 
+function convertText(entity: StrokeTextEntity, parent?: PartEntity) {
+    const points = pointsToRD([parent && parent.origin ? parent.origin: entity.origin]);
+    const scaleFeature = !(parent && parent.pixelScale);
+    let textAlign = 'center';
+    let textBaseline = 'middle';
+    if ([1, 4, 7].indexOf(entity.style.reference) !== -1) {
+        textAlign = 'left';
+    }
+    if ([3, 6, 9].indexOf(entity.style.reference) !== -1) {
+        textAlign = 'right'
+    }
+    if ([1, 2, 3].indexOf(entity.style.reference) !== -1) {
+        textBaseline = 'bottom';
+    }
+    if ([7, 8, 9].indexOf(entity.style.reference) !== -1) {
+        textBaseline = 'top';
+    }
+
+    return {
+        ...baseEntity(entity),
+        name: entity.text,
+        geometry: `POINT(${coordsList(points)})`,
+        attributes: {
+            tool: 1,
+            type: 'Point',
+            scaleFeature,
+        },
+        style: {
+            label: entity.text,
+            fontSize: scaleFeature ? entity.style.characterSize * 30 : entity.style.characterSize * 1.5,
+            halo: '',
+            showLabel: true,
+            textColor: entity.style.characterColor,
+            textBackgroundFill: entity.style.balloonType !== 0 ? entity.style.balloonFillType ? hexColor(entity.style.balloonFillType.paint.color1) : '' : '',
+            textBackgroundStroke: entity.style.balloonType !== 0 ? entity.style.balloonColor : '',
+            textBackgroundStrokeWidth: entity.style.balloonLineWidth * 20,
+            textAlign,
+            textBaseline,
+            rotation: 360 - entity.textAngle * 180/Math.PI,
+        }
+    };
+}
+
 function baseEntity(entity: ActionLayerEntity) {
     return {
         id: entity.id,
         name: entity.id,
         showInLegend: false,
-        zIndex: entity.zLevel,
+        zIndex: -entity.zLevel,
     };
 }
 
@@ -472,7 +516,7 @@ function convertStyle(entity: {fillType?: FillType, lineType?: LineType, lineWid
         strokeColor: entity.color,
         strokeOpacity: entity.alpha,
         strokeType: 0,
-        strokeWidth: entity.lineWidth,
+        strokeWidth: toStrokeWidth(entity.lineWidth),
     };
     if (entity.lineType && entity.lineType.name) {
         const lineTypeName = entity.lineType.name;
@@ -486,5 +530,9 @@ function convertStyle(entity: {fillType?: FillType, lineType?: LineType, lineWid
 }
 
 function hexColor(color: number) {
-    return (color & 0xffffff).toString(16).padStart(6,'0');
+    return '#'+ (color & 0xffffff).toString(16).padStart(6,'0');
+}
+
+function toStrokeWidth(width: number) {
+    return Math.max(1, width * 1.5)
 }

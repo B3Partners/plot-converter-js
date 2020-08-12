@@ -74,6 +74,34 @@ export interface PolyArrowEntity extends ActionLayerEntity {
     };
 }
 
+export interface StrokeTextEntity extends ActionLayerEntity {
+    text: string;
+    textOrigin: Point;
+    textAngle: number;
+    origin: Point;
+    alpha: number;
+    style: {
+        styleName: string;
+        characterColor: string;
+        characterLine: number;
+        characterSize: number;
+        characterSlant: number;
+        characterAngle: number;
+        relativeWidth: number;
+        relativeSpacing: number;
+        relativeLineDistance: number;
+        monoSpacing: boolean;
+        reference: number;
+        balloonType: number;
+        balloonLineWidth: number;
+        balloonColor: string;
+        balloonRadius: number;
+        includeReferencePointer: boolean;
+        balloonFillType: FillType;
+        strokeFontName: string;
+    }
+}
+
 export interface RectangleEntity extends ActionLayerEntity {
     point1: Point;
     point2: Point;
