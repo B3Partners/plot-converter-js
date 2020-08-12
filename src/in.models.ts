@@ -58,6 +58,22 @@ export interface PolyLineEntity extends ActionLayerEntity {
     fillType: FillType;
 }
 
+export interface PolyArrowEntity extends ActionLayerEntity {
+    pointList: Point[];
+    alpha: number;
+    style: {
+        name: string;
+        color: number;
+        lineType: LineType,
+        lineWeight: number;
+        arrowWidth: number;
+        arrowLength: number;
+        arrowType: number;
+        arrowStart: boolean;
+        arrowEnd: boolean;
+    };
+}
+
 export interface RectangleEntity extends ActionLayerEntity {
     point1: Point;
     point2: Point;

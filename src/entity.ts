@@ -6,7 +6,7 @@ import {
     LineEntity,
     LineType,
     PartEntity,
-    Point,
+    Point, PolyArrowEntity,
     PolyLineEntity,
     RectangleEntity,
     SymbolEntity,
@@ -25,6 +25,7 @@ export function convertEntity(entity: ActionLayerEntityBase, entityIndex: Entity
         case 'Lne': return convertLine(entity.entity as LineEntity, parent);
         case 'Arc': return convertArc(entity.entity as ArcEntity, parent);
         case 'PLn': return convertPolyLine(entity.entity as PolyLineEntity, parent);
+        case 'PAr': return convertPolyArrow(entity.entity as PolyArrowEntity, parent);
         case 'Spl': return convertSmoothPolyLine(entity.entity as PolyLineEntity, parent);
         case 'Rct': return convertRectangle(entity.entity as RectangleEntity, parent);
         case 'Prt': return convertPart(entity.entity as PartEntity, entityIndex);
@@ -192,6 +193,39 @@ function convertPolyLine(entity: PolyLineEntity, parent?: PartEntity) {
         style: {
             label: '',
             ...convertStyle(entity),
+        },
+    };
+}
+
+function convertPolyArrow(entity: PolyArrowEntity, parent?: PartEntity) {
+    const rdPoints = pointsToRD(entity.pointList);
+    const coords = coordsList(rdPoints);
+
+    let arrow = 0;
+    if (entity.style.arrowStart && entity.style.arrowEnd) {
+        arrow = 3;
+    } else if (entity.style.arrowStart) {
+        arrow = 1;
+    } else if (entity.style.arrowEnd) {
+        arrow = 2;
+    }
+
+    return {
+        ...baseEntity(entity),
+        geometry: `LINESTRING(${coords})`,
+        attributes: {
+            tool: 4,
+            type: 'LineString',
+        },
+        style: {
+            label: '',
+            ...convertStyle({
+                alpha: entity.alpha,
+                lineType: entity.style.lineType,
+                lineWidth: entity.style.lineWeight,
+                color: hexColor(entity.style.color),
+            }),
+            arrow,
         },
     };
 }
@@ -433,7 +467,7 @@ function convertStyle(entity: {fillType?: FillType, lineType?: LineType, lineWid
     let style = {
         fillOpacity: entity.fillType ? 0.5 : 0,
         fillColor: entity.fillType && entity.fillType.paint && entity.fillType.paint.color1
-            ? (entity.fillType.paint.color1 & 0xffffff).toString(16).padStart(6,'0') :
+            ? hexColor(entity.fillType.paint.color1) :
             '',
         strokeColor: entity.color,
         strokeOpacity: entity.alpha,
@@ -449,4 +483,8 @@ function convertStyle(entity: {fillType?: FillType, lineType?: LineType, lineWid
         }
     }
     return style;
+}
+
+function hexColor(color: number) {
+    return (color & 0xffffff).toString(16).padStart(6,'0');
 }
