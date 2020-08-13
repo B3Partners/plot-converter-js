@@ -5,6 +5,8 @@ import {convertEntity, EntityIndex} from "./entity";
 interface ConversionResult {
     succeeded: boolean;
     message: string;
+    errors: number;
+    featureCount: number;
     output?: string;
 }
 
@@ -12,7 +14,7 @@ export function hello(): string {
     return "PlotConverter works!";
 }
 
-const err = (message: string): ConversionResult => ({ succeeded: false, message});
+const err = (message: string): ConversionResult => ({ succeeded: false, message, errors: 1, featureCount: 0});
 
 export function convert(json: string, log?: (...args: any[]) => void): ConversionResult {
     let input: ActionLayerEntities;
@@ -68,6 +70,8 @@ export function convert(json: string, log?: (...args: any[]) => void): Conversio
     return {
         succeeded: true,
         message: result,
+        errors,
+        featureCount: features.length,
         output: JSON.stringify(features, null, 2),
     };
 }
