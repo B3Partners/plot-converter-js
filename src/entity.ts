@@ -478,7 +478,7 @@ function convertText(entity: StrokeTextEntity, parent?: PartEntity) {
             textColor: entity.style.characterColor,
             textBackgroundFill: entity.style.balloonType !== 0 ? entity.style.balloonFillType ? hexColor(entity.style.balloonFillType.paint.color1) : '' : '',
             textBackgroundStroke: entity.style.balloonType !== 0 ? entity.style.balloonColor : '',
-            textBackgroundStrokeWidth: entity.style.balloonLineWidth * 20,
+            textBackgroundStrokeWidth: toStrokeWidth(entity.style.balloonLineWidth),
             textAlign,
             textBaseline,
             rotation: 360 - entity.textAngle * 180/Math.PI,
