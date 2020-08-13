@@ -118,6 +118,8 @@ export interface SymbolEntity extends ActionLayerEntity {
         transform: Transform;
         symbolId: string;
         alpha: number;
+        lowerLeft?: Point;
+        upperRight?: Point;
     },
     text: {
         text: string;

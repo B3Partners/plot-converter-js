@@ -410,16 +410,21 @@ const symbolMap: { [key: string]: string} = {
 }
 
 function convertSymbol(entity: SymbolEntity, parent?: PartEntity) {
-    if (!parent) {
+    if (!parent || !(!parent.origin || !entity.symbol.lowerLeft)) {
         return null;
     }
-
+    const scaleFeature = !(parent && parent.pixelScale);
     const symbol = symbolMap[entity.symbol.symbolId] || 's0460';
     if (!symbolMap[entity.symbol.symbolId]) {
         throw new Error('Unknown symbol: ' + entity.symbol.symbolId);
     }
 
-    const points = pointsToRD([parent.origin]);
+    const point = parent.origin ? parent.origin :
+        {
+            x: (entity.symbol.upperRight.x + entity.symbol.lowerLeft.x) / 2,
+            y: (entity.symbol.upperRight.y + entity.symbol.lowerLeft.y) / 2,
+        };
+    const points = pointsToRD([point]);
     return {
         ...baseEntity(entity),
         name: parent.name,
@@ -427,7 +432,7 @@ function convertSymbol(entity: SymbolEntity, parent?: PartEntity) {
         attributes: {
             tool: 5,
             type: 'Point',
-            scaleFeature: false,
+            scaleFeature,
             symbol,
         },
         style: {
