@@ -313,9 +313,14 @@ function convertPart(entity: PartEntity, entityIndex: EntityIndex, parent?: Part
         return [];
     }
 
-    const gasMal = convertGasMal(entity, parent);
+    /*const gasMal = convertGasMal(entity, parent);
     if (gasMal) {
         return gasMal;
+    }*/
+
+    const vuurhaard = convertVuurhaard(entity, parent);
+    if (vuurhaard) {
+        return vuurhaard;
     }
 
     return flatDeep(entity.children
@@ -356,6 +361,55 @@ function convertGasMal(entity: PartEntity, parent?: PartEntity) {
             malNumber: nummer,
         },
         style: {
+            label: '',
+            fillOpacity: 0,
+            fillColor: '',
+            strokeColor: '',
+            strokeOpacity: 0,
+            strokeType: 0,
+            strokeWidth: 0,
+        },
+    };
+}
+
+function convertVuurhaard(entity: PartEntity, parent?: PartEntity) {
+    const vuurhaardAttribute = entity.attributes.find(a => a.name === 'VuurHaard');
+    if (!vuurhaardAttribute) {
+        return null;
+    }
+
+    const attr = (name: string) => {
+        const attr = vuurhaardAttribute.attributeItems.find((ai: { name: string; attributeValue: string }) => ai.name === name);
+        return attr ? attr.attributeValue : null;
+    }
+
+    const snelheid = Number(attr('Snelheid'));
+    const hoek = Number(attr('Hoek'));
+    const lat = Number(attr('originLat'));
+    const lon = Number(attr('originLon'));
+
+    if (lat === 0 && lon === 0) {
+        return null;
+    }
+
+    const points = pointsToRD([{x: lon, y: lat}]);
+    return {
+        ...baseEntity(entity, parent),
+        geometry: `POINT(${coordsList(points)})`,
+        attributes: {
+            tool: 7,
+            type: 'MultiPolygon',
+            windDirection: hoek,
+            windSpeed: snelheid,
+        },
+        style: {
+            label: '',
+            fillOpacity: 0,
+            fillColor: '',
+            strokeColor: '',
+            strokeOpacity: 0,
+            strokeType: 0,
+            strokeWidth: 0,
         },
     };
 }
