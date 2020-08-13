@@ -6,13 +6,15 @@ import {
     LineEntity,
     LineType,
     PartEntity,
-    Point, PolyArrowEntity,
+    Point,
+    PolyArrowEntity,
     PolyLineEntity,
-    RectangleEntity, StrokeTextEntity,
+    RectangleEntity,
+    StrokeTextEntity,
     SymbolEntity,
     Transform
 } from "./in.models";
-import {coordinateToPoint, coordsList, pointsToRD, pointToCoordinate} from "./util";
+import {coordsList, pointsToRD, pointToCoordinate, toHexColor, toStrokeWidth} from "./util";
 // @ts-ignore
 import quadratic from 'adaptive-quadratic-curve';
 // @ts-ignore
@@ -224,7 +226,7 @@ function convertPolyArrow(entity: PolyArrowEntity, parent?: PartEntity) {
                 alpha: entity.alpha,
                 lineType: entity.style.lineType,
                 lineWidth: toStrokeWidth(entity.style.lineWeight),
-                color: hexColor(entity.style.color),
+                color: toHexColor(entity.style.color),
             }),
             arrow,
         },
@@ -481,7 +483,7 @@ function convertText(entity: StrokeTextEntity, parent?: PartEntity) {
             halo: '',
             showLabel: true,
             textColor: entity.style.characterColor,
-            textBackgroundFill: entity.style.balloonType !== 0 ? entity.style.balloonFillType ? hexColor(entity.style.balloonFillType.paint.color1) : '' : '',
+            textBackgroundFill: entity.style.balloonType !== 0 ? entity.style.balloonFillType ? toHexColor(entity.style.balloonFillType.paint.color1) : '' : '',
             textBackgroundStroke: entity.style.balloonType !== 0 ? entity.style.balloonColor : '',
             textBackgroundStrokeWidth: toStrokeWidth(entity.style.balloonLineWidth),
             textAlign,
@@ -516,7 +518,7 @@ function convertStyle(entity: {fillType?: FillType, lineType?: LineType, lineWid
     let style = {
         fillOpacity: entity.fillType ? 0.5 : 0,
         fillColor: entity.fillType && entity.fillType.paint && entity.fillType.paint.color1
-            ? hexColor(entity.fillType.paint.color1) :
+            ? toHexColor(entity.fillType.paint.color1) :
             '',
         strokeColor: entity.color,
         strokeOpacity: entity.alpha,
@@ -532,12 +534,4 @@ function convertStyle(entity: {fillType?: FillType, lineType?: LineType, lineWid
         }
     }
     return style;
-}
-
-function hexColor(color: number) {
-    return '#'+ (color & 0xffffff).toString(16).padStart(6,'0');
-}
-
-function toStrokeWidth(width: number) {
-    return Math.max(1, width * 1.5)
 }

@@ -27,3 +27,12 @@ export function geoJsonCoordinatesToCoordsList(feature: { geometry: { coordinate
     const rdPoints = pointsToRD(feature.geometry.coordinates.map(coordinateToPoint));
     return coordsList(rdPoints);
 }
+
+export function toHexColor(color: number) {
+    const s = (color & 0xffffff).toString(16);
+    return '#' + '0'.repeat(6 - s.length) + s;
+}
+
+export function toStrokeWidth(width: number) {
+    return Math.max(1, width * 1.5)
+}
