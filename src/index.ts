@@ -56,8 +56,11 @@ export function convert(json: string, log?: (...args: any[]) => void): Conversio
             }
             convertedCount++;
         } catch(e) {
-            //console.log(e);
-            log(`Error converting entity ${entity.entityIdentifier} with ID ${id}: ${e}`);
+            if(e.message.indexOf('Unsupported entity') === -1 && typeof console !== 'undefined') {
+                console.log(`Error converting entity ${entity.entityIdentifier} with ID ${id}: ${e}`, entity, e);
+            } else {
+                log(`Error converting entity ${entity.entityIdentifier} with ID ${id}: ${e}`);
+            }
             errors++;
         }
     });
