@@ -22,20 +22,25 @@ import bezier from 'adaptive-bezier-curve';
 
 export type EntityIndex = { [key: string]: ActionLayerEntityBase};
 
-export function convertEntity(entity: ActionLayerEntityBase, entityIndex: EntityIndex, parent?: PartEntity): any {
-    switch(entity.entityIdentifier) {
-        case 'Lne': return convertLine(entity.entity as LineEntity, parent);
-        case 'Arc': return convertArc(entity.entity as ArcEntity, parent);
-        case 'PLn': return convertPolyLine(entity.entity as PolyLineEntity, parent);
-        case 'PAr': return convertPolyArrow(entity.entity as PolyArrowEntity, parent);
-        case 'Spl': return convertSmoothPolyLine(entity.entity as PolyLineEntity, parent);
-        case 'Rct': return convertRectangle(entity.entity as RectangleEntity, parent);
-        case 'Prt': return convertPart(entity.entity as PartEntity, entityIndex);
-        case 'Syn': return convertSymbol(entity.entity as SymbolEntity, parent);
-        case 'STx': return convertText(entity.entity as StrokeTextEntity, parent);
-        default:
-            //console.log('Unknown entity', entity, parent);
-            throw new Error('Unsupported entity: ' + entity.entityIdentifier);
+export type LogFunction = (...args: any[]) => void;
+
+export function convertEntity(entity: ActionLayerEntityBase, entityIndex: EntityIndex, parent?: PartEntity, log?: LogFunction): any {
+    try {
+        switch (entity.entityIdentifier) {
+            case 'Lne': return convertLine(entity.entity as LineEntity, parent);
+            case 'Arc': return convertArc(entity.entity as ArcEntity, parent);
+            case 'PLn': return convertPolyLine(entity.entity as PolyLineEntity, parent);
+            case 'PAr': return convertPolyArrow(entity.entity as PolyArrowEntity, parent);
+            case 'Spl': return convertSmoothPolyLine(entity.entity as PolyLineEntity, parent);
+            case 'Rct': return convertRectangle(entity.entity as RectangleEntity, parent);
+            case 'Prt': return convertPart(entity.entity as PartEntity, entityIndex, parent, log);
+            case 'Syn': return convertSymbol(entity.entity as SymbolEntity, parent);
+            case 'STx': return convertText(entity.entity as StrokeTextEntity, parent);
+            default:
+                throw new Error('Unsupported entity: ' + entity.entityIdentifier);
+        }
+    } catch(e) {
+        log(`Error converting ${entity.entityIdentifier} entity ${entity.entity.id}: ${e.message}`, e, entity);
     }
 }
 
@@ -43,7 +48,7 @@ function convertLine(entity: LineEntity, parent?: PartEntity) {
     const points = pointsToRD([entity.point1, entity.point2]);
 
     return {
-        ...baseEntity(entity),
+        ...baseEntity(entity, parent),
         geometry: 'LINESTRING(' + coordsList(points) + ')',
         attributes: {
             tool: 4,
@@ -73,7 +78,7 @@ function isCircle(entity: { point1: Point, point2: Point}): boolean {
     return Math.abs(rx-ry) < 0.000001;
 }
 
-function convertCircleArc(entity: ArcEntity): any {
+function convertCircleArc(entity: ArcEntity, parent?: PartEntity): any {
     const points = pointsToRD([entity.point1, entity.point2]);
     const midPoint = {
         x: points[0].x + ((points[1].x - points[0].x) / 2),
@@ -82,7 +87,7 @@ function convertCircleArc(entity: ArcEntity): any {
     const radius = Math.abs(points[1].x - points[0].x) / 2;
     if (entity.start === 0 && entity.extent === 360) {
         return {
-            ...baseEntity(entity),
+            ...baseEntity(entity, parent),
             geometry: 'POINT(' + coordsList([midPoint]) + ')',
             attributes: {
                 tool: 2,
@@ -109,7 +114,7 @@ function convertCircleArc(entity: ArcEntity): any {
         const coords = coordsList(circlePoints);
 
         return {
-            ...baseEntity(entity),
+            ...baseEntity(entity, parent),
             geometry: `LINESTRING(${coords})`,
             attributes: {
                 tool: 4,
@@ -123,7 +128,7 @@ function convertCircleArc(entity: ArcEntity): any {
     }
 }
 
-function convertEllipseArc(entity: ArcEntity): any {
+function convertEllipseArc(entity: ArcEntity, parent?: PartEntity): any {
     const points = pointsToRD([entity.point1, entity.point2]);
     const midPoint = {
         x: points[0].x + ((points[1].x - points[0].x) / 2),
@@ -167,7 +172,7 @@ function convertEllipseArc(entity: ArcEntity): any {
     }
 
     return {
-        ...baseEntity(entity),
+        ...baseEntity(entity, parent),
         geometry: isClosed ? `POLYGON((${coords}))` : `LINESTRING(${coords})`,
         attributes: {
             tool: isClosed? 3 : 4,
@@ -187,7 +192,7 @@ function convertPolyLine(entity: PolyLineEntity, parent?: PartEntity) {
     const coords = coordsList(rdPoints);
 
     return {
-        ...baseEntity(entity),
+        ...baseEntity(entity, parent),
         geometry: polygon ? `POLYGON((${coords}))` : `LINESTRING(${coords})`,
         attributes: {
             tool: polygon ? 3 : 4,
@@ -214,7 +219,7 @@ function convertPolyArrow(entity: PolyArrowEntity, parent?: PartEntity) {
     }
 
     return {
-        ...baseEntity(entity),
+        ...baseEntity(entity, parent),
         geometry: `LINESTRING(${coords})`,
         attributes: {
             tool: 4,
@@ -260,7 +265,7 @@ function convertSmoothPolyLine(entity: PolyLineEntity, parent?: PartEntity) {
     const coords = coordsList(smoothedCoords);
 
     return {
-        ...baseEntity(entity),
+        ...baseEntity(entity, parent),
         geometry: polygon ? `POLYGON((${coords}))` : `LINESTRING(${coords})`,
         attributes: {
             tool: polygon ? 3 : 4,
@@ -285,7 +290,7 @@ function convertRectangle(entity: RectangleEntity, parent?: PartEntity) {
         points[0],
     ]);
     return {
-        ...baseEntity(entity),
+        ...baseEntity(entity, parent),
         geometry: `POLYGON((${coordsList(polygonPoints)}))`,
         attributes: {
             tool: 3,
@@ -303,28 +308,31 @@ function flatDeep<T>(arr: Array<T>, d = 1): Array<T> {
         : arr.slice();
 }
 
-function convertPart(entity: PartEntity, entityIndex: EntityIndex, parent?: PartEntity) {
+function convertPart(entity: PartEntity, entityIndex: EntityIndex, parent?: PartEntity, log?: LogFunction) {
     if (!entity.children || entity.children.length === 0) {
         return [];
     }
 
-    const gasMal = convertGasMal(entity);
+    const gasMal = convertGasMal(entity, parent);
     if (gasMal) {
         return gasMal;
     }
 
     return flatDeep(entity.children
-        .map(child => convertEntity(entityIndex[child], entityIndex, entity))
+        .map(child => convertEntity(entityIndex[child], entityIndex, entity, log))
         .filter(converted => converted != null));
 }
 
-function convertGasMal(entity: PartEntity) {
+function convertGasMal(entity: PartEntity, parent?: PartEntity) {
     const gasMalAttribute = entity.attributes.find(a => a.name === 'GasMal');
     if (!gasMalAttribute) {
         return null;
     }
 
-    const attr = (name: string) => gasMalAttribute.attributeItems.find((ai: { name: string; attributeValue: string }) => ai.name === name).attributeValue;
+    const attr = (name: string) => {
+        const attr = gasMalAttribute.attributeItems.find((ai: { name: string; attributeValue: string }) => ai.name === name);
+        return attr ? attr.attributeValue : null;
+    }
 
     const nummer = Number(attr('Nummer'));
     const kleur = attr('Kleur');
@@ -332,9 +340,13 @@ function convertGasMal(entity: PartEntity) {
     const lat = Number(attr('originLat'));
     const lon = Number(attr('originLon'));
 
+    if (lat === 0 && lon === 0) {
+        return null;
+    }
+
     const points = pointsToRD([{x: lon, y: lat}]);
     return {
-        ...baseEntity(entity),
+        ...baseEntity(entity, parent),
         geometry: `POINT(${coordsList(points)})`,
         attributes: {
             tool: 8,
@@ -428,7 +440,7 @@ function convertSymbol(entity: SymbolEntity, parent?: PartEntity) {
         };
     const points = pointsToRD([point]);
     return {
-        ...baseEntity(entity),
+        ...baseEntity(entity, parent),
         name: parent.name,
         geometry: `POINT(${coordsList(points)})`,
         attributes: {
@@ -469,7 +481,7 @@ function convertText(entity: StrokeTextEntity, parent?: PartEntity) {
     }
 
     return {
-        ...baseEntity(entity),
+        ...baseEntity(entity, parent),
         name: entity.text,
         geometry: `POINT(${coordsList(points)})`,
         attributes: {
@@ -493,12 +505,12 @@ function convertText(entity: StrokeTextEntity, parent?: PartEntity) {
     };
 }
 
-function baseEntity(entity: ActionLayerEntity) {
+function baseEntity(entity: ActionLayerEntity, parent?: ActionLayerEntity) {
     return {
         id: entity.id,
         name: entity.id,
         showInLegend: false,
-        zIndex: -entity.zLevel,
+        zIndex: (parent ? parent.zLevel : 0) + entity.zLevel,
     };
 }
 
