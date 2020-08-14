@@ -1,9 +1,9 @@
 # plot-converter-js
 
-To build:
+To install:
 
 ```
-npm run install
+npm install
 ```
 ## Running in a browser
 
