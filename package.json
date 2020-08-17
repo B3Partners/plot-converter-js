@@ -30,7 +30,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "@turf/turf": "^5.1.6",
     "@types/proj4": "^2.5.0",
     "adaptive-bezier-curve": "^1.0.3",
     "adaptive-quadratic-curve": "^1.0.2",
