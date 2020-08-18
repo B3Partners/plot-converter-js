@@ -503,22 +503,28 @@ function convertSymbol(entity: SymbolEntity, parent?: PartEntity) {
             scaleFeature,
             symbol,
         },
-        style: {
-            label: '',
-            fontSize: 13,
-            halo: '#ffffff',
-            showLabel: false,
-            textColor: '#000000',
-            fillColor: '',
-            fillOpacity: 0.2,
-            strokeColor: '',
-        }
+        style: textStyle(entity.text, scaleFeature),
     };
 }
 
 function convertText(entity: StrokeTextEntity, parent?: PartEntity) {
     const points = pointsToRD([parent && parent.origin ? parent.origin: entity.origin]);
     const scaleFeature = !(parent && parent.pixelScale);
+
+    return {
+        ...baseEntity(entity, parent),
+        name: entity.text,
+        geometry: `POINT(${coordsList(points)})`,
+        attributes: {
+            tool: 1,
+            type: 'Point',
+            scaleFeature,
+        },
+        style: textStyle(entity, scaleFeature),
+    };
+}
+
+function textStyle(entity: StrokeTextEntity, scaleFeature: boolean) {
     let textAlign = 'center';
     let textBaseline = 'middle';
     if ([1, 4, 7].indexOf(entity.style.reference) !== -1) {
@@ -533,29 +539,18 @@ function convertText(entity: StrokeTextEntity, parent?: PartEntity) {
     if ([7, 8, 9].indexOf(entity.style.reference) !== -1) {
         textBaseline = 'top';
     }
-
     return {
-        ...baseEntity(entity, parent),
-        name: entity.text,
-        geometry: `POINT(${coordsList(points)})`,
-        attributes: {
-            tool: 1,
-            type: 'Point',
-            scaleFeature,
-        },
-        style: {
-            label: entity.text,
-            fontSize: scaleFeature ? entity.style.characterSize * 30 : entity.style.characterSize * 1.5,
-            halo: '',
-            showLabel: true,
-            textColor: entity.style.characterColor,
-            textBackgroundFill: entity.style.balloonType !== 0 ? entity.style.balloonFillType ? toHexColor(entity.style.balloonFillType.paint.color1) : '' : '',
-            textBackgroundStroke: entity.style.balloonType !== 0 ? entity.style.balloonColor : '',
-            textBackgroundStrokeWidth: toStrokeWidth(entity.style.balloonLineWidth),
-            textAlign,
-            textBaseline,
-            rotation: 360 - entity.textAngle * 180/Math.PI,
-        }
+        label: entity.text,
+        fontSize: scaleFeature ? entity.style.characterSize * 30 : entity.style.characterSize * 1.5,
+        halo: '',
+        showLabel: true,
+        textColor: entity.style.characterColor,
+        textBackgroundFill: entity.style.balloonType !== 0 ? entity.style.balloonFillType ? toHexColor(entity.style.balloonFillType.paint.color1) : '' : '',
+        textBackgroundStroke: entity.style.balloonType !== 0 ? entity.style.balloonColor : '',
+        textBackgroundStrokeWidth: toStrokeWidth(entity.style.balloonLineWidth),
+        textAlign,
+        textBaseline,
+        rotation: 360 - entity.textAngle * 180/Math.PI,
     };
 }
 

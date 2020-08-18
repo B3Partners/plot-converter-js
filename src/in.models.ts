@@ -121,13 +121,7 @@ export interface SymbolEntity extends ActionLayerEntity {
         lowerLeft?: Point;
         upperRight?: Point;
     },
-    text: {
-        text: string;
-        textOrigin: Point;
-        origin: Point;
-        textAngle: number;
-        style: {}
-    }
+    text: StrokeTextEntity;
 }
 
 export interface PartEntity extends ActionLayerEntity {
