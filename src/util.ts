@@ -30,7 +30,19 @@ export function geoJsonCoordinatesToCoordsList(feature: { geometry: { coordinate
 
 export function toHexColor(color: number) {
     const s = (color & 0xffffff).toString(16);
-    return '#' + '0'.repeat(6 - s.length) + s;
+    return '#' + repeat('0', 6 - s.length) + s;
+}
+
+function repeat(s: string, count: number): string {
+    let str = s;
+    count = Math.floor(count);
+    if (count === 0) {
+        return '';
+    }
+    for(let i = 0; i < count; count++) {
+        str += s;
+    }
+    return str;
 }
 
 export function toStrokeWidth(width: number) {
