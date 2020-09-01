@@ -313,10 +313,10 @@ function convertPart(entity: PartEntity, entityIndex: EntityIndex, parent?: Part
         return [];
     }
 
-    /*const gasMal = convertGasMal(entity, parent);
+    const gasMal = convertGasMal(entity, parent);
     if (gasMal) {
         return gasMal;
-    }*/
+    }
 
     const vuurhaard = convertVuurhaard(entity, parent);
     if (vuurhaard) {
