@@ -353,7 +353,9 @@ function convertGasMal(entity: PartEntity, parent?: PartEntity) {
     }
 
     const nummer = Number(attr('Nummer'));
-    const kleur = attr('Kleur');
+    const startMal = Number(attr('Startmal'));
+    const kleur = startMal === 1 ? 'Start' : attr('Kleur');
+    const kleurInitCap = kleur.charAt(0).toUpperCase() + kleur.substring(1);
     const hoek = Number(attr('Hoek'));
     const lat = Number(attr('originLat'));
     const lon = Number(attr('originLon'));
@@ -370,7 +372,7 @@ function convertGasMal(entity: PartEntity, parent?: PartEntity) {
             tool: 8,
             type: 'Point',
             windDirection: hoek,
-            malColor: kleur,
+            malColor: kleurInitCap,
             malNumber: nummer,
         },
         style: {
