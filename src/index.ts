@@ -1,6 +1,6 @@
 import './polyfills';
 import {ActionLayerEntities, ActionLayerEntityBase} from "./in.models";
-import {convertEntity, EntityIndex, LogFunction} from "./entity";
+import {convertEntity, EntityIndex, LogFunction, resetNameCounters} from "./entity";
 
 export interface ConversionResult {
     succeeded: boolean;
@@ -30,6 +30,8 @@ export function convert(json: string, log?: LogFunction): ConversionResult {
     if(input.version !== 20161115) {
         return err('Unknown version: ' + input.version);
     }
+
+    resetNameCounters();
 
     const entityIndex = indexEntities(input.entityList);
 

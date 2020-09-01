@@ -24,6 +24,19 @@ export type EntityIndex = { [key: string]: ActionLayerEntityBase};
 
 export type LogFunction = (...args: any[]) => void;
 
+let nameCounters: { [key: string]: number } = {};
+
+function getName(prefix: string) {
+    if (!nameCounters[prefix]) {
+        nameCounters[prefix] = 1;
+    }
+    return prefix + ' ' + nameCounters[prefix]++;
+}
+
+export function resetNameCounters() {
+    nameCounters = {};
+}
+
 export function convertEntity(entity: ActionLayerEntityBase, entityIndex: EntityIndex, parent?: PartEntity, log?: LogFunction): any {
     try {
         switch (entity.entityIdentifier) {
@@ -552,15 +565,6 @@ function textStyle(entity: StrokeTextEntity, scaleFeature: boolean) {
         textBaseline,
         rotation: 360 - entity.textAngle * 180/Math.PI,
     };
-}
-
-let nameCounters: { [key: string]: number } = {};
-
-function getName(prefix: string) {
-    if (!nameCounters[prefix]) {
-        nameCounters[prefix] = 1;
-    }
-    return prefix + ' ' + nameCounters[prefix]++;
 }
 
 function baseEntity(name: string, entity: ActionLayerEntity, parent?: ActionLayerEntity) {
