@@ -39,7 +39,7 @@ function repeat(s: string, count: number): string {
     if (count === 0) {
         return '';
     }
-    for(let i = 0; i < count; i++) {
+    for(let i = 0; i < count-1; i++) {
         str += s;
     }
     return str;
