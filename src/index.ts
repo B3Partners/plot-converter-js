@@ -15,7 +15,7 @@ export function hello(): string {
 
 const err = (message: string): ConversionResult => ({ succeeded: false, message, featureCount: 0});
 
-export function convert(json: string, log?: LogFunction): ConversionResult {
+export function convert(json: string, log?: LogFunction, convertGasMalObjects = false): ConversionResult {
     let input: ActionLayerEntities;
     let message = "";
     if (!log) {
@@ -44,7 +44,7 @@ export function convert(json: string, log?: LogFunction): ConversionResult {
             log(`Can't find top entity ID {$id}`);
             return;
         }
-        const converted = convertEntity(entity, entityIndex, null, log);
+        const converted = convertEntity(entity, entityIndex, null, log, convertGasMalObjects);
         if (converted) {
             //log(`Converted entity ${entity.entityIdentifier} with ID ${id}`, entity, converted);
             if (Array.isArray(converted)) {

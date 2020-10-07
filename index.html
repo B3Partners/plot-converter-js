@@ -19,14 +19,15 @@
         <table style="width: 100%">
             <tr>
                 <td>
-                    <button onclick="doConversion();">Convert</button>
+                    <button onclick="doConversion();">Convert</button> <label><input type="checkbox" id="gasmalObjects"> Convert gasmallen as objects, not polygons</label>
                     <p id="message" style="border: 1px solid black; padding: 2px; font-weight: bold">...</p>
                     <p>
                         <script>
                             function doConversion() {
                                 console.clear();
                                 const input = document.getElementById('input').value;
-                                const result = PlotConverter.convert(input, console.log);
+                                const convertGasMalObjects = document.getElementById('gasmalObjects').checked;
+                                const result = PlotConverter.convert(input, console.log, convertGasMalObjects);
                                 console.log(result);
                                 document.getElementById('message').innerText = result.message;
                                 const outputEl = document.getElementById('output');

@@ -37,7 +37,7 @@ export function resetNameCounters() {
     nameCounters = {};
 }
 
-export function convertEntity(entity: ActionLayerEntityBase, entityIndex: EntityIndex, parent?: PartEntity, log?: LogFunction): any {
+export function convertEntity(entity: ActionLayerEntityBase, entityIndex: EntityIndex, parent?: PartEntity, log?: LogFunction, convertGasMalObjects = false): any {
     try {
         switch (entity.entityIdentifier) {
             case 'Lne': return convertLine(entity.entity as LineEntity, parent);
@@ -46,7 +46,7 @@ export function convertEntity(entity: ActionLayerEntityBase, entityIndex: Entity
             case 'PAr': return convertPolyArrow(entity.entity as PolyArrowEntity, parent);
             case 'Spl': return convertSmoothPolyLine(entity.entity as PolyLineEntity, parent);
             case 'Rct': return convertRectangle(entity.entity as RectangleEntity, parent);
-            case 'Prt': return convertPart(entity.entity as PartEntity, entityIndex, parent, log);
+            case 'Prt': return convertPart(entity.entity as PartEntity, entityIndex, parent, log, convertGasMalObjects);
             case 'Syn': return convertSymbol(entity.entity as SymbolEntity, parent);
             case 'STx': return convertText(entity.entity as StrokeTextEntity, parent);
             default:
@@ -321,14 +321,16 @@ function flatDeep<T>(arr: Array<T>, d = 1): Array<T> {
         : arr.slice();
 }
 
-function convertPart(entity: PartEntity, entityIndex: EntityIndex, parent?: PartEntity, log?: LogFunction) {
+function convertPart(entity: PartEntity, entityIndex: EntityIndex, parent?: PartEntity, log?: LogFunction, convertGasMalObjects = false) {
     if (!entity.children || entity.children.length === 0) {
         return [];
     }
 
-    const gasMal = convertGasMal(entity, parent);
-    if (gasMal) {
-        return gasMal;
+    if (convertGasMalObjects) {
+        const gasMal = convertGasMal(entity, parent);
+        if (gasMal) {
+            return gasMal;
+        }
     }
 
     const vuurhaard = convertVuurhaard(entity, parent);
